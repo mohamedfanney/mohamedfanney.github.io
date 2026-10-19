@@ -1,6 +1,203 @@
 {
-  "generated_at": null,
-  "sources_ok": [],
+  "generated_at": "2026-10-19T16:52:14.501676Z",
+  "sources_ok": [
+    "ZATAZ",
+    "DataBreaches.net",
+    "BleepingComputer"
+  ],
   "sources_unavailable": [],
-  "items": []
+  "items": [
+    {
+      "title": "Microsoft fixes game, app crashes caused by recent Windows update",
+      "description": "Microsoft has resolved a bug that caused games and apps using AC-3 (Dolby Digital) audio decoding to crash after installing the September 2026 Windows 11 preview update (KB5124010). [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/",
+      "published": "2026-10-19T14:55:23Z",
+      "category": "general"
+    },
+    {
+      "title": "Inside the Underground Market for Know Your Client Services",
+      "description": "Cybercriminals are selling forged identity documents, deepfake videos, and live verification services to help buyers bypass Know Your Client (KYC) checks. Flare examines how these undergroun",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/inside-the-underground-market-for-know-your-client-services/",
+      "published": "2026-10-19T14:00:10Z",
+      "category": "general"
+    },
+    {
+      "title": "F5 releases out-of-band patches for critical NGINX vulnerabilities",
+      "description": "F5 has released out-of-band security patches to address multiple NGINX web server flaws, including three critical-severity vulnerabilities that can let attackers execute code on vulnerable s",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
+      "published": "2026-10-19T13:49:24Z",
+      "category": "attack"
+    },
+    {
+      "title": "Microsoft fixes classic Outlook bug that hid Copilot buttons",
+      "description": "Microsoft has fixed a known issue that removed the Copilot Chat and Copilot buttons in the classic Outlook desktop mail client for some Windows users. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/",
+      "published": "2026-10-19T12:44:44Z",
+      "category": "general"
+    },
+    {
+      "title": "Microsoft: October Windows Server updates break Exchange sign-in, mail flow",
+      "description": "Microsoft has confirmed that this month's Windows Server security updates are causing OWA sign-in and mail delivery issues on some Exchange Server systems. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/",
+      "published": "2026-10-19T08:58:41Z",
+      "category": "general"
+    },
+    {
+      "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
+      "description": "Attackers are targeting an OS command injection vulnerability in SiteGuard Server Edition that lets them execute commands as root or SYSTEM on affected servers. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+      "published": "2026-10-18T14:23:16Z",
+      "category": "attack"
+    },
+    {
+      "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
+      "description": "Kevin Townsend reports: Data for CyberSN’s jobs report is aggregated from JobSpikr (with duplicates removed). The various job titles are then analyzed and assigned to CyberSN’s taxonomy of 4",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/18/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
+      "published": "2026-10-18T12:26:09Z",
+      "category": "general"
+    },
+    {
+      "title": "More NHS staff sacked for accessing records of Nottingham stabbing victims",
+      "description": "Ellie Ng reports: More NHS staff have been dismissed for inappropriately accessing medical records of the Nottingham stabbing victims, taking the total sacked so far to 15, a trust said. Stu",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/18/more-nhs-staff-sacked-for-accessing-records-of-nottingham-stabbing-victims/",
+      "published": "2026-10-18T11:07:21Z",
+      "category": "general"
+    },
+    {
+      "title": "La Chine veut contrôler ses exportations d’IA",
+      "description": "La Chine veut encadrer les exportations de 23 technologies d’IA, sur fond de rivalité stratégique avec Washington.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/la-chine-veut-controler-ses-exportations-dia/",
+      "published": "2026-10-18T10:29:36Z",
+      "category": "general"
+    },
+    {
+      "title": "Fuite de données : la FFTir de nouveau ciblée ?",
+      "description": "FFTir : un pirate vend 40 Go de données, dont des photos et certificats médicaux de licenciés sportifs.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/fuite-de-donnees-la-fftir-de-nouveau-ciblee/",
+      "published": "2026-10-18T09:43:48Z",
+      "category": "breach"
+    },
+    {
+      "title": "NY AG James and CT AG Tong Secure $2.7 Million from Boston Children’s Health Physicians and XTIUM for 2024 Data Breach",
+      "description": "NY’s Attorney General and CT’s Attorney General held both a provider and its IT company liable for a data breach. The settlement also includes a corrective action plan to improve data securi",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/17/ny-ag-james-and-ct-ag-tong-secure-2-7-million-from-boston-childrens-health-physicians-and-xtium-for-2024-data-breach/",
+      "published": "2026-10-17T22:22:10Z",
+      "category": "breach"
+    },
+    {
+      "title": "Hack exposes data on millions of California students",
+      "description": "Eric He and Tyler Katzenberger report: Personal information about millions of California students was stolen in a hack of a non-profit organization that contracts with the state’s Department",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/17/hack-exposes-data-on-millions-of-california-students/",
+      "published": "2026-10-17T16:19:59Z",
+      "category": "attack"
+    },
+    {
+      "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
+      "description": "ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities and compromised Microsoft 365 tenants. [..",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+      "published": "2026-10-17T15:18:51Z",
+      "category": "breach"
+    },
+    {
+      "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
+      "description": "Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the content management system. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
+      "published": "2026-10-17T14:32:48Z",
+      "category": "attack"
+    },
+    {
+      "title": "Cyberattaques : des sites français ciblés par des pirates",
+      "description": "Des pirates ciblent des industriels français et des opérateurs étatiques. L'un des groupes vend DDoS et exfiltration de données !",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/cyberattaques-des-sites-francais-cibles-par-des-pirates/",
+      "published": "2026-10-17T13:03:32Z",
+      "category": "breach"
+    },
+    {
+      "title": "Phishing : une opération frappe trois kits pirate",
+      "description": "Une opération vise CoGUI et deux kits de phishing, avec saisies de domaines et action judiciaire.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/phishing-une-operation-frappe-trois-kits-pirate/",
+      "published": "2026-10-17T11:36:53Z",
+      "category": "attack"
+    },
+    {
+      "title": "Taxis et VTC : ce que vos données révèlent de vous",
+      "description": "Taxis, VTC, automobile : les affaires révélées par ZATAZ éclairent les risques liés aux données personnelles.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/taxis-et-vtc-ce-que-vos-donnees-revelent-de-vous/",
+      "published": "2026-10-17T11:28:33Z",
+      "category": "general"
+    },
+    {
+      "title": "Leboncoin et Vinted : des notifications suspectes",
+      "description": "Notifications suspectes sur Leboncoin et Vinted : des redirections vers des casinos pirates.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/leboncoin-et-vinted-des-notifications-suspectes/",
+      "published": "2026-10-17T11:02:52Z",
+      "category": "attack"
+    },
+    {
+      "title": "Doctolib : mon opposition à l’IA reste sans réponse claire",
+      "description": "Doctolib répond sur le marketing à une opposition à l’IA : récit, délais RGPD et droits rappelés par la CNIL.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/doctolib-mon-opposition-a-lia-reste-sans-reponse-claire/",
+      "published": "2026-10-17T10:33:58Z",
+      "category": "general"
+    },
+    {
+      "title": "Cyberattaques : les supermarchés européens perturbés",
+      "description": "Cyberattaques dans les supermarchés : froid saboté en France et perturbations dans des bases militaires US et enseignes en Europe.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/cyberattaques-les-supermarches-europeens-perturbes/",
+      "published": "2026-10-17T09:50:36Z",
+      "category": "attack"
+    },
+    {
+      "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
+      "description": "Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP c",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
+      "published": "2026-10-16T20:00:59Z",
+      "category": "attack"
+    },
+    {
+      "title": "Russian man linked to deadly NHS contractor hack arrested",
+      "description": "Joe Tidy reports: German police have detained a Russian man accused of being part of a cyber-crime gang which caused chaos at London hospitals and contributed to a patient’s death. The hack ",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/16/russian-man-linked-to-deadly-nhs-contractor-hack-arrested/",
+      "published": "2026-10-16T17:45:12Z",
+      "category": "attack"
+    },
+    {
+      "title": "Moscow police detain suspected DataSuckers hackers linked to breaches in Ukraine and Russia",
+      "description": "Daryna Antoniuk reports: Russian authorities have reportedly detained three suspected members of the DataSuckers hacking group following a cyberattack on a popular restaurant chain that expo",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/16/moscow-police-detain-suspected-datasuckers-hackers-linked-to-breaches-in-ukraine-and-russia/",
+      "published": "2026-10-16T17:45:02Z",
+      "category": "breach"
+    },
+    {
+      "title": "Targeted ads installed Candiru spyware in zero-click attacks",
+      "description": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's ",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
+      "published": "2026-10-16T17:20:03Z",
+      "category": "attack"
+    }
+  ]
 }
