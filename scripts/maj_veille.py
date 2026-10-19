@@ -49,15 +49,19 @@ def normal_date(value):
         d = d.replace(tzinfo=timezone.utc)
     return d.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
 
-def classify(text):
-    txt = text.lower()
-    if re.search(r"fuite|exfiltrat|breach|leak|stolen data|compromised data|data exposure", txt):
-        return "breach"
-    if re.search(r"ransom|cyberatta|pirat|hack|malware|phishing|attaque|attack", txt):
-        return "attack"
-    if re.search(r"vuln[ée]rab|faille|patch|cve-|flaw|zero.day|exploit", txt):
-        return "vuln"
-    return "general"
+def classify(title, description=""):
+    # Le titre prime sur l'extrait : évite les classements trompeurs.
+    def from_text(text):
+        value = text.lower()
+        if re.search(r"fuite|exfiltrat|breach|leak|stolen data|compromised data|data exposure", value):
+            return "breach"
+        if re.search(r"vuln[ée]rab|faille|patch|cve-|flaw|zero.day|exploit", value):
+            return "vuln"
+        if re.search(r"ransom|cyberatta|pirat|hack|malware|phishing|attaque|attack", value):
+            return "attack"
+        return "general"
+    title_category = from_text(title)
+    return title_category if title_category != "general" else from_text(description)
 
 def one(parent, name):
     node = parent.find(name)
@@ -76,8 +80,11 @@ def extract(xml, source):
         date = normal_date(one(entry, "pubDate") or one(entry, "{http://purl.org/dc/elements/1.1/}date"))
         if urlsplit(link).scheme != "https" or not title:
             continue
+        category = classify(title, desc)
+        if source == "BleepingComputer" and category == "general" and "/news/security/" not in link:
+            continue
         result.append({"title":title, "description":desc, "source":source, "link":link,
-                       "published":date, "category":classify(title + " " + desc)})
+                       "published":date, "category":category})
     for entry in atom[:35]:
         title = clean(one(entry, f"{atom_ns}title"), 190)
         desc = clean(one(entry, f"{atom_ns}summary") or one(entry, f"{atom_ns}content"), 190)
@@ -89,8 +96,11 @@ def extract(xml, source):
         date = normal_date(one(entry, f"{atom_ns}published") or one(entry, f"{atom_ns}updated"))
         if urlsplit(url).scheme != "https" or not title:
             continue
+        category = classify(title, desc)
+        if source == "BleepingComputer" and category == "general" and "/news/security/" not in url:
+            continue
         result.append({"title":title, "description":desc, "source":source, "link":url,
-                       "published":date, "category":classify(title + " " + desc)})
+                       "published":date, "category":category})
     return result
 
 def main():
