@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Réseau VLAN — Cabinet Comptafinance | Mohamed Hemamda</title>
+<meta name="description" content="Séparation de deux services et mise en place du routage inter-VLAN — BTS SIO SISR, documentation HTML et PDF original.">
+<style>
+:root{color-scheme:dark;--bg:#090b12;--surface:#10141f;--line:#293243;--text:#f1f5fa;--sub:#adb8c9;--blue:#38bdf8;--violet:#a855f7;}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.7 Inter,system-ui,-apple-system,Arial,sans-serif}
+header,main,footer{max-width:1040px;margin:auto;padding:30px 25px}header{display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid var(--line)}
+a{color:#70d2ff}a:hover{color:#fff}.back{color:var(--sub);text-decoration:none}.pill{display:inline-block;background:#172134;border:1px solid #36516a;border-radius:30px;padding:3px 11px;color:#9adaff;font-size:12px}
+h1{font-size:clamp(27px,5vw,44px);line-height:1.2;letter-spacing:-.025em;margin:18px 0 14px}h2{font-size:23px;margin:0 0 16px}h3{font-size:17px;margin:15px 0 6px}
+.lead{color:var(--sub);font-size:17px;max-width:760px}.hero{padding:25px 0 34px;border-bottom:1px solid var(--line)}
+section{padding:25px 0;border-bottom:1px solid var(--line)}.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:20px}
+.card p,.card li{color:var(--sub)}.card ul{padding-left:18px;margin-bottom:0}
+.label{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);font-weight:700}
+table{width:100%;border-collapse:collapse;background:var(--surface);overflow:hidden;border-radius:12px;font-size:14px}
+th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--blue)}td{color:var(--sub)}
+pre{overflow-x:auto;padding:17px;border-radius:10px;background:#060912;color:#c6e9ff;font-size:13px;line-height:1.65}
+.alert{border-left:3px solid #fbbf24;padding:15px 20px;background:rgba(251,191,36,.06);color:#f9e5b1}
+.good{border-left:3px solid #38bdf8;padding:15px 20px;background:rgba(56,189,248,.05)}
+.foot{font-size:13px;color:var(--sub)}
+@media(max-width:700px){.cols{grid-template-columns:1fr}th,td{padding:8px;font-size:12px}header{padding:15px}}
+
+.actionbar{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}
+.action{display:inline-flex;gap:8px;align-items:center;border-radius:11px;padding:11px 18px;background:#182a40;border:1px solid #315574;text-decoration:none;color:#bce8ff;font-weight:600}
+.action.secondary{background:#131822;border-color:var(--line);color:var(--sub)}
+.action:hover{background:#203550}
+p{margin-top:9px}.meta{color:var(--sub);font-size:13px}
+.card p{margin-bottom:0}.footnav{display:flex;gap:17px;flex-wrap:wrap;align-items:center}
+</style>
+</head>
+<body>
+<header><a class="back" href="../#projects">← Revenir aux projets du portfolio</a><span>MOHAMED HEMAMDA · BTS SIO SISR</span></header>
+<main>
+<div class="hero">
+<span class="pill">Réseaux · niveau débutant · Projet de formation</span>
+<h1>Réseau VLAN — Cabinet Comptafinance</h1><p class="lead">Simulation sous Cisco Packet Tracer d'un réseau de cabinet comptable avec deux VLAN, distribution DHCP et imprimante partagée accessible entre les deux services.</p>
+<div class="actionbar"><a class="action" href="vlan-comptafinance.pdf" target="_blank" rel="noopener noreferrer">Consulter le PDF avec captures ↗</a><a class="action secondary" href="vlan-comptafinance.pdf" download>Télécharger le PDF ↓</a></div>
+<p class="meta">Fiche HTML de synthèse établie à partir du descriptif du projet déjà publié sur ce portfolio. La documentation PDF d'origine reste le support détaillé, avec ses captures et ses configurations.</p>
+</div>
+<section><h2>1. Objectif et contexte</h2><p>L'objectif est de séparer logiquement les postes de l'accueil et de la gestion tout en conservant les communications nécessaires, en particulier vers une imprimante commune.</p><div class="good"><strong>Objectif :</strong> Permettre à deux services isolés en VLAN de communiquer via un routeur et d'utiliser une imprimante commune.</div></section>
+<section><h2>2. Environnement technique</h2><table><tbody><tr><th>Outil</th><td>Cisco Packet Tracer</td></tr>
+<tr><th>VLAN 10</th><td>Accueil — réseau 192.168.10.0/24</td></tr>
+<tr><th>VLAN 20</th><td>Gestion — réseau 192.168.20.0/24</td></tr>
+<tr><th>Passerelles décrites</th><td>192.168.10.1 et 192.168.20.1</td></tr>
+<tr><th>Services</th><td>DHCP et imprimante partagée</td></tr>
+<tr><th>Routage</th><td>Inter-VLAN sur sous-interfaces du routeur, trunk 802.1Q</td></tr></tbody></table></section>
+<section><h2>3. Réalisation technique</h2><div class="cols"><article class="card"><span class="label">Étape 1</span><h3>Segmentation</h3><p>Création du VLAN 10 (Accueil) et du VLAN 20 (Gestion) sur le commutateur.</p></article>
+<article class="card"><span class="label">Étape 2</span><h3>Liaison routeur–switch</h3><p>Mise en place d'un lien trunk entre le switch et le routeur.</p></article>
+<article class="card"><span class="label">Étape 3</span><h3>Routage inter-VLAN</h3><p>Configuration de sous-interfaces du routeur avec les passerelles 192.168.10.1 et 192.168.20.1.</p></article>
+<article class="card"><span class="label">Étape 4</span><h3>Adressage automatisé</h3><p>Configuration du serveur DHCP avec un pool d'adresses distinct par VLAN.</p></article>
+<article class="card"><span class="label">Étape 5</span><h3>Ressource partagée</h3><p>Mise en réseau d'une imprimante accessible depuis les deux services.</p></article></div></section>
+<section><h2>4. Tests et contrôles documentés</h2><table><thead><tr><th>Point vérifié</th><th>Ce qui est décrit</th></tr></thead><tbody><tr><th>Attribution DHCP</th><td>Un pool est prévu pour chaque VLAN ; adresses à vérifier dans les captures.</td></tr>
+<tr><th>Connectivité inter-VLAN</th><td>Tests ping annoncés dans le descriptif du projet.</td></tr>
+<tr><th>Accès à l'imprimante</th><td>Tests de ping depuis les deux services, avec 0 % de perte indiqué dans la description.</td></tr>
+<tr><th>Documentation</th><td>Configurations et captures dans le document PDF original.</td></tr></tbody></table></section>
+<section><h2>5. Compétences techniques mises en jeu</h2><div class="card"><ul><li>Configuration de VLAN et de ports trunk</li>
+<li>Routage inter-VLAN et adressage IPv4</li>
+<li>Distribution DHCP</li>
+<li>Tests de connectivité et documentation réseau</li></ul></div>
+<p class="meta">Ces compétences sont déduites des tâches décrites. La correspondance officielle avec le tableau E5/E6 doit être justifiée par les preuves de chaque réalisation.</p></section>
+<section><h2>6. Documentation et points à vérifier</h2><div class="alert"><strong>Pour la soutenance :</strong> La présence du ping ne suffit pas, à elle seule, à prouver des restrictions d'accès fines ou une sécurité de niveau production. Cette réalisation illustre surtout l'adressage, la segmentation et le routage.</div>
+<p>La fiche HTML sert à consulter rapidement le projet. Le PDF d'origine doit être conservé pour ses copies d'écran, procédures et configurations ; il n'est pas remplacé par cette synthèse.</p>
+<div class="actionbar"><a class="action" href="vlan-comptafinance.pdf" target="_blank" rel="noopener noreferrer">Voir la documentation originale (PDF) ↗</a></div>
+</section>
+</main>
+<footer class="foot footnav"><a href="../#projects">← Tous les projets</a><span>Réseau VLAN — Cabinet Comptafinance · BTS SIO SISR</span></footer>
+</body></html>

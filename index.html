@@ -391,7 +391,8 @@
         <div class="tags">
           <span class="tag">Windows Server 2019</span><span class="tag">Active Directory</span><span class="tag">GPO</span><span class="tag">PowerShell</span><span class="tag">DNS</span><span class="tag">VirtualBox</span>
         </div>
-        <a class="viewlink" href="projets/active-directory.pdf" target="_blank" rel="noopener" data-i18n="proj.view">Voir le livrable complet (PDF) ↗</a>
+        <a class="viewlink" href="projets/active-directory.html" data-i18n="proj.case">Voir la fiche technique (HTML) ↗</a>
+        <a class="viewlink" href="projets/active-directory.pdf" target="_blank" rel="noopener noreferrer" data-i18n="proj.view">Voir la documentation originale (PDF) ↗</a>
       </div>
       <div class="projectcard">
         <span class="cat" data-i18n="proj2.cat">Réseau</span>
@@ -407,7 +408,8 @@
         <div class="tags">
           <span class="tag">Cisco Packet Tracer</span><span class="tag">VLAN 802.1Q</span><span class="tag">DHCP</span><span class="tag">Routage inter-VLAN</span><span class="tag">Cisco IOS (CLI)</span>
         </div>
-        <a class="viewlink" href="projets/vlan-comptafinance.pdf" target="_blank" rel="noopener" data-i18n="proj.view">Voir le livrable complet (PDF) ↗</a>
+        <a class="viewlink" href="projets/vlan-comptafinance.html" data-i18n="proj.case">Voir la fiche technique (HTML) ↗</a>
+        <a class="viewlink" href="projets/vlan-comptafinance.pdf" target="_blank" rel="noopener noreferrer" data-i18n="proj.view">Voir la documentation originale (PDF) ↗</a>
       </div>
       <div class="projectcard">
         <span class="cat" data-i18n="proj3.cat">Réseau</span>
@@ -422,7 +424,8 @@
         <div class="tags">
           <span class="tag">Cisco Packet Tracer</span><span class="tag">VLAN</span><span class="tag">ACL</span><span class="tag">DHCP / DNS / HTTP</span><span class="tag">SNMP</span><span class="tag">Assisté par IA</span>
         </div>
-        <a class="viewlink" href="projets/vlan-stratadvise.pdf" target="_blank" rel="noopener" data-i18n="proj.view">Voir le livrable complet (PDF) ↗</a>
+        <a class="viewlink" href="projets/vlan-stratadvise.html" data-i18n="proj.case">Voir la fiche technique (HTML) ↗</a>
+        <a class="viewlink" href="projets/vlan-stratadvise.pdf" target="_blank" rel="noopener noreferrer" data-i18n="proj.view">Voir la documentation originale (PDF) ↗</a>
       </div>
       <div class="projectcard">
         <span class="cat" data-i18n="proj4.cat">Infrastructure · 2e année</span>
@@ -567,7 +570,7 @@ const i18n = {
     'veille.loading':'Chargement des articles RSS…','veille.all':'Toutes','veille.breach':'Fuites de données','veille.attack':'Cyberattaques','veille.vuln':'Vulnérabilités','veille.sources':'Sources RSS :','veille.more':'Afficher davantage d’articles','veille.note':"Méthode de veille : consultation de plusieurs sources, classement par thématique, affichage de la date et renvoi vers l'article original. La publication des titres ne remplace pas une analyse personnelle des informations.",
     'cert.kicker':'CERTIFICATIONS','cert.h2':'Des compétences <span class="hl">validées</span>','cert.view':'Voir le PDF ↗',
     'proj4.cat':'Infrastructure · 2e année','proj4.title':'Salle de formation E6 – infrastructure Debian 13','proj4.desc':"Mise en place d'un environnement virtualisé avec deux VM Debian 13, DHCP, DNS BIND9, annuaire LDAP, partages Samba, intranet Apache/GLPI et supervision Bash/cron.",'proj4.steps':"<li>Plan d'adressage du domaine de test madrid.local sous VMware VMnet2</li><li>Services centralisés : DHCP, DNS, utilisateurs LDAP et partages par groupe</li><li>Tests de validation, diagnostic d'incidents et supervision automatisée</li>",'proj4.view':'Consulter la fiche technique (HTML) ↗',
-    'proj.kicker':'PROJETS','proj.h2':'Des infrastructures <span class="hl">montées de A à Z</span>','proj.view':'Voir le livrable complet (PDF) ↗',
+    'proj.kicker':'PROJETS','proj.h2':'Des infrastructures <span class="hl">montées de A à Z</span>','proj.case':'Voir la fiche technique (HTML) ↗','proj.view':'Voir la documentation originale (PDF) ↗',
     'proj1.cat':'Infrastructure','proj1.title':'Déploiement Active Directory — domaine esup.local',
     'proj1.desc':"Mise en place complète d'un contrôleur de domaine Windows Server, de la VM jusqu'à la politique de sécurité : création du domaine, gestion des utilisateurs et groupes par import PowerShell, GPO de sécurité et plan d'audit.",
     'proj1.steps':"<li>Installation de Windows Server 2019 sur VM VirtualBox (4 Go RAM, 2 vCPU)</li><li>Promotion en contrôleur de domaine (domaine esup.local, NetBIOS ESUP)</li><li>Création des unités d'organisation, groupes et import CSV des utilisateurs via PowerShell</li><li>GPO de sécurité : politique de mots de passe, verrouillage d'écran, authentification à deux facteurs</li><li>Plan d'audit des événements de sécurité et veille sur Microsoft Defender for Identity</li>",
@@ -618,7 +621,7 @@ const i18n = {
     'veille.loading':'Loading RSS articles…','veille.all':'All','veille.breach':'Data breaches','veille.attack':'Cyberattacks','veille.vuln':'Vulnerabilities','veille.sources':'RSS sources:','veille.more':'Show more articles','veille.note':"Monitoring method: multiple sources, thematic classification, publication dates, and links to original articles. Republishing headlines is not a substitute for a personal analysis.",
     'cert.kicker':'CERTIFICATIONS','cert.h2':'Validated <span class="hl">skills</span>','cert.view':'View PDF ↗',
     'proj4.cat':'Infrastructure · 2nd year','proj4.title':'Training room E6 – Debian 13 infrastructure','proj4.desc':'Virtualized infrastructure with two Debian 13 VMs, DHCP, BIND9 DNS, LDAP, Samba file shares, Apache/GLPI intranet and Bash/cron monitoring.','proj4.steps':'<li>VMware VMnet2 lab network, madrid.local domain</li><li>Centralized DHCP, DNS, LDAP accounts and permissioned shares</li><li>Validation tests, troubleshooting and automated monitoring</li>','proj4.view':'Read the technical case study (HTML) ↗',
-    'proj.kicker':'PROJECTS','proj.h2':'Infrastructure <span class="hl">built from scratch</span>','proj.view':'View full deliverable (PDF) ↗',
+    'proj.kicker':'PROJECTS','proj.h2':'Infrastructure <span class="hl">built from scratch</span>','proj.case':'Read case study (HTML) ↗','proj.view':'View original documentation (PDF) ↗',
     'proj1.cat':'Infrastructure','proj1.title':'Active Directory deployment — esup.local domain',
     'proj1.desc':"Full setup of a Windows Server domain controller, from the VM to the security policy: domain creation, user and group management via PowerShell import, security GPOs and an audit plan.",
     'proj1.steps':"<li>Installed Windows Server 2019 on a VirtualBox VM (4GB RAM, 2 vCPU)</li><li>Promoted to domain controller (esup.local domain, ESUP NetBIOS name)</li><li>Created organizational units, groups and bulk user import via PowerShell/CSV</li><li>Security GPOs: password policy, screen lock, two-factor authentication</li><li>Security event audit plan and research on Microsoft Defender for Identity</li>",
