@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T16:53:51.567979Z",
+  "generated_at": "2026-10-19T22:21:37.118548Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,46 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
+      "description": "Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+      "published": "2026-10-19T21:49:48Z",
+      "category": "breach"
+    },
+    {
+      "title": "WordPress SEO plugin Rank Math compromised to backdoor websites",
+      "description": "Some downloads of the Rank Math PRO WordPress plugin from the vendor's official website carried malware that planted hidden backdoors in a supply-chain attack last week. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
+      "published": "2026-10-19T21:24:51Z",
+      "category": "attack"
+    },
+    {
+      "title": "Hackers hijack AOMEI update servers to secretly spread malware",
+      "description": "Hackers reportedly compromised AOMEI's servers to distribute malware through a built-in promotional feature in its backup software, briefly tampering with configuration files before restorin",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
+      "published": "2026-10-19T19:40:58Z",
+      "category": "attack"
+    },
+    {
+      "title": "Bullhorn takes staffing platform offline to contain cyberattack",
+      "description": "Staffing software company Bullhorn has disabled access to its platform to contain a cyberattack that caused a system-wide outage. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
+      "published": "2026-10-19T18:51:13Z",
+      "category": "attack"
+    },
+    {
+      "title": "OpenCode hack exposes API keys amid AI distillation attacks",
+      "description": "The open-source AI coding project OpenCode has notified a small number of users that API keys they used with external providers were exposed in a security breach. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/",
+      "published": "2026-10-19T17:27:15Z",
+      "category": "attack"
+    },
     {
       "title": "Inside the Underground Market for Know Your Client Services",
       "description": "Cybercriminals are selling forged identity documents, deepfake videos, and live verification services to help buyers bypass Know Your Client (KYC) checks. Flare examines how these undergroun",
@@ -158,46 +198,6 @@
       "link": "https://databreaches.net/2026/10/16/russian-man-linked-to-deadly-nhs-contractor-hack-arrested/",
       "published": "2026-10-16T17:45:12Z",
       "category": "attack"
-    },
-    {
-      "title": "Moscow police detain suspected DataSuckers hackers linked to breaches in Ukraine and Russia",
-      "description": "Daryna Antoniuk reports: Russian authorities have reportedly detained three suspected members of the DataSuckers hacking group following a cyberattack on a popular restaurant chain that expo",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/16/moscow-police-detain-suspected-datasuckers-hackers-linked-to-breaches-in-ukraine-and-russia/",
-      "published": "2026-10-16T17:45:02Z",
-      "category": "breach"
-    },
-    {
-      "title": "Targeted ads installed Candiru spyware in zero-click attacks",
-      "description": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's ",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
-      "published": "2026-10-16T17:20:03Z",
-      "category": "attack"
-    },
-    {
-      "title": "Employees using personal ChatGPT at work? Here's what IT admins need to do",
-      "description": "Employees using personal ChatGPT accounts at work can expose sensitive company data, even when their organization provides an approved Enterprise workspace. NordLayer explains how IT teams c",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/",
-      "published": "2026-10-16T13:50:59Z",
-      "category": "general"
-    },
-    {
-      "title": "KR: NHIS Employee Sold Data, Victims Uninformed for Three Months",
-      "description": "In today’s reminder of the insider threat, Kim Ji-won reports: A National Health Insurance Service (NHIS) employee was dismissed for illegally selling personal information of health insuranc",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/16/kr-nhis-employee-sold-data-victims-uninformed-for-three-months/",
-      "published": "2026-10-16T13:02:43Z",
-      "category": "general"
-    },
-    {
-      "title": "Burger King Japan data breach exposes 11 million customer records",
-      "description": "Burger King Japan, the Japanese subsidiary of global fast-food giant Burger King, disclosed a major data breach after attackers accessed a server containing 11.18 million customer records. [",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
-      "published": "2026-10-16T12:01:29Z",
-      "category": "breach"
     }
   ]
 }
