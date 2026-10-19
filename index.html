@@ -135,6 +135,28 @@
   .veilleitem .meta{font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--dim); white-space:nowrap; flex-shrink:0; margin-top:2px;}
   .veille-loading{text-align:center; color:var(--dim); font-family:'JetBrains Mono',monospace; font-size:.85rem; padding:20px;}
 
+
+  /* Veille RSS : cartes, filtres et méthode */
+  .veilletoolbar{max-width:850px;margin:28px auto 0;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;}
+  .veillefilters{display:flex;gap:8px;flex-wrap:wrap;}
+  .veillefilter{padding:8px 13px;border:1px solid var(--border);border-radius:999px;color:var(--dim);background:var(--card);font:500 .81rem 'Inter',sans-serif;cursor:pointer;}
+  .veillefilter:hover,.veillefilter[aria-pressed="true"]{border-color:var(--purple);color:var(--text);background:rgba(168,85,247,.15);}
+  .veillesources{font-size:.78rem;color:var(--dim);display:flex;gap:10px;flex-wrap:wrap;}
+  .veillesources a{color:var(--dim);text-decoration:underline;text-underline-offset:3px;}
+  .veillesources a:hover{color:var(--orange);}
+  .veillestatus{max-width:850px;margin:16px auto 0;color:var(--dim);font-size:.78rem;line-height:1.6;}
+  .veillelist{max-width:850px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px;}
+  .veilleitem{display:flex;flex-direction:column;align-items:stretch;min-width:0;gap:10px;padding:20px;}
+  .veilleitem a{font-size:1rem;font-weight:600;line-height:1.45;}
+  .veilleitem .meta{margin:0;font-size:.73rem;white-space:normal;line-height:1.6;}
+  .veilleexcerpt{color:var(--dim);font-size:.84rem;line-height:1.55;}
+  .veilletopic{display:inline-block;width:fit-content;border:1px solid rgba(168,85,247,.32);border-radius:999px;padding:4px 9px;font-size:.68rem;color:#d8b4fe;}
+  .veillemore{display:block;margin:22px auto 0;background:transparent;color:var(--text);border:1px solid var(--border);border-radius:999px;padding:10px 18px;cursor:pointer;}
+  .veillemore:hover{border-color:var(--purple);}
+  .veillenote{max-width:850px;margin:22px auto 0;color:var(--dim);font-size:.8rem;line-height:1.6;}
+  .veillemore[hidden]{display:none;}
+  @media(max-width:700px){.veillelist{grid-template-columns:1fr;}.veilletoolbar{align-items:flex-start;}}
+
   .certgrid{display:grid; grid-template-columns:1fr; gap:16px; margin-top:40px; max-width:720px; margin-left:auto; margin-right:auto;}
   @media(min-width:700px){ .certgrid{grid-template-columns:repeat(2,1fr);} }
   .certcard{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; display:flex; flex-direction:column; gap:8px;}
@@ -397,13 +419,28 @@
 
   <section class="about" id="veille">
     <div style="text-align:center">
-      <div class="section-kicker" data-i18n="veille.kicker">VEILLE TECHNOLOGIQUE</div>
-      <h2 data-i18n="veille.h2">Fuites de données <span class="hl">dans le monde</span></h2>
-      <p style="color:var(--dim); max-width:560px; margin:14px auto 0; font-size:.95rem;" data-i18n="veille.sub">Dans le cadre de mon BTS SIO, je surveille l'actualité des fuites de données et cyberattaques touchant des entreprises partout dans le monde — sources françaises et internationales. Liste mise à jour automatiquement.</p>
+      <div class="section-kicker" data-i18n="veille.kicker">VEILLE TECHNOLOGIQUE · RSS</div>
+      <h2 data-i18n="veille.h2">Fuites de données <span class="hl">et cybersécurité</span></h2>
+      <p style="color:var(--dim);max-width:680px;margin:14px auto 0;font-size:.95rem;line-height:1.7;" data-i18n="veille.sub">Dans le cadre du BTS SIO SISR, je suis les cyberattaques, fuites de données et vulnérabilités. Les articles proviennent de flux RSS de médias spécialisés et sont regroupés automatiquement.</p>
     </div>
-    <div class="veillelist" id="veilleList">
-      <div class="veille-loading" data-i18n="veille.loading">Chargement de l'actualité en direct…</div>
+    <div class="veilletoolbar">
+      <div class="veillefilters" role="group" aria-label="Filtrer les actualités">
+        <button class="veillefilter" type="button" data-topic="all" aria-pressed="true" data-i18n="veille.all">Toutes</button>
+        <button class="veillefilter" type="button" data-topic="breach" aria-pressed="false" data-i18n="veille.breach">Fuites de données</button>
+        <button class="veillefilter" type="button" data-topic="attack" aria-pressed="false" data-i18n="veille.attack">Cyberattaques</button>
+        <button class="veillefilter" type="button" data-topic="vuln" aria-pressed="false" data-i18n="veille.vuln">Vulnérabilités</button>
+      </div>
+      <div class="veillesources">
+        <span data-i18n="veille.sources">Sources RSS :</span>
+        <a href="https://www.zataz.com/feed/" target="_blank" rel="noopener noreferrer">ZATAZ</a>
+        <a href="https://databreaches.net/feed/" target="_blank" rel="noopener noreferrer">DataBreaches.net</a>
+        <a href="https://www.bleepingcomputer.com/feed/" target="_blank" rel="noopener noreferrer">BleepingComputer</a>
+      </div>
     </div>
+    <p class="veillestatus" id="veilleStatus" role="status" aria-live="polite" data-i18n="veille.loading">Chargement des articles RSS…</p>
+    <div class="veillelist" id="veilleList" aria-label="Derniers articles de cybersécurité"></div>
+    <button class="veillemore" id="veilleMore" type="button" hidden data-i18n="veille.more">Afficher davantage d’articles</button>
+    <p class="veillenote" data-i18n="veille.note">Méthode de veille : consultation de plusieurs sources, classement par thématique, affichage de la date et renvoi vers l'article original. La publication des titres ne remplace pas une analyse personnelle des informations.</p>
   </section>
 
   <section class="about" id="terminal">
@@ -488,9 +525,9 @@ const i18n = {
     'contact.phonelabel':'Téléphone','contact.loclabel':'Localisation','contact.cvlabel':'CV','contact.cvlink':'Télécharger mon CV (PDF)',
     'form.name':'Nom complet','form.message':'Message','form.submit':'Envoyer le message →',
     'form.namePh':'Votre nom','form.emailPh':'vous@entreprise.com','form.messagePh':'Décrivez votre demande...',
-    'veille.kicker':'VEILLE TECHNOLOGIQUE','veille.h2':'Fuites de données <span class="hl">dans le monde</span>',
-    'veille.sub':"Dans le cadre de mon BTS SIO, je surveille l'actualité des fuites de données et cyberattaques touchant des entreprises partout dans le monde — sources françaises et internationales. Liste mise à jour automatiquement.",
-    'veille.loading':"Chargement de l'actualité en direct…",
+    'veille.kicker':'VEILLE TECHNOLOGIQUE · RSS','veille.h2':'Fuites de données <span class="hl">et cybersécurité</span>',
+    'veille.sub':"Dans le cadre du BTS SIO SISR, je suis les cyberattaques, fuites de données et vulnérabilités. Les articles proviennent de flux RSS de médias spécialisés et sont regroupés automatiquement.",
+    'veille.loading':'Chargement des articles RSS…','veille.all':'Toutes','veille.breach':'Fuites de données','veille.attack':'Cyberattaques','veille.vuln':'Vulnérabilités','veille.sources':'Sources RSS :','veille.more':'Afficher davantage d’articles','veille.note':"Méthode de veille : consultation de plusieurs sources, classement par thématique, affichage de la date et renvoi vers l'article original. La publication des titres ne remplace pas une analyse personnelle des informations.",
     'cert.kicker':'CERTIFICATIONS','cert.h2':'Des compétences <span class="hl">validées</span>','cert.view':'Voir le PDF ↗',
     'proj.kicker':'PROJETS','proj.h2':'Des infrastructures <span class="hl">montées de A à Z</span>','proj.view':'Voir le livrable complet (PDF) ↗',
     'proj1.cat':'Infrastructure','proj1.title':'Déploiement Active Directory — domaine esup.local',
@@ -537,9 +574,9 @@ const i18n = {
     'contact.phonelabel':'Phone','contact.loclabel':'Location','contact.cvlabel':'CV','contact.cvlink':'Download my CV (PDF)',
     'form.name':'Full name','form.message':'Message','form.submit':'Send message →',
     'form.namePh':'Your name','form.emailPh':'you@company.com','form.messagePh':'Describe your request...',
-    'veille.kicker':'TECH WATCH','veille.h2':'Data <span class="hl">breaches</span> worldwide',
-    'veille.sub':"As part of my BTS SIO, I track data breaches and cyberattacks affecting companies worldwide — French and international sources. List refreshes automatically.",
-    'veille.loading':'Loading live news…',
+    'veille.kicker':'TECH WATCH','veille.h2':'Data breaches <span class="hl">and cybersecurity</span>',
+    'veille.sub':"As part of my BTS SIO SISR studies, I monitor data breaches, cyberattacks and vulnerabilities. Articles are gathered automatically from specialized RSS feeds.",
+    'veille.loading':'Loading RSS articles…','veille.all':'All','veille.breach':'Data breaches','veille.attack':'Cyberattacks','veille.vuln':'Vulnerabilities','veille.sources':'RSS sources:','veille.more':'Show more articles','veille.note':"Monitoring method: multiple sources, thematic classification, publication dates, and links to original articles. Republishing headlines is not a substitute for a personal analysis.",
     'cert.kicker':'CERTIFICATIONS','cert.h2':'Validated <span class="hl">skills</span>','cert.view':'View PDF ↗',
     'proj.kicker':'PROJECTS','proj.h2':'Infrastructure <span class="hl">built from scratch</span>','proj.view':'View full deliverable (PDF) ↗',
     'proj1.cat':'Infrastructure','proj1.title':'Active Directory deployment — esup.local domain',
@@ -571,6 +608,7 @@ function setLang(lang){
   });
   try{ localStorage.setItem('portfolio_lang', lang); }catch(e){}
   currentLang = lang;
+  if(typeof renderVeille === 'function' && Array.isArray(veilleItems) && veilleItems.length) renderVeille();
 }
 var currentLang = 'fr';
 document.querySelectorAll('.langtoggle span').forEach(function(s){
@@ -590,41 +628,131 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
   window.location.href = 'mailto:mohamed.hemamda017@gmail.com?subject=' + subject + '&body=' + body;
 });
 
-function fetchRss(feedUrl){
-  var api = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
-  return fetch(api).then(function(r){ return r.json(); })
-    .then(function(d){ return (d && d.status === 'ok') ? d.items : []; })
-    .catch(function(){ return []; });
-}
 
-Promise.all([
-  fetchRss('https://www.zataz.com/feed/'),
-  fetchRss('https://databreaches.net/feed/')
-]).then(function(results){
-  var list = document.getElementById('veilleList');
-  var merged = results[0].concat(results[1]);
-  merged.sort(function(a,b){ return new Date(b.pubDate) - new Date(a.pubDate); });
-  var top = merged.slice(0,6);
-  if(!top.length){
-    list.innerHTML = '<div class="veille-loading">Actualité indisponible pour le moment.</div>';
-    return;
+// Veille RSS : données mises en cache par GitHub Actions (pas de clé API côté navigateur).
+var veilleItems = [];
+var veilleTopic = 'all';
+var veilleExpanded = false;
+var veilleUpdated = '';
+var veilleMode = '';
+var veilleLabels = {
+  fr: {breach:'Fuite de données',attack:'Cyberattaque',vuln:'Vulnérabilité',general:'Cybersécurité'},
+  en: {breach:'Data breach',attack:'Cyberattack',vuln:'Vulnerability',general:'Cybersecurity'}
+};
+function veilleSafeUrl(value){
+  try { var url = new URL(value); return url.protocol === 'https:' ? url.href : ''; }
+  catch(e){ return ''; }
+}
+function veilleCategory(article){
+  if (['breach','attack','vuln'].indexOf(article.category) !== -1) return article.category;
+  var s = ((article.title || '')+' '+(article.description || '')).toLowerCase();
+  if (/fuite|exfiltrat|breach|leak|donn[ée]es vol[ée]es|data exposure|stolen data|compromised data/.test(s)) return 'breach';
+  if (/ransom|cyberatta|pirat|hack|malware|phishing|attaque|attack/.test(s)) return 'attack';
+  if (/vuln[ée]rab|faille|patch|cve-|flaw|zero.day|exploit/.test(s)) return 'vuln';
+  return 'general';
+}
+function veilleDate(v){
+  if(!v) return '';
+  var d = new Date(v);
+  if(isNaN(d.getTime())) return '';
+  return d.toLocaleDateString(currentLang === 'en' ? 'en-GB' : 'fr-FR',{year:'numeric',month:'short',day:'2-digit'});
+}
+function renderVeille(){
+  var host = document.getElementById('veilleList');
+  var state = document.getElementById('veilleStatus');
+  var more = document.getElementById('veilleMore');
+  if(!host) return;
+  var filtered = veilleItems.filter(function(item){return veilleTopic === 'all' || veilleCategory(item) === veilleTopic;});
+  var visible = veilleExpanded ? filtered : filtered.slice(0,8);
+  host.innerHTML = '';
+  var language = currentLang === 'en' ? 'en' : 'fr';
+  if(!visible.length){
+    var empty=document.createElement('div'); empty.className='veille-loading';
+    empty.textContent = language === 'en' ? 'No articles for this filter yet.' : 'Aucun article pour ce filtre pour le moment.';
+    host.appendChild(empty);
   }
-  list.innerHTML = '';
-  top.forEach(function(it){
-    var div = document.createElement('div');
-    div.className = 'veilleitem';
-    var a = document.createElement('a');
-    a.href = it.link; a.target = '_blank'; a.rel = 'noopener'; a.textContent = it.title || '';
-    var meta = document.createElement('span');
-    meta.className = 'meta';
-    var d = it.pubDate ? new Date(it.pubDate) : null;
-    meta.textContent = d ? d.toLocaleDateString('fr-FR', {day:'2-digit', month:'short'}) : '';
-    div.appendChild(a); div.appendChild(meta);
-    list.appendChild(div);
+  visible.forEach(function(it){
+    var safeLink = veilleSafeUrl(it.link);
+    if(!safeLink) return;
+    var item = document.createElement('article'); item.className='veilleitem';
+    var topic = document.createElement('span'); topic.className='veilletopic';
+    topic.textContent = veilleLabels[language][veilleCategory(it)];
+    var link = document.createElement('a');
+    link.href=safeLink; link.target='_blank'; link.rel='noopener noreferrer';
+    link.textContent=it.title || (language === 'en' ? 'Read article' : 'Lire l’article');
+    var desc = document.createElement('p'); desc.className='veilleexcerpt';
+    desc.textContent = it.description || '';
+    var meta=document.createElement('span'); meta.className='meta';
+    meta.textContent = (it.source || 'RSS')+'  ·  '+veilleDate(it.published);
+    item.appendChild(topic); item.appendChild(link);
+    if(desc.textContent) item.appendChild(desc);
+    item.appendChild(meta); host.appendChild(item);
   });
-}).catch(function(){
-  document.getElementById('veilleList').innerHTML = '<div class="veille-loading">Impossible de charger l\'actualité en direct pour le moment.</div>';
+  more.hidden = filtered.length <= 8 || veilleExpanded;
+  more.textContent = language === 'en' ? 'Show more articles' : 'Afficher davantage d’articles';
+  var statusText = '';
+  if(veilleMode === 'github' && veilleUpdated){
+    statusText = (language === 'en' ? 'RSS cache updated: ' : 'Flux RSS actualisés le ')+veilleDate(veilleUpdated)+
+      (language === 'en' ? ' · ' : ' · ')+veilleItems.length+(language === 'en' ? ' articles.' : ' articles.');
+  } else if(veilleMode === 'fallback'){
+    statusText = language === 'en' ? 'Latest available articles from RSS sources (backup service).' : 'Articles issus des flux RSS (service de secours).';
+  } else {
+    statusText = language === 'en' ? 'RSS news unavailable for now; try again later.' : 'Actualités RSS momentanément indisponibles ; réessaye plus tard.';
+  }
+  state.textContent = statusText;
+}
+document.querySelectorAll('.veillefilter').forEach(function(button){
+  button.addEventListener('click',function(){
+    veilleTopic=button.getAttribute('data-topic');
+    veilleExpanded=false;
+    document.querySelectorAll('.veillefilter').forEach(function(b){
+      b.setAttribute('aria-pressed',b === button ? 'true' : 'false');
+    });
+    renderVeille();
+  });
 });
+document.getElementById('veilleMore').addEventListener('click',function(){
+  veilleExpanded=true; renderVeille();
+});
+function rssFallback(feedUrl, source){
+  var api='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent(feedUrl);
+  return fetch(api).then(function(r){ if(!r.ok) throw new Error('HTTP'); return r.json(); })
+    .then(function(data){
+      if(!data || data.status !== 'ok' || !Array.isArray(data.items)) return [];
+      return data.items.map(function(item){
+        var raw=document.createElement('div'); raw.innerHTML=item.description || '';
+        return {title:item.title || '',link:item.link || '',source:source,published:item.pubDate || '',description:(raw.textContent || '').replace(/\s+/g,' ').slice(0,170)};
+      });
+    }).catch(function(){return [];});
+}
+function uniqueVeille(items){
+  var used=Object.create(null);
+  return items.filter(function(item){
+    var key=veilleSafeUrl(item.link);
+    if(!key || used[key] || !item.title) return false;
+    used[key]=true;
+    return true;
+  }).sort(function(a,b){return (Date.parse(b.published)||0)-(Date.parse(a.published)||0);}).slice(0,24);
+}
+fetch('https://raw.githubusercontent.com/mohamedfanney/mohamedfanney.github.io/main/data/veille-rss.json?v='+Date.now(),{cache:'no-store'})
+  .then(function(r){if(!r.ok) throw new Error('Cache HTTP');return r.json();})
+  .then(function(data){
+    if(!Array.isArray(data.items) || !data.items.length) throw new Error('Cache RSS vide');
+    veilleItems=uniqueVeille(data.items);
+    veilleUpdated=data.generated_at || '';
+    veilleMode='github';
+    renderVeille();
+  })
+  .catch(function(){
+    return Promise.all([
+      rssFallback('https://www.zataz.com/feed/','ZATAZ'),
+      rssFallback('https://databreaches.net/feed/','DataBreaches.net')
+    ]).then(function(results){
+      veilleItems=uniqueVeille(results[0].concat(results[1]));
+      veilleMode=veilleItems.length ? 'fallback' : 'error';
+      renderVeille();
+    }).catch(function(){veilleMode='error';renderVeille();});
+  });
 
 var navLinks = document.querySelectorAll('.links a');
 navLinks.forEach(function(link){
