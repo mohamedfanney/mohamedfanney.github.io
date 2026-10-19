@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Salle de formation E6 — Projet Debian 13 | Mohamed Hemamda</title>
+<meta name="description" content="Documentation du projet Salle de formation E6 : infrastructure virtualisée Debian 13, réseau VMware, DHCP, DNS, LDAP, Samba, intranet GLPI et supervision Bash.">
+<style>
+:root{color-scheme:dark;--bg:#090b12;--surface:#10141f;--line:#293243;--text:#f1f5fa;--sub:#adb8c9;--blue:#38bdf8;--violet:#a855f7;}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.7 Inter,system-ui,-apple-system,Arial,sans-serif}
+header,main,footer{max-width:1040px;margin:auto;padding:30px 25px}header{display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid var(--line)}
+a{color:#70d2ff}a:hover{color:#fff}.back{color:var(--sub);text-decoration:none}.pill{display:inline-block;background:#172134;border:1px solid #36516a;border-radius:30px;padding:3px 11px;color:#9adaff;font-size:12px}
+h1{font-size:clamp(27px,5vw,44px);line-height:1.2;letter-spacing:-.025em;margin:18px 0 14px}h2{font-size:23px;margin:0 0 16px}h3{font-size:17px;margin:15px 0 6px}
+.lead{color:var(--sub);font-size:17px;max-width:760px}.hero{padding:25px 0 34px;border-bottom:1px solid var(--line)}
+section{padding:25px 0;border-bottom:1px solid var(--line)}.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:20px}
+.card p,.card li{color:var(--sub)}.card ul{padding-left:18px;margin-bottom:0}
+.label{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);font-weight:700}
+table{width:100%;border-collapse:collapse;background:var(--surface);overflow:hidden;border-radius:12px;font-size:14px}
+th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--blue)}td{color:var(--sub)}
+pre{overflow-x:auto;padding:17px;border-radius:10px;background:#060912;color:#c6e9ff;font-size:13px;line-height:1.65}
+.alert{border-left:3px solid #fbbf24;padding:15px 20px;background:rgba(251,191,36,.06);color:#f9e5b1}
+.good{border-left:3px solid #38bdf8;padding:15px 20px;background:rgba(56,189,248,.05)}
+.foot{font-size:13px;color:var(--sub)}
+@media(max-width:700px){.cols{grid-template-columns:1fr}th,td{padding:8px;font-size:12px}header{padding:15px}}
+</style>
+</head>
+<body>
+<header><a class="back" href="../#projects">← Revenir aux projets du portfolio</a><span>MOHAMED HEMAMDA · BTS SIO SISR</span></header>
+<main>
+<div class="hero"><span class="pill">Projet de formation · 2e année · E6 SISR</span>
+<h1>Infrastructure réseau d’une salle de formation sous Debian 13</h1>
+<p class="lead">Virtualisation sur VMware Workstation d'une infrastructure centralisée : adressage DHCP, résolution DNS, annuaire OpenLDAP, partages Samba, intranet GLPI et supervision Bash/cron.</p>
+<p>Documentation remise le <strong>19 octobre 2026</strong> · Projet de laboratoire <strong>madrid.local</strong>.</p>
+</div>
+<section><h2>1. Cahier des charges et environnement</h2>
+<div class="cols">
+<div class="card"><span class="label">Niveau 1 · Socle réseau</span><h3>Connectivité, DHCP et DNS</h3><p>Deux machines Debian 13 minimalistes sur un réseau VMware VMnet2 NAT, avec DHCP VMware désactivé. Adressage des clients assuré par le serveur interne.</p></div>
+<div class="card"><span class="label">Niveau 2 · Services centralisés</span><h3>LDAP, Samba et intranet</h3><p>Comptes utilisateurs et groupes dans OpenLDAP, partages différenciés étudiants/professeurs, page Apache et GLPI.</p></div>
+<div class="card"><span class="label">Niveau 3 · Exploitation</span><h3>Supervision et simulation de pannes</h3><p>Script shell vérifiant cinq services toutes les cinq minutes. La documentation décrit aussi des tests d'arrêt et de restauration DHCP/DNS.</p></div>
+<div class="card"><span class="label">Environnement</span><h3>VMware Workstation / Windows 11</h3><p>Deux VM Debian 13 sans interface graphique : un serveur SRV-INFRA et un poste CLIENT-01 pour les tests réseau et applicatifs.</p></div></div>
+</section>
+<section><h2>2. Architecture et adressage de test</h2>
+<table><thead><tr><th>Équipement</th><th>IP / réseau</th><th>Fonction</th></tr></thead><tbody>
+<tr><td>VMnet2</td><td>192.168.198.0/24</td><td>Réseau NAT privé du laboratoire</td></tr>
+<tr><td>Passerelle VMware</td><td>192.168.198.2</td><td>Accès extérieur par NAT</td></tr>
+<tr><td>SRV-INFRA</td><td>192.168.198.10</td><td>Serveur multi-services Debian 13</td></tr>
+<tr><td>CLIENT-01</td><td>192.168.198.101</td><td>Poste de test ; bail DHCP</td></tr>
+<tr><td>Domaine local</td><td>madrid.local</td><td>DNS et annuaire du laboratoire</td></tr>
+</tbody></table></section>
+<section><h2>3. Services et configurations documentés</h2><div class="cols">
+<div class="card"><h3>DHCP · isc-dhcp-server</h3><p>Plage <code>192.168.198.100–150</code>. Le serveur annonce la passerelle NAT et le DNS <code>192.168.198.10</code>. Vérification par <code>dhcpd -t</code> et contrôle du bail sur CLIENT-01.</p></div>
+<div class="card"><h3>DNS · BIND9</h3><p>Zone directe et inverse de <code>madrid.local</code>, avec <code>dig</code> et <code>named-checkzone</code> pour les tests. Le compte rendu détaille un problème de résolution externe dû à DNSSEC dans le laboratoire NAT.</p></div>
+<div class="card"><h3>Annuaire · OpenLDAP</h3><p>Arbre <code>dc=madrid,dc=local</code>, unités <code>ou=people</code> et <code>ou=groups</code>, groupes étudiants/professeurs. Tests avec <code>ldapsearch</code> et <code>ldapwhoami</code>.</p></div>
+<div class="card"><h3>Partages · Samba</h3><p>Deux espaces : <code>EspaceEleves</code> et <code>EspaceProfs</code>, différenciés par groupe. Le compte rendu indique un test d'accès croisé avec un utilisateur étudiant.</p></div>
+<div class="card"><h3>Intranet · Apache, PHP, GLPI</h3><p>Page d'accueil de l'intranet pointant vers GLPI, avec MariaDB pour le service de gestion du parc. Vérifications présentées dans le rapport.</p></div>
+<div class="card"><h3>Supervision · Bash et cron</h3><p>Vérification de cinq services : <code>isc-dhcp-server</code>, <code>bind9</code>, <code>slapd</code>, <code>smbd</code> et <code>apache2</code>. Écriture dans <code>/var/log/supervision.log</code>.</p></div>
+</div><pre>*/5 * * * * /usr/local/bin/check_services.sh >> /var/log/supervision.log 2>&1</pre></section>
+<section><h2>4. Tests et incidents documentés</h2>
+<table><thead><tr><th>Vérification</th><th>Résultat indiqué dans le rapport</th></tr></thead><tbody>
+<tr><td>DHCP</td><td>Bail dynamique 192.168.198.101 obtenu sur CLIENT-01</td></tr>
+<tr><td>DNS</td><td>Résolution interne du serveur et résolution externe via forwarder</td></tr>
+<tr><td>LDAP</td><td>Groupes et comptes visibles ; authentification après correction d'un hash</td></tr>
+<tr><td>Samba</td><td>Partage étudiant accessible et partage professeurs refusé à l'utilisateur étudiant</td></tr>
+<tr><td>Intranet</td><td>Apache / GLPI et base MariaDB présentés comme actifs</td></tr>
+<tr><td>Supervision</td><td>Journal de contrôle périodique ; simulation d'un arrêt DHCP et d'une erreur DNS</td></tr>
+</tbody></table>
+<p>Incidents présentés : syntaxe de <code>dhcpd.conf</code>, relais DNS provoquant <code>SERVFAIL</code>, erreurs LDIF, identifiants LDAP, commande <code>dhclient</code> absente et correction de partages.</p>
+</section>
+<section><h2>5. Captures et preuves à compléter</h2>
+<div class="alert"><strong>État du dossier documentaire :</strong> le PDF source fourni comporte 21 pages, des captures de configuration et un tableau de tests. Ses pages 4, 19 et 21 signalent néanmoins des captures manquantes : installation Debian, authentification LDAP réussie, test d'accès différencié Samba, <code>curl -I</code>, simulation de panne DHCP et erreur/restauration DNS. Le PDF et les images d'origine ne sont pas encore publiés dans ce dépôt ; cette fiche reprend uniquement leurs informations techniques.</div>
+<p>Pour le jury : ajouter les captures et préciser le rôle individuel dans le projet. Vérifier notamment les conditions de sécurité de l'annuaire et le choix de désactivation DNSSEC dans l'environnement de test.</p>
+</section>
+<section><h2>6. Correspondance avec le BTS SIO</h2><div class="good">Ce projet contribue notamment aux activités de gestion du patrimoine, de traitement d'incidents, de conduite de projet et de mise à disposition de services informatiques. Il peut nourrir une réalisation technique E6 SISR, mais le dossier officiel E6 et la conformité de l'environnement doivent être validés avec le formateur.</div></section>
+</main><footer class="foot"><a href="../#projects">← Retour au portfolio</a> · Projet de formation sous Debian 13 · Documentation fournie le 19/10/2026</footer>
+</body>
+</html>

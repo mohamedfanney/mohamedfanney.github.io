@@ -243,7 +243,7 @@
       <h2 data-i18n="about.h2">Une administration <span class="hl">fiable, sécurisée</span>, opérationnelle</h2>
     </div>
     <div class="stats">
-      <div class="statcard"><div class="num">3</div><div class="label" data-i18n="stat.projects">Projets réalisés</div></div>
+      <div class="statcard"><div class="num">4</div><div class="label" data-i18n="stat.projects">Projets réalisés</div></div>
       <div class="statcard"><div class="num">1</div><div class="label" data-i18n="stat.cert">Certification PIX</div></div>
       <div class="statcard"><div class="num">5</div><div class="label" data-i18n="stat.skills">Domaines de compétences</div></div>
       <div class="statcard"><div class="num">SISR</div><div class="label">BTS SIO · 2025–2027</div></div>
@@ -424,6 +424,18 @@
         </div>
         <a class="viewlink" href="projets/vlan-stratadvise.pdf" target="_blank" rel="noopener" data-i18n="proj.view">Voir le livrable complet (PDF) ↗</a>
       </div>
+      <div class="projectcard">
+        <span class="cat" data-i18n="proj4.cat">Infrastructure · 2e année</span>
+        <h3 data-i18n="proj4.title">Salle de formation E6 – infrastructure Debian 13</h3>
+        <p data-i18n="proj4.desc">Mise en place d'un environnement virtualisé avec deux VM Debian 13, DHCP, DNS BIND9, annuaire LDAP, partages Samba, intranet Apache/GLPI et supervision Bash/cron.</p>
+        <ul class="steps" data-i18n="proj4.steps">
+          <li>Plan d'adressage du domaine de test madrid.local sous VMware VMnet2</li>
+          <li>Services centralisés : DHCP, DNS, utilisateurs LDAP et partages par groupe</li>
+          <li>Tests de validation, diagnostic d'incidents et supervision automatisée</li>
+        </ul>
+        <div class="tags"><span class="tag">Debian 13</span><span class="tag">VMware</span><span class="tag">BIND9</span><span class="tag">OpenLDAP</span><span class="tag">Samba</span><span class="tag">GLPI</span><span class="tag">Bash</span></div>
+        <a class="viewlink" href="projets/salle-formation-e6.html" data-i18n="proj4.view">Consulter la fiche technique (HTML) ↗</a>
+      </div>
     </div>
   </section>
 
@@ -554,6 +566,7 @@ const i18n = {
     'veille.sub':"Dans le cadre du BTS SIO SISR, je suis les cyberattaques, fuites de données et vulnérabilités. Les articles proviennent de flux RSS de médias spécialisés et sont regroupés automatiquement.",
     'veille.loading':'Chargement des articles RSS…','veille.all':'Toutes','veille.breach':'Fuites de données','veille.attack':'Cyberattaques','veille.vuln':'Vulnérabilités','veille.sources':'Sources RSS :','veille.more':'Afficher davantage d’articles','veille.note':"Méthode de veille : consultation de plusieurs sources, classement par thématique, affichage de la date et renvoi vers l'article original. La publication des titres ne remplace pas une analyse personnelle des informations.",
     'cert.kicker':'CERTIFICATIONS','cert.h2':'Des compétences <span class="hl">validées</span>','cert.view':'Voir le PDF ↗',
+    'proj4.cat':'Infrastructure · 2e année','proj4.title':'Salle de formation E6 – infrastructure Debian 13','proj4.desc':"Mise en place d'un environnement virtualisé avec deux VM Debian 13, DHCP, DNS BIND9, annuaire LDAP, partages Samba, intranet Apache/GLPI et supervision Bash/cron.",'proj4.steps':"<li>Plan d'adressage du domaine de test madrid.local sous VMware VMnet2</li><li>Services centralisés : DHCP, DNS, utilisateurs LDAP et partages par groupe</li><li>Tests de validation, diagnostic d'incidents et supervision automatisée</li>",'proj4.view':'Consulter la fiche technique (HTML) ↗',
     'proj.kicker':'PROJETS','proj.h2':'Des infrastructures <span class="hl">montées de A à Z</span>','proj.view':'Voir le livrable complet (PDF) ↗',
     'proj1.cat':'Infrastructure','proj1.title':'Déploiement Active Directory — domaine esup.local',
     'proj1.desc':"Mise en place complète d'un contrôleur de domaine Windows Server, de la VM jusqu'à la politique de sécurité : création du domaine, gestion des utilisateurs et groupes par import PowerShell, GPO de sécurité et plan d'audit.",
@@ -604,6 +617,7 @@ const i18n = {
     'veille.sub':"As part of my BTS SIO SISR studies, I monitor data breaches, cyberattacks and vulnerabilities. Articles are gathered automatically from specialized RSS feeds.",
     'veille.loading':'Loading RSS articles…','veille.all':'All','veille.breach':'Data breaches','veille.attack':'Cyberattacks','veille.vuln':'Vulnerabilities','veille.sources':'RSS sources:','veille.more':'Show more articles','veille.note':"Monitoring method: multiple sources, thematic classification, publication dates, and links to original articles. Republishing headlines is not a substitute for a personal analysis.",
     'cert.kicker':'CERTIFICATIONS','cert.h2':'Validated <span class="hl">skills</span>','cert.view':'View PDF ↗',
+    'proj4.cat':'Infrastructure · 2nd year','proj4.title':'Training room E6 – Debian 13 infrastructure','proj4.desc':'Virtualized infrastructure with two Debian 13 VMs, DHCP, BIND9 DNS, LDAP, Samba file shares, Apache/GLPI intranet and Bash/cron monitoring.','proj4.steps':'<li>VMware VMnet2 lab network, madrid.local domain</li><li>Centralized DHCP, DNS, LDAP accounts and permissioned shares</li><li>Validation tests, troubleshooting and automated monitoring</li>','proj4.view':'Read the technical case study (HTML) ↗',
     'proj.kicker':'PROJECTS','proj.h2':'Infrastructure <span class="hl">built from scratch</span>','proj.view':'View full deliverable (PDF) ↗',
     'proj1.cat':'Infrastructure','proj1.title':'Active Directory deployment — esup.local domain',
     'proj1.desc':"Full setup of a Windows Server domain controller, from the VM to the security policy: domain creation, user and group management via PowerShell import, security GPOs and an audit plan.",
