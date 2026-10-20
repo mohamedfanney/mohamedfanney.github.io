@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T17:05:27.155102Z",
+  "generated_at": "2026-10-20T21:37:35.628834Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,22 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "PHP warns admins of two critical flaws, emergency patches coming tomorrow",
+      "description": "The PHP security team is warning administrators to prepare for emergency security updates tomorrow to address two critical vulnerabilities, as information about the flaws has reportedly leak",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/",
+      "published": "2026-10-20T20:56:43Z",
+      "category": "vuln"
+    },
+    {
+      "title": "Zeabur shutting down after second security breach in two months",
+      "description": "Development platform Zeabur has disclosed details of a cybersecurity incident in which an attacker used leaked internal credentials stored in plaintext to compromise its infrastructure and s",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
+      "published": "2026-10-20T19:33:02Z",
+      "category": "breach"
+    },
     {
       "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
       "description": "Ravie Lakshmanan reports: Palo Alto Networks has disclosed that it’s continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors",
@@ -158,22 +174,6 @@
       "link": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/",
       "published": "2026-10-19T17:27:15Z",
       "category": "attack"
-    },
-    {
-      "title": "Inside the Underground Market for Know Your Client Services",
-      "description": "Cybercriminals are selling forged identity documents, deepfake videos, and live verification services to help buyers bypass Know Your Client (KYC) checks. Flare examines how these undergroun",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/inside-the-underground-market-for-know-your-client-services/",
-      "published": "2026-10-19T14:00:10Z",
-      "category": "general"
-    },
-    {
-      "title": "F5 releases out-of-band patches for critical NGINX vulnerabilities",
-      "description": "F5 has released out-of-band security patches to address multiple NGINX web server flaws, including three critical-severity vulnerabilities that can let attackers execute code on vulnerable s",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
-      "published": "2026-10-19T13:49:24Z",
-      "category": "vuln"
     },
     {
       "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
