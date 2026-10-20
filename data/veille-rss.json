@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T04:52:00.062908Z",
+  "generated_at": "2026-10-20T11:37:27.205503Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,38 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "OVHcloud CLI releases backdoored on GitHub to steal developer secrets",
+      "description": "French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute information-stealing malware. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/",
+      "published": "2026-10-20T11:31:22Z",
+      "category": "attack"
+    },
+    {
+      "title": "Arnaque Netflix à 1 € : le cadeau qui piège vos données",
+      "description": "Arnaque Netflix sur TikTok : six mois pour 1 €, des acteurs en appât et vos données en danger. Alerte ZATAZ.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/arnaque-netflix-a-1-e-le-cadeau-qui-piege-vos-donnees/",
+      "published": "2026-10-20T11:30:08Z",
+      "category": "general"
+    },
+    {
+      "title": "Ahold Delhaize: Cyberattack affects services across US and Europe",
+      "description": "Ahold Delhaize, one of the world's largest food retail chains, confirmed that last week's cyberattack disrupted services at stores across Europe and the United States. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/",
+      "published": "2026-10-20T11:18:35Z",
+      "category": "attack"
+    },
+    {
+      "title": "Revolut outage disrupts online banking operations worldwide",
+      "description": "Fintech company Revolut is working to resolve a massive outage that disrupted most of its services worldwide earlier today. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
+      "published": "2026-10-20T09:46:44Z",
+      "category": "general"
+    },
     {
       "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
       "description": "Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records. [...]",
@@ -128,14 +160,6 @@
       "category": "breach"
     },
     {
-      "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
-      "description": "Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the content management system. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
-      "published": "2026-10-17T14:32:48Z",
-      "category": "vuln"
-    },
-    {
       "title": "Cyberattaques : des sites français ciblés par des pirates",
       "description": "Des pirates ciblent des industriels français et des opérateurs étatiques. L'un des groupes vend DDoS et exfiltration de données !",
       "source": "ZATAZ",
@@ -174,30 +198,6 @@
       "link": "https://www.zataz.com/doctolib-mon-opposition-a-lia-reste-sans-reponse-claire/",
       "published": "2026-10-17T10:33:58Z",
       "category": "general"
-    },
-    {
-      "title": "Cyberattaques : les supermarchés européens perturbés",
-      "description": "Cyberattaques dans les supermarchés : froid saboté en France et perturbations dans des bases militaires US et enseignes en Europe.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/cyberattaques-les-supermarches-europeens-perturbes/",
-      "published": "2026-10-17T09:50:36Z",
-      "category": "attack"
-    },
-    {
-      "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
-      "description": "Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP c",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
-      "published": "2026-10-16T20:00:59Z",
-      "category": "vuln"
-    },
-    {
-      "title": "Russian man linked to deadly NHS contractor hack arrested",
-      "description": "Joe Tidy reports: German police have detained a Russian man accused of being part of a cyber-crime gang which caused chaos at London hospitals and contributed to a patient’s death. The hack ",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/16/russian-man-linked-to-deadly-nhs-contractor-hack-arrested/",
-      "published": "2026-10-16T17:45:12Z",
-      "category": "attack"
     }
   ]
 }
