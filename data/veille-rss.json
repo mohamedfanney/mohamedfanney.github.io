@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T11:37:27.205503Z",
+  "generated_at": "2026-10-20T17:05:27.155102Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,86 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+      "description": "Ravie Lakshmanan reports: Palo Alto Networks has disclosed that it’s continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/20/qilin-and-inc-ransomware-groups-exploit-palo-alto-networks-flaw-to-bypass-mfa/",
+      "published": "2026-10-20T16:08:24Z",
+      "category": "vuln"
+    },
+    {
+      "title": "DHS bans DeepSeek products across US federal civilian agencies",
+      "description": "The U.S. Department of Homeland Security (DHS) is ordering federal civilian agencies to stop using DeepSeek products and remove them from government systems. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/",
+      "published": "2026-10-20T14:19:05Z",
+      "category": "general"
+    },
+    {
+      "title": "CJIS v6.1 Compliance: 5 Practical Priorities for Agencies",
+      "description": "CJIS v6.1 requires agencies to maintain strong authentication, account security, and audit controls while demonstrating ongoing compliance. Specops outlines five practical priorities coverin",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/cjis-v61-compliance-5-practical-priorities-for-agencies/",
+      "published": "2026-10-20T13:51:00Z",
+      "category": "general"
+    },
+    {
+      "title": "Welsh firms ‘Password1’ and ‘Test 2’ fails led to hackers stealing children’s data",
+      "description": "Alex Hickey reports: Two Welsh organisations have been censured by the Information Commissioner’s Office (ICO) after a ransomware attack led to the theft of personal data belonging to 3,300 ",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/20/welsh-firms-password1-and-test-2-fails-led-to-hackers-stealing-childrens-data/",
+      "published": "2026-10-20T13:28:52Z",
+      "category": "attack"
+    },
+    {
+      "title": "Pryx – Four Dead in Cairo, a Cybercrime Past and…",
+      "description": "Simone Kraus writes: On October 9, 2026, Reuters introduced the world to Adem El Adeb, a 19-year-old so called former cybercriminal known as Pryx, who claimed to have abandoned illegal hacki",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/20/pryx-four-dead-in-cairo-a-cybercrime-past-and/",
+      "published": "2026-10-20T13:26:43Z",
+      "category": "attack"
+    },
+    {
+      "title": "Hacker gets 8 years for stealing $3.3 million from taxpayers",
+      "description": "A Nigerian national was sentenced to eight years in prison for his involvement in a series of spearphishing attacks targeting US tax preparation businesses since 2019. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
+      "published": "2026-10-20T13:18:36Z",
+      "category": "attack"
+    },
+    {
+      "title": "Attorney General Tong Announces $625,000 Settlement with Frontier Over Data Breach",
+      "description": "Connecticut Attorney General William Tong has been active in litigating data breaches. The press release below relates to a 2024 breach of Frontier Communications by RansomHub: Attorney Gene",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/20/attorney-general-tong-announces-625000-settlement-with-frontier-over-data-breach/",
+      "published": "2026-10-20T13:17:31Z",
+      "category": "breach"
+    },
+    {
+      "title": "U.S. bans DeepSeek from government agency systems amid AI rift with China",
+      "description": "Jenny Lee reports: The Trump administration banned Chinese AI startup DeepSeek from civilian U.S. government agencies, citing security concerns. The Department of Homeland Security on Monday",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/20/u-s-bans-deepseek-from-government-agency-systems-amid-ai-rift-with-china/",
+      "published": "2026-10-20T13:17:19Z",
+      "category": "general"
+    },
+    {
+      "title": "Suspected cyber incident blocks Parkview Health patient portal in Indiana and Ohio",
+      "description": "DysruptionHub reports: The health system disabled its network after suspicious activity, leaving MyChart and doctor searches unavailable and directing urgent medical needs to phone calls or ",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/20/suspected-cyber-incident-blocks-parkview-health-patient-portal-in-indiana-and-ohio/",
+      "published": "2026-10-20T12:45:39Z",
+      "category": "general"
+    },
+    {
+      "title": "Caméras de surveillance : contrôlez qui vous regarde",
+      "description": "Caméras piratées : les risques physiques et informatiques exploités par des pirates Russes repérés par zataz.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/cameras-de-surveillance-controlez-qui-vous-regarde/",
+      "published": "2026-10-20T12:23:48Z",
+      "category": "vuln"
+    },
     {
       "title": "OVHcloud CLI releases backdoored on GitHub to steal developer secrets",
       "description": "French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute information-stealing malware. [...]",
@@ -96,14 +176,6 @@
       "category": "vuln"
     },
     {
-      "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
-      "description": "Attackers are targeting an OS command injection vulnerability in SiteGuard Server Edition that lets them execute commands as root or SYSTEM on affected servers. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
-      "published": "2026-10-18T14:23:16Z",
-      "category": "vuln"
-    },
-    {
       "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
       "description": "Kevin Townsend reports: Data for CyberSN’s jobs report is aggregated from JobSpikr (with duplicates removed). The various job titles are then analyzed and assigned to CyberSN’s taxonomy of 4",
       "source": "DataBreaches.net",
@@ -125,78 +197,6 @@
       "source": "ZATAZ",
       "link": "https://www.zataz.com/la-chine-veut-controler-ses-exportations-dia/",
       "published": "2026-10-18T10:29:36Z",
-      "category": "general"
-    },
-    {
-      "title": "Fuite de données : la FFTir de nouveau ciblée ?",
-      "description": "FFTir : un pirate vend 40 Go de données, dont des photos et certificats médicaux de licenciés sportifs.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/fuite-de-donnees-la-fftir-de-nouveau-ciblee/",
-      "published": "2026-10-18T09:43:48Z",
-      "category": "breach"
-    },
-    {
-      "title": "NY AG James and CT AG Tong Secure $2.7 Million from Boston Children’s Health Physicians and XTIUM for 2024 Data Breach",
-      "description": "NY’s Attorney General and CT’s Attorney General held both a provider and its IT company liable for a data breach. The settlement also includes a corrective action plan to improve data securi",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/17/ny-ag-james-and-ct-ag-tong-secure-2-7-million-from-boston-childrens-health-physicians-and-xtium-for-2024-data-breach/",
-      "published": "2026-10-17T22:22:10Z",
-      "category": "breach"
-    },
-    {
-      "title": "Hack exposes data on millions of California students",
-      "description": "Eric He and Tyler Katzenberger report: Personal information about millions of California students was stolen in a hack of a non-profit organization that contracts with the state’s Department",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/17/hack-exposes-data-on-millions-of-california-students/",
-      "published": "2026-10-17T16:19:59Z",
-      "category": "attack"
-    },
-    {
-      "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
-      "description": "ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities and compromised Microsoft 365 tenants. [..",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
-      "published": "2026-10-17T15:18:51Z",
-      "category": "breach"
-    },
-    {
-      "title": "Cyberattaques : des sites français ciblés par des pirates",
-      "description": "Des pirates ciblent des industriels français et des opérateurs étatiques. L'un des groupes vend DDoS et exfiltration de données !",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/cyberattaques-des-sites-francais-cibles-par-des-pirates/",
-      "published": "2026-10-17T13:03:32Z",
-      "category": "attack"
-    },
-    {
-      "title": "Phishing : une opération frappe trois kits pirate",
-      "description": "Une opération vise CoGUI et deux kits de phishing, avec saisies de domaines et action judiciaire.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/phishing-une-operation-frappe-trois-kits-pirate/",
-      "published": "2026-10-17T11:36:53Z",
-      "category": "attack"
-    },
-    {
-      "title": "Taxis et VTC : ce que vos données révèlent de vous",
-      "description": "Taxis, VTC, automobile : les affaires révélées par ZATAZ éclairent les risques liés aux données personnelles.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/taxis-et-vtc-ce-que-vos-donnees-revelent-de-vous/",
-      "published": "2026-10-17T11:28:33Z",
-      "category": "general"
-    },
-    {
-      "title": "Leboncoin et Vinted : des notifications suspectes",
-      "description": "Notifications suspectes sur Leboncoin et Vinted : des redirections vers des casinos pirates.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/leboncoin-et-vinted-des-notifications-suspectes/",
-      "published": "2026-10-17T11:02:52Z",
-      "category": "attack"
-    },
-    {
-      "title": "Doctolib : mon opposition à l’IA reste sans réponse claire",
-      "description": "Doctolib répond sur le marketing à une opposition à l’IA : récit, délais RGPD et droits rappelés par la CNIL.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/doctolib-mon-opposition-a-lia-reste-sans-reponse-claire/",
-      "published": "2026-10-17T10:33:58Z",
       "category": "general"
     }
   ]
