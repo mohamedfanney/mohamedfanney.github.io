@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T11:49:42.845777Z",
+  "generated_at": "2026-10-21T17:12:58.150701Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,70 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "OpenAI agents disabled safety monitoring, one lied about it",
+      "description": "OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as authorization to do so. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/",
+      "published": "2026-10-21T16:26:53Z",
+      "category": "general"
+    },
+    {
+      "title": "Panne chez Orange et Sosh !",
+      "description": "Ce mercredi 21 octobre 2026, une importante panne perturbe le réseau mobile d'Orange et de sa marque low cost Sosh.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/panne-chez-orange-et-sosh/",
+      "published": "2026-10-21T15:21:36Z",
+      "category": "general"
+    },
+    {
+      "title": "Musique IA et faux streams : 18 mois de prison",
+      "description": "Musique IA, faux comptes et royalties détournées : 18 mois de prison pour un fraudeur.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/musique-ia-et-faux-streams-18-mois-de-prison/",
+      "published": "2026-10-21T14:42:22Z",
+      "category": "general"
+    },
+    {
+      "title": "LibreOffice et OpenOffice piégés par des tableurs",
+      "description": "LibreOffice et OpenOffice : des tableurs piégés exécutent du code Java. Correctifs et protections à connaître.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/libreoffice-et-openoffice-pieges-par-des-tableurs/",
+      "published": "2026-10-21T14:28:13Z",
+      "category": "general"
+    },
+    {
+      "title": "Claude transmet une fausse piste à la police",
+      "description": "Claude a envoyé une fausse piste à la police de Philadelphie pendant un test interne mené par Anthropic.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/claude-transmet-une-fausse-piste-a-la-police/",
+      "published": "2026-10-21T14:20:12Z",
+      "category": "general"
+    },
+    {
+      "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+      "description": "The PHP security team released emergency security patches for two critical remote code execution (RCE) vulnerabilities (CVE-2026-109618 and CVE-2026-109619) tracked collectively as PHP2Shell",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+      "published": "2026-10-21T14:07:05Z",
+      "category": "vuln"
+    },
+    {
+      "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
+      "description": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. Push Security examines h",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
+      "published": "2026-10-21T14:00:10Z",
+      "category": "attack"
+    },
+    {
+      "title": "PHP2Shell : deux failles critiques menacent les serveurs web",
+      "description": "Deux failles PHP2Shell critiques menacent les serveurs web. Versions concernées, risques et mesures de sécurité.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/php2shell-deux-failles-critiques-menacent-les-serveurs-web/",
+      "published": "2026-10-21T12:55:11Z",
+      "category": "vuln"
+    },
     {
       "title": "Arnaque au bitcoin : un réseau piloté depuis des prisons",
       "description": "Arnaque au bitcoin : une femme arrêtée et un réseau d'escroquerie lié à deux prisons.",
@@ -16,8 +80,8 @@
       "category": "general"
     },
     {
-      "title": "Quatre arrestations autour d’un SMS blaster",
-      "description": "Aux Philippines, quatre personnes ont été arrêtées dans une enquête concernant un SMS blaster, que les autorités associent à des messages frauduleux imitant un établissement bancaire. Selon ",
+      "title": "Des arrestations autour d’un SMS blaster",
+      "description": "Aux Philippines ainsi qu’au Cambodge, des personnes ont été arrêtées dans une enquête concernant un SMS blaster, que les autorités associent à des messages frauduleux imitant un établissemen",
       "source": "ZATAZ",
       "link": "https://www.zataz.com/quatre-arrestations-autour-dun-sms-blaster/",
       "published": "2026-10-21T09:20:00Z",
@@ -54,14 +118,6 @@
       "link": "https://www.zataz.com/un-ingenieur-dopenai-soupconne-decoute-clandestine/",
       "published": "2026-10-21T08:01:36Z",
       "category": "general"
-    },
-    {
-      "title": "Modern Warfare 4, un piratage signalé avant la sortie",
-      "description": "Modern Warfare 4 : un contournement de licence de la campagne PC est signalé avant la sortie du 23 octobre.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/modern-warfare-4-un-piratage-signale-avant-la-sortie/",
-      "published": "2026-10-21T07:45:30Z",
-      "category": "attack"
     },
     {
       "title": "Stolen UpdraftCentral keys used to backdoor WordPress sites",
@@ -141,62 +197,6 @@
       "source": "BleepingComputer",
       "link": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
       "published": "2026-10-20T13:18:36Z",
-      "category": "attack"
-    },
-    {
-      "title": "Attorney General Tong Announces $625,000 Settlement with Frontier Over Data Breach",
-      "description": "Connecticut Attorney General William Tong has been active in litigating data breaches. The press release below relates to a 2024 breach of Frontier Communications by RansomHub: Attorney Gene",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/20/attorney-general-tong-announces-625000-settlement-with-frontier-over-data-breach/",
-      "published": "2026-10-20T13:17:31Z",
-      "category": "breach"
-    },
-    {
-      "title": "U.S. bans DeepSeek from government agency systems amid AI rift with China",
-      "description": "Jenny Lee reports: The Trump administration banned Chinese AI startup DeepSeek from civilian U.S. government agencies, citing security concerns. The Department of Homeland Security on Monday",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/20/u-s-bans-deepseek-from-government-agency-systems-amid-ai-rift-with-china/",
-      "published": "2026-10-20T13:17:19Z",
-      "category": "general"
-    },
-    {
-      "title": "Suspected cyber incident blocks Parkview Health patient portal in Indiana and Ohio",
-      "description": "DysruptionHub reports: The health system disabled its network after suspicious activity, leaving MyChart and doctor searches unavailable and directing urgent medical needs to phone calls or ",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/20/suspected-cyber-incident-blocks-parkview-health-patient-portal-in-indiana-and-ohio/",
-      "published": "2026-10-20T12:45:39Z",
-      "category": "general"
-    },
-    {
-      "title": "Caméras de surveillance : contrôlez qui vous regarde",
-      "description": "Caméras piratées : les risques physiques et informatiques exploités par des pirates Russes repérés par zataz.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/cameras-de-surveillance-controlez-qui-vous-regarde/",
-      "published": "2026-10-20T12:23:48Z",
-      "category": "vuln"
-    },
-    {
-      "title": "OVHcloud CLI releases backdoored on GitHub to steal developer secrets",
-      "description": "French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute information-stealing malware. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/",
-      "published": "2026-10-20T11:31:22Z",
-      "category": "attack"
-    },
-    {
-      "title": "Arnaque Netflix à 1 € : le cadeau qui piège vos données",
-      "description": "Arnaque Netflix sur TikTok : six mois pour 1 €, des acteurs en appât et vos données en danger. Alerte ZATAZ.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/arnaque-netflix-a-1-e-le-cadeau-qui-piege-vos-donnees/",
-      "published": "2026-10-20T11:30:08Z",
-      "category": "general"
-    },
-    {
-      "title": "Ahold Delhaize: Cyberattack affects services across US and Europe",
-      "description": "Ahold Delhaize, one of the world's largest food retail chains, confirmed that last week's cyberattack disrupted services at stores across Europe and the United States. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/",
-      "published": "2026-10-20T11:18:35Z",
       "category": "attack"
     }
   ]
