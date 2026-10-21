@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T04:47:56.554013Z",
+  "generated_at": "2026-10-21T11:49:42.845777Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,62 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Arnaque au bitcoin : un réseau piloté depuis des prisons",
+      "description": "Arnaque au bitcoin : une femme arrêtée et un réseau d'escroquerie lié à deux prisons.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/arnaque-au-bitcoin-un-reseau-pilote-depuis-des-prisons/",
+      "published": "2026-10-21T09:43:47Z",
+      "category": "general"
+    },
+    {
+      "title": "Quatre arrestations autour d’un SMS blaster",
+      "description": "Aux Philippines, quatre personnes ont été arrêtées dans une enquête concernant un SMS blaster, que les autorités associent à des messages frauduleux imitant un établissement bancaire. Selon ",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/quatre-arrestations-autour-dun-sms-blaster/",
+      "published": "2026-10-21T09:20:00Z",
+      "category": "general"
+    },
+    {
+      "title": "Une ministre française ciblée par un logiciel espion",
+      "description": "Agnès Pannier-Runacher ciblée par un logiciel espion : trois alertes Apple et une enquête judiciaire en cours.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/agnes-pannier-runacher-ciblee-par-un-logiciel-espion/",
+      "published": "2026-10-21T08:46:25Z",
+      "category": "general"
+    },
+    {
+      "title": "CISA: SafePay ransomware hit over 600 critical infrastructure orgs",
+      "description": "The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwide since 2024. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/",
+      "published": "2026-10-21T08:36:24Z",
+      "category": "attack"
+    },
+    {
+      "title": "Ledger piégés : l’enquête examine plusieurs circuits de distribution",
+      "description": "Des Ledger modifiés interceptent les phrases de récupération. Le pirate est passé par un fournisseur ?",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/ledger-pieges-lenquete-examine-plusieurs-circuits-de-distribution/",
+      "published": "2026-10-21T08:23:54Z",
+      "category": "attack"
+    },
+    {
+      "title": "Un ingénieur d’OpenAI soupçonné d’écoute clandestine",
+      "description": "Un ingénieur d’OpenAI soupçonné d’écoute clandestine : appareils cachés, requêtes à l’IA et enquête du FBI.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/un-ingenieur-dopenai-soupconne-decoute-clandestine/",
+      "published": "2026-10-21T08:01:36Z",
+      "category": "general"
+    },
+    {
+      "title": "Modern Warfare 4, un piratage signalé avant la sortie",
+      "description": "Modern Warfare 4 : un contournement de licence de la campagne PC est signalé avant la sortie du 23 octobre.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/modern-warfare-4-un-piratage-signale-avant-la-sortie/",
+      "published": "2026-10-21T07:45:30Z",
+      "category": "attack"
+    },
     {
       "title": "Stolen UpdraftCentral keys used to backdoor WordPress sites",
       "description": "A threat actor breached TeamUpdraft's website, a developer of popular WordPress backup and security plugins, potentially compromising UpdraftCentral connection keys that can send commands to",
@@ -142,62 +198,6 @@
       "link": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/",
       "published": "2026-10-20T11:18:35Z",
       "category": "attack"
-    },
-    {
-      "title": "Revolut outage disrupts online banking operations worldwide",
-      "description": "Fintech company Revolut is working to resolve a massive outage that disrupted most of its services worldwide earlier today. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
-      "published": "2026-10-20T09:46:44Z",
-      "category": "general"
-    },
-    {
-      "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
-      "description": "Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
-      "published": "2026-10-19T21:49:48Z",
-      "category": "breach"
-    },
-    {
-      "title": "WordPress SEO plugin Rank Math compromised to backdoor websites",
-      "description": "Some downloads of the Rank Math PRO WordPress plugin from the vendor's official website carried malware that planted hidden backdoors in a supply-chain attack last week. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
-      "published": "2026-10-19T21:24:51Z",
-      "category": "attack"
-    },
-    {
-      "title": "Hackers hijack AOMEI update servers to secretly spread malware",
-      "description": "Hackers reportedly compromised AOMEI's servers to distribute malware through a built-in promotional feature in its backup software, briefly tampering with configuration files before restorin",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
-      "published": "2026-10-19T19:40:58Z",
-      "category": "attack"
-    },
-    {
-      "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
-      "description": "Kevin Townsend reports: Data for CyberSN’s jobs report is aggregated from JobSpikr (with duplicates removed). The various job titles are then analyzed and assigned to CyberSN’s taxonomy of 4",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/18/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
-      "published": "2026-10-18T12:26:09Z",
-      "category": "general"
-    },
-    {
-      "title": "More NHS staff sacked for accessing records of Nottingham stabbing victims",
-      "description": "Ellie Ng reports: More NHS staff have been dismissed for inappropriately accessing medical records of the Nottingham stabbing victims, taking the total sacked so far to 15, a trust said. Stu",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/18/more-nhs-staff-sacked-for-accessing-records-of-nottingham-stabbing-victims/",
-      "published": "2026-10-18T11:07:21Z",
-      "category": "general"
-    },
-    {
-      "title": "La Chine veut contrôler ses exportations d’IA",
-      "description": "La Chine veut encadrer les exportations de 23 technologies d’IA, sur fond de rivalité stratégique avec Washington.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/la-chine-veut-controler-ses-exportations-dia/",
-      "published": "2026-10-18T10:29:36Z",
-      "category": "general"
     }
   ]
 }
