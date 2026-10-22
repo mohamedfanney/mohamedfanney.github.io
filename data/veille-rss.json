@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T21:43:45.262987Z",
+  "generated_at": "2026-10-22T04:46:19.905974Z",
   "sources_ok": [
     "ZATAZ",
     "BleepingComputer"
@@ -8,6 +8,14 @@
     "DataBreaches.net"
   ],
   "items": [
+    {
+      "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
+      "description": "Chrome is getting new scam protections that use Gemini to detect deceptive websites and warn users when they copy suspicious commands from ClickFix attacks. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
+      "published": "2026-10-21T22:16:26Z",
+      "category": "attack"
+    },
     {
       "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
       "description": "Hackers compromised the infrastructure of Onamae Desktop Cloud, a popular provider of VPS services in Japan, and installed malware on up to 26,739 customers' servers. [...]",
@@ -175,14 +183,6 @@
       "link": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
       "published": "2026-10-20T19:33:02Z",
       "category": "breach"
-    },
-    {
-      "title": "DHS bans DeepSeek products across US federal civilian agencies",
-      "description": "The U.S. Department of Homeland Security (DHS) is ordering federal civilian agencies to stop using DeepSeek products and remove them from government systems. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/",
-      "published": "2026-10-20T14:19:05Z",
-      "category": "general"
     }
   ]
 }
