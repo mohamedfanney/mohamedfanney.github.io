@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T17:11:31.757330Z",
+  "generated_at": "2026-10-22T21:36:04.984101Z",
   "sources_ok": [
     "ZATAZ",
     "BleepingComputer"
@@ -8,6 +8,38 @@
     "DataBreaches.net"
   ],
   "items": [
+    {
+      "title": "Railway warns devs to rotate secrets after potential breach",
+      "description": "Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this week. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+      "published": "2026-10-22T21:25:31Z",
+      "category": "breach"
+    },
+    {
+      "title": "Capcom confirms data breach affecting 11.7 million accounts",
+      "description": "Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and associated information. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
+      "published": "2026-10-22T20:22:45Z",
+      "category": "breach"
+    },
+    {
+      "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
+      "description": "Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
+      "published": "2026-10-22T19:12:51Z",
+      "category": "attack"
+    },
+    {
+      "title": "Arista patches new VeloCloud Orchestrator zero-day exploited in attacks",
+      "description": "Arista Networks released security updates to patch an actively exploited zero-day vulnerability affecting VeloCloud Orchestrator (VCO) On-Prem deployments. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
+      "published": "2026-10-22T17:18:22Z",
+      "category": "vuln"
+    },
     {
       "title": "Machine speed attacks require machine speed detection and response",
       "description": "Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, mali",
@@ -129,14 +161,6 @@
       "category": "vuln"
     },
     {
-      "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
-      "description": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. Push Security examines h",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
-      "published": "2026-10-21T14:00:10Z",
-      "category": "attack"
-    },
-    {
       "title": "PHP2Shell : deux failles critiques menacent les serveurs web",
       "description": "Deux failles PHP2Shell critiques menacent les serveurs web. Versions concernées, risques et mesures de sécurité.",
       "source": "ZATAZ",
@@ -167,14 +191,6 @@
       "link": "https://www.zataz.com/agnes-pannier-runacher-ciblee-par-un-logiciel-espion/",
       "published": "2026-10-21T08:46:25Z",
       "category": "general"
-    },
-    {
-      "title": "CISA: SafePay ransomware hit over 600 critical infrastructure orgs",
-      "description": "The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwide since 2024. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/",
-      "published": "2026-10-21T08:36:24Z",
-      "category": "attack"
     },
     {
       "title": "Ledger piégés : l’enquête examine plusieurs circuits de distribution",
