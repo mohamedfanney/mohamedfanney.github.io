@@ -1,13 +1,28 @@
 {
-  "generated_at": "2026-10-23T04:49:56.197089Z",
+  "generated_at": "2026-10-23T11:39:25.941439Z",
   "sources_ok": [
     "ZATAZ",
+    "DataBreaches.net",
     "BleepingComputer"
   ],
-  "sources_unavailable": [
-    "DataBreaches.net"
-  ],
+  "sources_unavailable": [],
   "items": [
+    {
+      "title": "Piratage de la FFTir : la Fédération confirme le vol",
+      "description": "FFTir : la Fédération confirme une cyberattaque, le vol de 64 000 photos et de milliers de documents personnels.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/piratage-de-la-fftir-la-federation-confirme-le-vol/",
+      "published": "2026-10-23T10:41:26Z",
+      "category": "attack"
+    },
+    {
+      "title": "Fraude bancaire : deux mails pour installer la peur",
+      "description": "Alerte ZATAZ : deux faux mails bancaires, des milliers d'euros en jeu et une fraude téléphonique décryptée.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/fraude-bancaire-deux-mails-pour-installer-la-peur/",
+      "published": "2026-10-23T10:27:14Z",
+      "category": "general"
+    },
     {
       "title": "Railway warns devs to rotate secrets after potential breach",
       "description": "Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this week. [...]",
@@ -183,22 +198,6 @@
       "link": "https://www.zataz.com/quatre-arrestations-autour-dun-sms-blaster/",
       "published": "2026-10-21T09:20:00Z",
       "category": "general"
-    },
-    {
-      "title": "Une ministre française ciblée par un logiciel espion",
-      "description": "Agnès Pannier-Runacher ciblée par un logiciel espion : trois alertes Apple et une enquête judiciaire en cours.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/agnes-pannier-runacher-ciblee-par-un-logiciel-espion/",
-      "published": "2026-10-21T08:46:25Z",
-      "category": "general"
-    },
-    {
-      "title": "Ledger piégés : l’enquête examine plusieurs circuits de distribution",
-      "description": "Des Ledger modifiés interceptent les phrases de récupération. Le pirate est passé par un fournisseur ?",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/ledger-pieges-lenquete-examine-plusieurs-circuits-de-distribution/",
-      "published": "2026-10-21T08:23:54Z",
-      "category": "attack"
     }
   ]
 }
