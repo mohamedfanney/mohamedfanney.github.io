@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T17:07:33.787302Z",
+  "generated_at": "2026-10-23T21:24:45.658481Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,22 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Abandoned Popcorn Time app exposed millions of device to RCE attacks",
+      "description": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers ",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+      "published": "2026-10-23T20:55:05Z",
+      "category": "attack"
+    },
+    {
+      "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
+      "description": "Microsoft has announced plans to add AI-powered phishing detection to Teams messages starting in early November 2026. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+      "published": "2026-10-23T18:54:41Z",
+      "category": "attack"
+    },
     {
       "title": "Quest Diagnostics confirms data breach exposed patient records",
       "description": "American clinical laboratory company Quest Diagnostics disclosed that patient records have been exposed after a threat actor gained unauthorized access to its Quanum LSM system. [...]",
@@ -118,22 +134,6 @@
       "link": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-new-max-severity-code-execution-vulnerability/",
       "published": "2026-10-22T11:41:48Z",
       "category": "vuln"
-    },
-    {
-      "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
-      "description": "Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business email compromise, ransomw",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
-      "published": "2026-10-22T08:27:11Z",
-      "category": "attack"
-    },
-    {
-      "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
-      "description": "Chrome is getting new scam protections that use Gemini to detect deceptive websites and warn users when they copy suspicious commands from ClickFix attacks. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
-      "published": "2026-10-21T22:16:26Z",
-      "category": "attack"
     },
     {
       "title": "Arrêtée pour avoir bloqué un robot de livraison Uber",
