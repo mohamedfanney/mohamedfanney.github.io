@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T04:37:06.699972Z",
+  "generated_at": "2026-10-24T11:01:11.482512Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,22 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "DeepSeek banni des agences fédérales US",
+      "description": "DeepSeek banni des agences fédérales civiles américaines : portée, calendrier et risques pour les données.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/deepseek-banni-des-agences-federales-civiles-americaines/",
+      "published": "2026-10-24T10:46:39Z",
+      "category": "general"
+    },
+    {
+      "title": "Point Vision : des données de patients dérobées",
+      "description": "Cyberattaque chez Point Vision : données de patients volées, exposition possible des motifs de rendez-vous.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/point-vision-des-donnees-de-patients-derobees/",
+      "published": "2026-10-24T09:29:23Z",
+      "category": "attack"
+    },
     {
       "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
       "description": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers ",
@@ -173,22 +189,6 @@
       "source": "ZATAZ",
       "link": "https://www.zataz.com/claude-transmet-une-fausse-piste-a-la-police/",
       "published": "2026-10-21T14:20:12Z",
-      "category": "general"
-    },
-    {
-      "title": "PHP2Shell : deux failles critiques menacent les serveurs web",
-      "description": "Deux failles PHP2Shell critiques menacent les serveurs web. Versions concernées, risques et mesures de sécurité.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/php2shell-deux-failles-critiques-menacent-les-serveurs-web/",
-      "published": "2026-10-21T12:55:11Z",
-      "category": "vuln"
-    },
-    {
-      "title": "Arnaque au bitcoin : un réseau piloté depuis des prisons",
-      "description": "Arnaque au bitcoin : une femme arrêtée et un réseau d'escroquerie lié à deux prisons.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/arnaque-au-bitcoin-un-reseau-pilote-depuis-des-prisons/",
-      "published": "2026-10-21T09:43:47Z",
       "category": "general"
     },
     {
