@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T21:24:45.658481Z",
+  "generated_at": "2026-10-24T04:37:06.699972Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -8,7 +8,7 @@
   "sources_unavailable": [],
   "items": [
     {
-      "title": "Abandoned Popcorn Time app exposed millions of device to RCE attacks",
+      "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
       "description": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers ",
       "source": "BleepingComputer",
       "link": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
