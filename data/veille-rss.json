@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T20:50:15.849930Z",
+  "generated_at": "2026-10-25T04:41:44.731623Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,14 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Chimeraz revendique des fuites visant trois partis français, dont celui du groupe présidentiel",
+      "description": "Chimeraz revendique des données annoncées comme volées aux partis politiques de Renaissance, LFI et du PCF.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/chimeraz-revendique-des-fuites-visant-trois-partis-francais/",
+      "published": "2026-10-24T23:00:29Z",
+      "category": "breach"
+    },
     {
       "title": "BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot",
       "description": "A new UEFI bootkit named BlackX, deployed in an espionage campaign in early 2026, exploited the old Baton Drop vulnerability to bypass Secure Boot and load a malicious driver designed to int",
@@ -181,14 +189,6 @@
       "source": "ZATAZ",
       "link": "https://www.zataz.com/libreoffice-et-openoffice-pieges-par-des-tableurs/",
       "published": "2026-10-21T14:28:13Z",
-      "category": "general"
-    },
-    {
-      "title": "Claude transmet une fausse piste à la police",
-      "description": "Claude a envoyé une fausse piste à la police de Philadelphie pendant un test interne mené par Anthropic.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/claude-transmet-une-fausse-piste-a-la-police/",
-      "published": "2026-10-21T14:20:12Z",
       "category": "general"
     },
     {
