@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T04:47:44.243340Z",
+  "generated_at": "2026-10-26T13:03:26.824469Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,22 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Kali Linux 2026.3 released with 6 new tools, desktop updates",
+      "description": "Kali Linux has released version 2026.3, its third release this year, featuring six new hacking tools, desktop environment improvements, refreshed build scripts, and more. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/",
+      "published": "2026-10-26T10:26:52Z",
+      "category": "attack"
+    },
+    {
+      "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
+      "description": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+      "published": "2026-10-26T09:19:57Z",
+      "category": "vuln"
+    },
     {
       "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
       "description": "Researchers found a malicious AGENTS markdown instruction file in a customer's Downloads folder that tricked an AI coding agent into installing a rogue npm package. [...]",
@@ -152,14 +168,6 @@
       "category": "vuln"
     },
     {
-      "title": "Machine speed attacks require machine speed detection and response",
-      "description": "Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, mali",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-      "published": "2026-10-22T14:02:12Z",
-      "category": "attack"
-    },
-    {
       "title": "Arrêtée pour avoir bloqué un robot de livraison Uber",
       "description": "Une manifestante arrêtée pour avoir bloqué un robot Uber et dénoncé l'automatisation des emplois.",
       "source": "ZATAZ",
@@ -190,14 +198,6 @@
       "link": "https://www.zataz.com/libreoffice-et-openoffice-pieges-par-des-tableurs/",
       "published": "2026-10-21T14:28:13Z",
       "category": "general"
-    },
-    {
-      "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
-      "description": "Ravie Lakshmanan reports: Palo Alto Networks has disclosed that it’s continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/20/qilin-and-inc-ransomware-groups-exploit-palo-alto-networks-flaw-to-bypass-mfa/",
-      "published": "2026-10-20T16:08:24Z",
-      "category": "vuln"
     }
   ]
 }
