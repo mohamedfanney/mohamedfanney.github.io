@@ -23,6 +23,7 @@ pre{overflow-x:auto;padding:17px;border-radius:10px;background:#060912;color:#c6
 .foot{font-size:13px;color:var(--sub)}
 @media(max-width:700px){.cols{grid-template-columns:1fr}th,td{padding:8px;font-size:12px}header{padding:15px}}
 </style>
+<link rel="stylesheet" href="../assets/document-popup.css"><script defer src="../assets/document-popup.js"></script>
 </head>
 <body>
 <header><a class="back" href="../#projects">← Revenir aux projets du portfolio</a><span>MOHAMED HEMAMDA · BTS SIO SISR</span></header>
@@ -72,5 +73,13 @@ pre{overflow-x:auto;padding:17px;border-radius:10px;background:#060912;color:#c6
 </section>
 <section><h2>6. Correspondance avec le BTS SIO</h2><div class="good">Ce projet contribue notamment aux activités de gestion du patrimoine, de traitement d'incidents, de conduite de projet et de mise à disposition de services informatiques. Il peut nourrir une réalisation technique E6 SISR, mais le dossier officiel E6 et la conformité de l'environnement doivent être validés avec le formateur.</div></section>
 </main><footer class="foot"><a href="../#projects">← Retour au portfolio</a> · Projet de formation sous Debian 13 · Documentation fournie le 19/10/2026</footer>
+
+<dialog id="documentDialog" class="doc-modal" aria-labelledby="documentDialogTitle">
+<div class="doc-modal__panel">
+<div class="doc-modal__head"><div class="doc-modal__heading"><span class="doc-modal__eyebrow">HEMAMDA.SYS · DOCUMENT</span><h2 id="documentDialogTitle">Document</h2></div><button class="doc-modal__close" type="button" data-document-close aria-label="Fermer la fenêtre">✕</button></div>
+<div class="doc-modal__actions"><a class="doc-modal__action" href="#" data-document-open target="_blank" rel="noopener noreferrer">↗ Ouvrir dans un onglet</a><a class="doc-modal__action doc-modal__action--solid" href="#" data-document-download download>↓ Télécharger le PDF</a></div>
+<div class="doc-modal__viewer"><iframe title="Aperçu du document" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+<p class="doc-modal__hint">Si l'aperçu ne s'affiche pas sur votre appareil, utilisez « Ouvrir dans un onglet ».</p>
+</div></dialog>
 </body>
 </html>

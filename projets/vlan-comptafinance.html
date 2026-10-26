@@ -30,6 +30,7 @@ pre{overflow-x:auto;padding:17px;border-radius:10px;background:#060912;color:#c6
 p{margin-top:9px}.meta{color:var(--sub);font-size:13px}
 .card p{margin-bottom:0}.footnav{display:flex;gap:17px;flex-wrap:wrap;align-items:center}
 </style>
+<link rel="stylesheet" href="../assets/document-popup.css"><script defer src="../assets/document-popup.js"></script>
 </head>
 <body>
 <header><a class="back" href="../#projects">← Revenir aux projets du portfolio</a><span>MOHAMED HEMAMDA · BTS SIO SISR</span></header>
@@ -37,7 +38,7 @@ p{margin-top:9px}.meta{color:var(--sub);font-size:13px}
 <div class="hero">
 <span class="pill">Réseaux · niveau débutant · Projet de formation</span>
 <h1>Réseau VLAN — Cabinet Comptafinance</h1><p class="lead">Simulation sous Cisco Packet Tracer d'un réseau de cabinet comptable avec deux VLAN, distribution DHCP et imprimante partagée accessible entre les deux services.</p>
-<div class="actionbar"><a class="action" href="vlan-comptafinance.pdf" target="_blank" rel="noopener noreferrer">Consulter le PDF avec captures ↗</a><a class="action secondary" href="vlan-comptafinance.pdf" download>Télécharger le PDF ↓</a></div>
+<div class="actionbar"><a class="action" href="vlan-comptafinance.pdf" data-document-popup data-document-title="VLAN – Comptafinance">Consulter le PDF avec captures ↗</a><a class="action secondary" href="vlan-comptafinance.pdf" download>Télécharger le PDF ↓</a></div>
 <p class="meta">Fiche HTML de synthèse établie à partir du descriptif du projet déjà publié sur ce portfolio. La documentation PDF d'origine reste le support détaillé, avec ses captures et ses configurations.</p>
 </div>
 <section><h2>1. Objectif et contexte</h2><p>L'objectif est de séparer logiquement les postes de l'accueil et de la gestion tout en conservant les communications nécessaires, en particulier vers une imprimante commune.</p><div class="good"><strong>Objectif :</strong> Permettre à deux services isolés en VLAN de communiquer via un routeur et d'utiliser une imprimante commune.</div></section>
@@ -63,8 +64,16 @@ p{margin-top:9px}.meta{color:var(--sub);font-size:13px}
 <p class="meta">Ces compétences sont déduites des tâches décrites. La correspondance officielle avec le tableau E5/E6 doit être justifiée par les preuves de chaque réalisation.</p></section>
 <section><h2>6. Documentation et points à vérifier</h2><div class="alert"><strong>Pour la soutenance :</strong> La présence du ping ne suffit pas, à elle seule, à prouver des restrictions d'accès fines ou une sécurité de niveau production. Cette réalisation illustre surtout l'adressage, la segmentation et le routage.</div>
 <p>La fiche HTML sert à consulter rapidement le projet. Le PDF d'origine doit être conservé pour ses copies d'écran, procédures et configurations ; il n'est pas remplacé par cette synthèse.</p>
-<div class="actionbar"><a class="action" href="vlan-comptafinance.pdf" target="_blank" rel="noopener noreferrer">Voir la documentation originale (PDF) ↗</a></div>
+<div class="actionbar"><a class="action" href="vlan-comptafinance.pdf" data-document-popup data-document-title="VLAN – Comptafinance">Voir la documentation originale (PDF) ↗</a></div>
 </section>
 </main>
 <footer class="foot footnav"><a href="../#projects">← Tous les projets</a><span>Réseau VLAN — Cabinet Comptafinance · BTS SIO SISR</span></footer>
+
+<dialog id="documentDialog" class="doc-modal" aria-labelledby="documentDialogTitle">
+<div class="doc-modal__panel">
+<div class="doc-modal__head"><div class="doc-modal__heading"><span class="doc-modal__eyebrow">HEMAMDA.SYS · DOCUMENT</span><h2 id="documentDialogTitle">Document</h2></div><button class="doc-modal__close" type="button" data-document-close aria-label="Fermer la fenêtre">✕</button></div>
+<div class="doc-modal__actions"><a class="doc-modal__action" href="#" data-document-open target="_blank" rel="noopener noreferrer">↗ Ouvrir dans un onglet</a><a class="doc-modal__action doc-modal__action--solid" href="#" data-document-download download>↓ Télécharger le PDF</a></div>
+<div class="doc-modal__viewer"><iframe title="Aperçu du document" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+<p class="doc-modal__hint">Si l'aperçu ne s'affiche pas sur votre appareil, utilisez « Ouvrir dans un onglet ».</p>
+</div></dialog>
 </body></html>
