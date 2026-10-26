@@ -273,7 +273,6 @@
           </details>
         </li>
         <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
-        <li><a href="#documents" data-i18n="nav.docs">Documents</a></li>
         <li><a href="#certifications" data-i18n="nav.cert">Certifications</a></li>
         <li><a href="#veille" data-i18n="nav.veille">Veille techno</a></li>
         <li><a href="#terminal" data-i18n="nav.term">Terminal</a></li>
@@ -311,6 +310,7 @@
       <div class="cta">
         <a href="#contact" class="btn grad" data-i18n="hero.cta1">Me contacter</a>
         <a href="#projects" class="btn ghost" data-i18n="hero.cta2">Voir mes projets</a>
+        <a href="documents/CV_Mohamed_Hemamda.pdf" class="btn ghost" data-document-popup data-document-title="CV — Mohamed Hemamda" data-i18n="hero.cv.preview">Consulter mon CV</a>
         <a href="documents/CV_Mohamed_Hemamda.pdf" class="btn ghost" download="CV_Mohamed_Hemamda.pdf" data-i18n="hero.cv">Télécharger mon CV (PDF)</a>
       </div>
     </div>
@@ -521,22 +521,12 @@
           <li>Tests de validation, diagnostic d'incidents et supervision automatisée</li>
         </ul>
         <div class="tags"><span class="tag">Debian 13</span><span class="tag">VMware</span><span class="tag">BIND9</span><span class="tag">OpenLDAP</span><span class="tag">Samba</span><span class="tag">GLPI</span><span class="tag">Bash</span></div>
-        <a class="viewlink" href="projets/salle-formation-e6.html" data-i18n="proj4.view">Consulter la fiche technique (HTML) ↗</a>
+        <a class="viewlink" href="projets/salle-formation-e6.html" data-document-popup data-document-title="Salle de formation Debian 13" data-i18n="proj4.view">Consulter la fiche technique (HTML) ↗</a>
       </div>
     </div>
   </section>
 
-<section class="about" id="documents">
-<div style="text-align:center"><div class="section-kicker" data-i18n="docs.kicker">DOCUMENTS ET PREUVES</div><h2 data-i18n="docs.h2">Tous mes documents <span class="hl">en pop-up</span></h2>
-<p style="color:var(--dim);max-width:700px;margin:14px auto 0;line-height:1.7" data-i18n="docs.sub">Clique sur un document pour le lire directement dans une fenêtre du portfolio, ou télécharge le fichier original.</p></div>
-<div class="document-grid"><div class="document-item"><span class="document-item__type">CANDIDATURE · PDF</span><h3>CV de Mohamed Hemamda</h3><p>CV professionnel hébergé sur GitHub.</p><div class="document-item__links"><a class="doc-modal-launch" href="documents/CV_Mohamed_Hemamda.pdf" data-document-popup data-document-title="CV de Mohamed Hemamda">▣ Aperçu pop-up</a><a href="documents/CV_Mohamed_Hemamda.pdf" download>↓ Télécharger</a></div></div>
-<div class="document-item"><span class="document-item__type">CERTIFICATION · PDF</span><h3>Document PIX</h3><p>Document PIX d'origine.</p><div class="document-item__links"><a class="doc-modal-launch" href="certificats/pix.pdf" data-document-popup data-document-title="Document PIX">▣ Aperçu pop-up</a><a href="certificats/pix.pdf" download>↓ Télécharger</a></div></div>
-<div class="document-item"><span class="document-item__type">PROJET · PDF</span><h3>Déploiement Active Directory</h3><p>Documentation et captures Windows Server.</p><div class="document-item__links"><a class="doc-modal-launch" href="projets/active-directory.pdf" data-document-popup data-document-title="Déploiement Active Directory">▣ Aperçu pop-up</a><a href="projets/active-directory.pdf" download>↓ Télécharger</a></div></div>
-<div class="document-item"><span class="document-item__type">PROJET · PDF</span><h3>VLAN – Comptafinance</h3><p>Configuration réseau et tests de connectivité.</p><div class="document-item__links"><a class="doc-modal-launch" href="projets/vlan-comptafinance.pdf" data-document-popup data-document-title="VLAN – Comptafinance">▣ Aperçu pop-up</a><a href="projets/vlan-comptafinance.pdf" download>↓ Télécharger</a></div></div>
-<div class="document-item"><span class="document-item__type">PROJET · PDF</span><h3>Réseau – StratAdvise</h3><p>VLAN, ACL, services et dépannage.</p><div class="document-item__links"><a class="doc-modal-launch" href="projets/vlan-stratadvise.pdf" data-document-popup data-document-title="Réseau – StratAdvise">▣ Aperçu pop-up</a><a href="projets/vlan-stratadvise.pdf" download>↓ Télécharger</a></div></div>
-<div class="document-item"><span class="document-item__type">PROJET · HTML</span><h3>Salle de formation Debian 13</h3><p>Fiche HTML ; PDF original non encore publié sur GitHub.</p><div class="document-item__links"><a class="doc-modal-launch" href="projets/salle-formation-e6.html" data-document-popup data-document-title="Salle de formation Debian 13">▣ Aperçu pop-up</a><a href="projets/salle-formation-e6.html" target="_blank" rel="noopener noreferrer">↗ Ouvrir</a></div></div></div></section>
-
-  <section class="about" id="certifications">
+<section class="about" id="certifications">
     <div style="text-align:center">
       <div class="section-kicker" data-i18n="cert.kicker">CERTIFICATIONS</div>
       <h2 data-i18n="cert.h2">Des compétences <span class="hl">validées</span></h2>
@@ -632,13 +622,13 @@
 const i18n = {
   fr: {
     'nav.home':'Accueil','nav.about':'À propos','nav.skills':'Compétences','nav.exp':'Expérience',
-    'nav.formation':'Formation','nav.parcours':'Parcours','nav.menu':'Menu','nav.projects':'Projets','nav.docs':'Documents','nav.cert':'Certifications','nav.veille':'Veille techno','nav.term':'Terminal','nav.contact':'Contact',
+    'nav.formation':'Formation','nav.parcours':'Parcours','nav.menu':'Menu','nav.projects':'Projets','nav.cert':'Certifications','nav.veille':'Veille techno','nav.term':'Terminal','nav.contact':'Contact',
     'hero.greet':'Bonjour, je suis <b>Mohamed</b>',
     'hero.h1':'Technicien Systèmes & Réseaux',
     'hero.subline':'Active Directory · Windows Server · Virtualisation · Sécurité',
     'hero.desc':"Apprenti chez Tunzini, en BTS SIO SISR. Je déploie, administre et sécurise des infrastructures systèmes et réseaux — de l'annuaire Active Directory à la supervision réseau.",
     'hero.avail':"Apprenti chez Tunzini en BTS SIO SISR. Je recherche une alternance Bac+3 à partir de septembre ou octobre 2027.",
-    'hero.cta1':'Me contacter','hero.cta2':'Voir mes projets','hero.cv':'Télécharger mon CV (PDF)','hero.status':'Disponible en alternance',
+    'hero.cta1':'Me contacter','hero.cta2':'Voir mes projets','hero.cv':'Télécharger mon CV (PDF)','hero.cv.preview':'Consulter mon CV','hero.status':'Disponible en alternance',
     'formation.kicker':'FORMATION','formation.h2':'Mon <span class="hl">parcours académique</span>','formation.bts':'BTS Services informatiques aux organisations, option SISR (solutions d’infrastructure, systèmes et réseaux) – en cours.','formation.staps':'Année d’études en licence STAPS.','formation.bac':'Baccalauréat général.',
     'about.kicker':'À PROPOS',
     'about.h2':'Une administration <span class="hl">fiable, sécurisée</span>, opérationnelle',
@@ -665,10 +655,9 @@ const i18n = {
     'veille.kicker':'VEILLE TECHNOLOGIQUE · RSS','veille.h2':'Fuites de données <span class="hl">et cybersécurité</span>',
     'veille.sub':"Dans le cadre du BTS SIO SISR, je suis les cyberattaques, fuites de données et vulnérabilités. Les articles proviennent de flux RSS de médias spécialisés et sont regroupés automatiquement.",
     'veille.loading':'Chargement des articles RSS…','veille.all':'Toutes','veille.breach':'Fuites de données','veille.attack':'Cyberattaques','veille.vuln':'Vulnérabilités','veille.sources':'Sources RSS :','veille.more':'Afficher davantage d’articles','veille.note':"Méthode de veille : consultation de plusieurs sources, classement par thématique, affichage de la date et renvoi vers l'article original. La publication des titres ne remplace pas une analyse personnelle des informations.",
-    'docs.kicker':'DOCUMENTS ET PREUVES','docs.h2':'Tous mes documents <span class="hl">en pop-up</span>','docs.sub':'Clique sur un document pour le lire directement dans une fenêtre du portfolio, ou télécharge le fichier original.',
-    'cert.kicker':'CERTIFICATIONS','cert.h2':'Des compétences <span class="hl">validées</span>','cert.view':'Voir le PDF ↗','cert.popup':'▣ Consulter en pop-up','cert.download':'↓ Télécharger le document PDF',
+'cert.kicker':'CERTIFICATIONS','cert.h2':'Des compétences <span class="hl">validées</span>','cert.view':'Voir le PDF ↗','cert.popup':'▣ Consulter en pop-up','cert.download':'↓ Télécharger le document PDF',
     'proj4.cat':'Infrastructure · 2e année','proj4.title':'Salle de formation E6 – infrastructure Debian 13','proj4.desc':"Mise en place d'un environnement virtualisé avec deux VM Debian 13, DHCP, DNS BIND9, annuaire LDAP, partages Samba, intranet Apache/GLPI et supervision Bash/cron.",'proj4.steps':"<li>Plan d'adressage du domaine de test madrid.local sous VMware VMnet2</li><li>Services centralisés : DHCP, DNS, utilisateurs LDAP et partages par groupe</li><li>Tests de validation, diagnostic d'incidents et supervision automatisée</li>",'proj4.view':'Consulter la fiche technique (HTML) ↗',
-    'proj.kicker':'PROJETS','proj.h2':'Des infrastructures <span class="hl">montées de A à Z</span>','proj.case':'Voir la fiche technique (HTML) ↗','proj.view':'Voir la documentation originale (PDF) ↗',
+    'proj.kicker':'PROJETS','proj.h2':'Des infrastructures <span class="hl">montées de A à Z</span>','proj.case':'Voir la fiche technique (HTML) ↗','proj.view':'Voir les captures (pop-up) ↗',
     'proj1.cat':'Infrastructure','proj1.title':'Déploiement Active Directory — domaine esup.local',
     'proj1.desc':"Mise en place complète d'un contrôleur de domaine Windows Server, de la VM jusqu'à la politique de sécurité : création du domaine, gestion des utilisateurs et groupes par import PowerShell, GPO de sécurité et plan d'audit.",
     'proj1.steps':"<li>Installation de Windows Server 2019 sur VM VirtualBox (4 Go RAM, 2 vCPU)</li><li>Promotion en contrôleur de domaine (domaine esup.local, NetBIOS ESUP)</li><li>Création des unités d'organisation, groupes et import CSV des utilisateurs via PowerShell</li><li>GPO de sécurité : politique de mots de passe, verrouillage d'écran, authentification à deux facteurs</li><li>Plan d'audit des événements de sécurité et veille sur Microsoft Defender for Identity</li>",
@@ -684,13 +673,13 @@ const i18n = {
   },
   en: {
     'nav.home':'Home','nav.about':'About','nav.skills':'Skills','nav.exp':'Experience',
-    'nav.formation':'Education','nav.parcours':'Journey','nav.menu':'Menu','nav.projects':'Projects','nav.docs':'Documents','nav.cert':'Certifications','nav.veille':'Tech watch','nav.term':'Terminal','nav.contact':'Contact',
+    'nav.formation':'Education','nav.parcours':'Journey','nav.menu':'Menu','nav.projects':'Projects','nav.cert':'Certifications','nav.veille':'Tech watch','nav.term':'Terminal','nav.contact':'Contact',
     'hero.greet':"Hi, I'm <b>Mohamed</b>",
     'hero.h1':'Systems & Network Technician',
     'hero.subline':'Active Directory · Windows Server · Virtualization · Security',
     'hero.desc':"Apprentice at Tunzini, studying for a BTS SIO SISR IT diploma. I deploy, administer and secure systems and network infrastructure — from Active Directory to network monitoring.",
     'hero.avail':"Currently a BTS SIO SISR apprentice at Tunzini. Seeking a new Bac+3 work-study placement from September or October 2027.",
-    'hero.cta1':'Contact me','hero.cta2':'View my projects','hero.cv':'Download my CV (PDF)','hero.status':'Available for work-study',
+    'hero.cta1':'Contact me','hero.cta2':'View my projects','hero.cv':'Download my CV (PDF)','hero.cv.preview':'View my CV','hero.status':'Available for work-study',
     'formation.kicker':'EDUCATION','formation.h2':'My <span class="hl">education</span>','formation.bts':'BTS in IT Services for Organisations, SISR option (systems and network infrastructure) – in progress.','formation.staps':'One academic year in STAPS (sports sciences).','formation.bac':'French general baccalaureate.',
     'about.kicker':'ABOUT',
     'about.h2':'A <span class="hl">reliable, secure</span>, operational administration',
@@ -717,10 +706,9 @@ const i18n = {
     'veille.kicker':'TECH WATCH','veille.h2':'Data breaches <span class="hl">and cybersecurity</span>',
     'veille.sub':"As part of my BTS SIO SISR studies, I monitor data breaches, cyberattacks and vulnerabilities. Articles are gathered automatically from specialized RSS feeds.",
     'veille.loading':'Loading RSS articles…','veille.all':'All','veille.breach':'Data breaches','veille.attack':'Cyberattacks','veille.vuln':'Vulnerabilities','veille.sources':'RSS sources:','veille.more':'Show more articles','veille.note':"Monitoring method: multiple sources, thematic classification, publication dates, and links to original articles. Republishing headlines is not a substitute for a personal analysis.",
-    'docs.kicker':'DOCUMENTS AND EVIDENCE','docs.h2':'All my documents <span class="hl">in pop-ups</span>','docs.sub':'Click a document to view it in a pop-up inside the portfolio, or download the original file.',
-    'cert.kicker':'CERTIFICATIONS','cert.h2':'Validated <span class="hl">skills</span>','cert.view':'View PDF ↗','cert.popup':'▣ View in pop-up','cert.download':'↓ Download the PDF',
+'cert.kicker':'CERTIFICATIONS','cert.h2':'Validated <span class="hl">skills</span>','cert.view':'View PDF ↗','cert.popup':'▣ View in pop-up','cert.download':'↓ Download the PDF',
     'proj4.cat':'Infrastructure · 2nd year','proj4.title':'Training room E6 – Debian 13 infrastructure','proj4.desc':'Virtualized infrastructure with two Debian 13 VMs, DHCP, BIND9 DNS, LDAP, Samba file shares, Apache/GLPI intranet and Bash/cron monitoring.','proj4.steps':'<li>VMware VMnet2 lab network, madrid.local domain</li><li>Centralized DHCP, DNS, LDAP accounts and permissioned shares</li><li>Validation tests, troubleshooting and automated monitoring</li>','proj4.view':'Read the technical case study (HTML) ↗',
-    'proj.kicker':'PROJECTS','proj.h2':'Infrastructure <span class="hl">built from scratch</span>','proj.case':'Read case study (HTML) ↗','proj.view':'View original documentation (PDF) ↗',
+    'proj.kicker':'PROJECTS','proj.h2':'Infrastructure <span class="hl">built from scratch</span>','proj.case':'Read case study (HTML) ↗','proj.view':'View screenshots (pop-up) ↗',
     'proj1.cat':'Infrastructure','proj1.title':'Active Directory deployment — esup.local domain',
     'proj1.desc':"Full setup of a Windows Server domain controller, from the VM to the security policy: domain creation, user and group management via PowerShell import, security GPOs and an audit plan.",
     'proj1.steps':"<li>Installed Windows Server 2019 on a VirtualBox VM (4GB RAM, 2 vCPU)</li><li>Promoted to domain controller (esup.local domain, ESUP NetBIOS name)</li><li>Created organizational units, groups and bulk user import via PowerShell/CSV</li><li>Security GPOs: password policy, screen lock, two-factor authentication</li><li>Security event audit plan and research on Microsoft Defender for Identity</li>",
