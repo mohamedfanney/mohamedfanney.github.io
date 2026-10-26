@@ -188,32 +188,109 @@
   .terminal .prompt-row{display:flex; align-items:center; gap:8px; padding:0 18px 16px; border-top:1px solid var(--border); padding-top:12px;}
   .terminal .prompt-row .ps{color:var(--orange); font-size:.8rem; white-space:nowrap;}
   .terminal input{flex:1; background:transparent; border:none; outline:none; color:var(--text); font-family:'JetBrains Mono',monospace; font-size:.8rem;}
+
+  /* Navigation responsive : pas de chevauchement ni de retour à la ligne */
+  html{scroll-padding-top:82px;}
+  .site-nav{padding:13px clamp(16px,2.7vw,48px);gap:clamp(12px,1.4vw,24px);z-index:60;isolation:isolate;}
+  .site-nav .brand{flex:0 0 auto;display:flex;gap:10px;align-items:center;color:var(--text);text-decoration:none;white-space:nowrap;}
+  .site-nav .wordmark{font-size:1.01rem;white-space:nowrap;}
+  .site-nav .badge-sq{flex:0 0 34px;}
+  .site-nav .nav-collapse{flex:1 1 auto;min-width:0;display:block;}
+  .site-nav .links{display:flex;align-items:center;justify-content:center;gap:clamp(8px,1.0vw,17px);list-style:none;font-size:.81rem;line-height:1.25;white-space:nowrap;}
+  .site-nav .links>li{position:relative;flex:0 0 auto;}
+  .site-nav .links a,.site-nav .nav-details>summary{display:block;padding:9px 3px;color:var(--dim);text-decoration:none;font-weight:500;white-space:nowrap;transition:color .15s ease;cursor:pointer;}
+  .site-nav .links a:hover,.site-nav .links a:focus-visible,.site-nav .nav-details>summary:hover,.site-nav .nav-details>summary:focus-visible{color:var(--text);}
+  .site-nav .links a.active{color:var(--text);font-weight:700;}
+  .site-nav .nav-details{position:relative;}
+  .site-nav .nav-details>summary{display:flex;align-items:center;gap:5px;list-style:none;}
+  .site-nav .nav-details>summary::-webkit-details-marker{display:none;}
+  .site-nav .nav-details>summary::after{content:"⌄";font-size:1rem;line-height:1;transform:translateY(-2px);color:var(--dim);}
+  .site-nav .nav-details[open]>summary::after{transform:rotate(180deg) translateY(-1px);}
+  .site-nav .nav-details.is-active>summary{color:var(--text);font-weight:700;}
+  .site-nav .nav-submenu{position:absolute;left:-12px;top:calc(100% + 7px);display:flex;flex-direction:column;gap:2px;min-width:190px;list-style:none;padding:8px;border:1px solid rgba(255,255,255,.13);border-radius:12px;background:#10141f;box-shadow:0 18px 38px rgba(0,0,0,.36);}
+  .site-nav .nav-submenu a{padding:10px 12px;border-radius:8px;}
+  .site-nav .nav-submenu a:hover,.site-nav .nav-submenu a.active{background:rgba(168,85,247,.14);}
+  .site-nav .navright{display:flex;flex:0 0 auto;align-items:center;gap:10px;}
+  .site-nav .navright .btn{font-size:.8rem;font-weight:600;padding:10px 14px;white-space:nowrap;text-align:center;}
+  .site-nav .langtoggle{flex:0 0 auto;display:flex;align-items:center;}
+  .site-nav .langtoggle button{font:500 .73rem 'JetBrains Mono',monospace;background:transparent;border:0;color:var(--dim);cursor:pointer;padding:7px 10px;}
+  .site-nav .langtoggle button.active{background:var(--purple);color:#04121f;}
+  .site-nav .langtoggle button:focus-visible{outline:2px solid var(--orange);outline-offset:-2px;}
+  .site-nav .mobile-contact,.site-nav .menu-toggle{display:none;}
+  [id="top"],section[id]{scroll-margin-top:82px;}
+  @media(max-width:1140px){
+    .site-nav{gap:10px;}
+    .site-nav .nav-collapse{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(12,15,24,.98);border:1px solid var(--border);border-top:0;box-shadow:0 20px 42px rgba(0,0,0,.5);max-height:calc(100dvh - 74px);overflow-y:auto;overscroll-behavior:contain;padding:12px clamp(18px,5vw,45px) 20px;}
+    .site-nav .nav-collapse.is-open{display:block;}
+    .site-nav .links{display:flex;flex-direction:column;gap:2px;align-items:stretch;font-size:.94rem;}
+    .site-nav .links>li{width:100%;}
+    .site-nav .links a,.site-nav .nav-details>summary{padding:12px 14px;border-radius:9px;}
+    .site-nav .links a:hover,.site-nav .nav-details>summary:hover{background:rgba(255,255,255,.06);}
+    .site-nav .nav-submenu{position:static;min-width:0;box-shadow:none;background:rgba(255,255,255,.035);margin:2px 0 8px 15px;border-color:var(--border);}
+    .site-nav .mobile-contact{display:block;}
+    .site-nav .navright{margin-left:auto;}
+    .site-nav .menu-toggle{display:inline-flex;align-items:center;gap:7px;justify-content:center;border-radius:10px;border:1px solid rgba(255,255,255,.14);padding:8px 12px;color:var(--text);background:var(--card);font:600 .81rem 'Inter',sans-serif;cursor:pointer;flex:0 0 auto;}
+    .site-nav .menu-toggle[aria-expanded="true"]{border-color:var(--purple);background:rgba(168,85,247,.13);}
+    .site-nav .menu-toggle__icon{font-size:1.05rem;line-height:1;}
+  }
+  @media(max-width:600px){
+    .site-nav{padding:12px 15px;}
+    .site-nav .wordmark{font-size:.92rem;}
+    .site-nav .badge-sq{width:31px;height:31px;flex-basis:31px;}
+    .site-nav .navright .btn{display:none;}
+    .site-nav .menu-toggle{padding:7px 10px;}
+    .site-nav .langtoggle button{padding:7px 8px;}
+  }
+  @media(max-width:365px){
+    .site-nav .wordmark{font-size:.83rem;}
+    .site-nav .brand{gap:6px;}
+    .site-nav .menu-toggle span[data-i18n]{display:none;}
+    .site-nav .langtoggle button{padding:6px;}
+  }
+  @media(prefers-reduced-motion:reduce){.site-nav .links a,.site-nav .nav-details>summary{transition:none;}}
+
 </style>
 <link rel="stylesheet" href="assets/document-popup.css"><script defer src="assets/document-popup.js"></script>
 </head>
 <body>
-  <nav>
-    <div class="brand">
-      <div class="badge-sq">M</div>
-      <div class="wordmark">HEMAMDA<span>.sys</span></div>
+  <nav class="site-nav" id="siteNav" aria-label="Navigation principale">
+    <a class="brand" href="#top" aria-label="Mohamed Hemamda — accueil">
+      <span class="badge-sq" aria-hidden="true">M</span>
+      <span class="wordmark">HEMAMDA<span>.sys</span></span>
+    </a>
+    <div class="nav-collapse" id="primaryNavigation">
+      <ul class="links">
+        <li><a href="#top" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+        <li class="nav-group">
+          <details class="nav-details">
+            <summary data-i18n="nav.parcours">Parcours</summary>
+            <ul class="nav-submenu">
+              <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+              <li><a href="#experience" data-i18n="nav.exp">Expérience</a></li>
+              <li><a href="#formation" data-i18n="nav.formation">Formation</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="#documents" data-i18n="nav.docs">Documents</a></li>
+        <li><a href="#certifications" data-i18n="nav.cert">Certifications</a></li>
+        <li><a href="#veille" data-i18n="nav.veille">Veille techno</a></li>
+        <li><a href="#terminal" data-i18n="nav.term">Terminal</a></li>
+        <li class="mobile-contact"><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
     </div>
-    <ul class="links">
-      <li><a href="#top" data-i18n="nav.home">Accueil</a></li>
-      <li><a href="#about" data-i18n="nav.about">À propos</a></li>
-      <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
-      <li><a href="#experience" data-i18n="nav.exp">Expérience</a></li>
-      <li><a href="#formation" data-i18n="nav.formation">Formation</a></li>
-      <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
-<li><a href="#documents" data-i18n="nav.docs">Documents</a></li>
-      <li><a href="#certifications" data-i18n="nav.cert">Certifications</a></li>
-      <li><a href="#veille" data-i18n="nav.veille">Veille techno</a></li>
-      <li><a href="#terminal" data-i18n="nav.term">Terminal</a></li>
-      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-    </ul>
     <div class="navright">
-      <div class="langtoggle"><span data-lang="fr" class="active">FR</span><span data-lang="en">EN</span></div>
+      <div class="langtoggle" role="group" aria-label="Langue du portfolio">
+        <button type="button" data-lang="fr" class="active" aria-pressed="true">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
       <a href="#contact" class="btn grad" data-i18n="hero.cta1">Me contacter</a>
     </div>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNavigation" aria-label="Ouvrir le menu">
+      <span class="menu-toggle__icon" aria-hidden="true">☰</span>
+      <span data-i18n="nav.menu">Menu</span>
+    </button>
   </nav>
 
   <section class="hero" id="top">
@@ -555,7 +632,7 @@
 const i18n = {
   fr: {
     'nav.home':'Accueil','nav.about':'À propos','nav.skills':'Compétences','nav.exp':'Expérience',
-    'nav.formation':'Formation','nav.projects':'Projets','nav.docs':'Documents','nav.cert':'Certifications','nav.veille':'Veille techno','nav.term':'Terminal','nav.contact':'Contact',
+    'nav.formation':'Formation','nav.parcours':'Parcours','nav.menu':'Menu','nav.projects':'Projets','nav.docs':'Documents','nav.cert':'Certifications','nav.veille':'Veille techno','nav.term':'Terminal','nav.contact':'Contact',
     'hero.greet':'Bonjour, je suis <b>Mohamed</b>',
     'hero.h1':'Technicien Systèmes & Réseaux',
     'hero.subline':'Active Directory · Windows Server · Virtualisation · Sécurité',
@@ -607,7 +684,7 @@ const i18n = {
   },
   en: {
     'nav.home':'Home','nav.about':'About','nav.skills':'Skills','nav.exp':'Experience',
-    'nav.formation':'Education','nav.projects':'Projects','nav.docs':'Documents','nav.cert':'Certifications','nav.veille':'Tech watch','nav.term':'Terminal','nav.contact':'Contact',
+    'nav.formation':'Education','nav.parcours':'Journey','nav.menu':'Menu','nav.projects':'Projects','nav.docs':'Documents','nav.cert':'Certifications','nav.veille':'Tech watch','nav.term':'Terminal','nav.contact':'Contact',
     'hero.greet':"Hi, I'm <b>Mohamed</b>",
     'hero.h1':'Systems & Network Technician',
     'hero.subline':'Active Directory · Windows Server · Virtualization · Security',
@@ -668,15 +745,17 @@ function setLang(lang){
     if(i18n[lang][key]!==undefined) el.setAttribute('placeholder', i18n[lang][key]);
   });
   document.documentElement.lang = lang;
-  document.querySelectorAll('.langtoggle span').forEach(function(s){
-    s.classList.toggle('active', s.dataset.lang===lang);
+  document.querySelectorAll('.langtoggle button').forEach(function(s){
+    var selected=s.dataset.lang===lang;
+    s.classList.toggle('active', selected);
+    s.setAttribute('aria-pressed', selected ? 'true' : 'false');
   });
   try{ localStorage.setItem('portfolio_lang', lang); }catch(e){}
   currentLang = lang;
   if(typeof renderVeille === 'function' && Array.isArray(veilleItems) && veilleItems.length) renderVeille();
 }
 var currentLang = 'fr';
-document.querySelectorAll('.langtoggle span').forEach(function(s){
+document.querySelectorAll('.langtoggle button').forEach(function(s){
   s.addEventListener('click', function(){ setLang(s.dataset.lang); });
 });
 var savedLang = 'fr';
@@ -820,25 +899,63 @@ fetch('https://raw.githubusercontent.com/mohamedfanney/mohamedfanney.github.io/m
   });
 
 var navLinks = document.querySelectorAll('.links a');
+var primaryNav = document.getElementById('primaryNavigation');
+var menuToggle = document.getElementById('menuToggle');
+var detailsMenus = document.querySelectorAll('.nav-details');
+function closeMobileMenu(){
+  primaryNav.classList.remove('is-open');
+  menuToggle.setAttribute('aria-expanded','false');
+  menuToggle.querySelector('.menu-toggle__icon').textContent='☰';
+  menuToggle.setAttribute('aria-label',currentLang==='en'?'Open menu':'Ouvrir le menu');
+}
+menuToggle.addEventListener('click',function(){
+  var isOpen=primaryNav.classList.toggle('is-open');
+  menuToggle.setAttribute('aria-expanded',isOpen?'true':'false');
+  menuToggle.querySelector('.menu-toggle__icon').textContent=isOpen?'✕':'☰';
+  menuToggle.setAttribute('aria-label',currentLang==='en'?(isOpen?'Close menu':'Open menu'):(isOpen?'Fermer le menu':'Ouvrir le menu'));
+  if(!isOpen){detailsMenus.forEach(function(d){d.open=false;});}
+});
 navLinks.forEach(function(link){
-  link.addEventListener('click', function(){
-    navLinks.forEach(function(l){ l.classList.remove('active'); });
+  link.addEventListener('click',function(){
+    navLinks.forEach(function(l){l.classList.remove('active');});
     link.classList.add('active');
+    closeMobileMenu();
+    detailsMenus.forEach(function(d){d.open=false;});
   });
+});
+document.addEventListener('click',function(event){
+  if(!event.target.closest('#siteNav')){
+    closeMobileMenu();
+    detailsMenus.forEach(function(d){d.open=false;});
+  }else if(!event.target.closest('.nav-details')){
+    detailsMenus.forEach(function(d){d.open=false;});
+  }
+});
+document.addEventListener('keydown',function(event){
+  if(event.key==='Escape'){
+    closeMobileMenu();
+    detailsMenus.forEach(function(d){d.open=false;});
+  }
+});
+window.addEventListener('resize',function(){
+  if(window.innerWidth>1140)closeMobileMenu();
 });
 var spySections = document.querySelectorAll('section[id]');
 if('IntersectionObserver' in window){
   var spy = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
       if(entry.isIntersecting){
-        var id = entry.target.getAttribute('id');
+        var id=entry.target.getAttribute('id');
         navLinks.forEach(function(link){
-          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+          link.classList.toggle('active',link.getAttribute('href')==='#'+id);
+        });
+        detailsMenus.forEach(function(d){
+          d.classList.toggle('is-active',!!d.querySelector('a.active'));
         });
       }
     });
-  }, {rootMargin:'-40% 0px -55% 0px', threshold:0});
-  spySections.forEach(function(sec){ spy.observe(sec); });
+  },{rootMargin:'-30% 0px -55% 0px',threshold:0});
+  spySections.forEach(function(sec){spy.observe(sec);});
 }
 
 var termCommands = {
