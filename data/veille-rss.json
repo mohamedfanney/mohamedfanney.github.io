@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T13:03:26.824469Z",
+  "generated_at": "2026-10-26T22:40:40.956010Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,62 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "University of Copenhagen data breach exposes data of 525,000 people",
+      "description": "The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
+      "published": "2026-10-26T22:20:36Z",
+      "category": "breach"
+    },
+    {
+      "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
+      "description": "South Korean police identified seven suspects linked to a cybercrime operation that breached more than 90 organizations in the country, with ARTEX AI pentesting framework used in most of the",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
+      "published": "2026-10-26T21:08:28Z",
+      "category": "breach"
+    },
+    {
+      "title": "DreamHost forces password resets in ongoing \"incident\"",
+      "description": "DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/",
+      "published": "2026-10-26T19:26:20Z",
+      "category": "general"
+    },
+    {
+      "title": "Critical 'HTTP2Shell' Brotli vulnerability triggers emergency patches",
+      "description": "A critical flaw dubbed 'HTTP2Shell' in Brotli, the C decoder library built into Node.js, could allow attackers to corrupt memory and access sensitive data. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/",
+      "published": "2026-10-26T16:27:57Z",
+      "category": "vuln"
+    },
+    {
+      "title": "Microsoft releases emergency .NET patches for critical Brotli flaw",
+      "description": "Microsoft released emergency .NET security updates to patch a critical vulnerability known as Broccoli2Shell, also tracked as Node2Shell and HTTP2Shell. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-net-patches-for-critical-brotli-flaw/",
+      "published": "2026-10-26T15:38:24Z",
+      "category": "vuln"
+    },
+    {
+      "title": "When an AI Agent Is the Incident, the Identity Record Is the Evidence",
+      "description": "A new NIST, CISA, and NSA guide treats runaway agents as incidents to be rehearsed. The hard part of the response is answering whose authority the agent used, and that answer has to exist be",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/when-an-ai-agent-is-the-incident-the-identity-record-is-the-evidence/",
+      "published": "2026-10-26T14:00:10Z",
+      "category": "general"
+    },
+    {
+      "title": "Chinese man extradited for role in $36 million cryptocurrency scam",
+      "description": "A Chinese national was arraigned in California after being extradited from the Netherlands for his alleged involvement in a cryptocurrency investment scam that stole nearly $37 million from ",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/chinese-man-extradited-for-role-in-36-million-cryptocurrency-scam/",
+      "published": "2026-10-26T13:56:44Z",
+      "category": "general"
+    },
     {
       "title": "Kali Linux 2026.3 released with 6 new tools, desktop updates",
       "description": "Kali Linux has released version 2026.3, its third release this year, featuring six new hacking tools, desktop environment improvements, refreshed build scripts, and more. [...]",
@@ -80,43 +136,11 @@
       "category": "attack"
     },
     {
-      "title": "Quest Diagnostics confirms data breach exposed patient records",
-      "description": "American clinical laboratory company Quest Diagnostics disclosed that patient records have been exposed after a threat actor gained unauthorized access to its Quanum LSM system. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
-      "published": "2026-10-23T16:40:07Z",
-      "category": "breach"
-    },
-    {
-      "title": "PHP shares mitigation for new RCE vulnerability with no patch",
-      "description": "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
-      "published": "2026-10-23T15:38:05Z",
-      "category": "vuln"
-    },
-    {
-      "title": "You gave your AI agent access, but who is giving it orders?",
-      "description": "AI agents can be manipulated through malicious emails, websites, and plugins into executing commands, stealing data, or deleting files using their legitimate permissions. Gen Digital explain",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
-      "published": "2026-10-23T14:00:10Z",
-      "category": "general"
-    },
-    {
       "title": "Technostress : une faille pour l’ingénierie sociale",
       "description": "Technostress et ingénierie sociale : comment la surcharge numérique peut fragiliser la vigilance face aux manipulations.",
       "source": "ZATAZ",
       "link": "https://www.zataz.com/technostress-une-faille-pour-lingenierie-sociale/",
       "published": "2026-10-23T12:56:16Z",
-      "category": "vuln"
-    },
-    {
-      "title": "HPE patches eight max severity RCE and auth bypass AOS flaws",
-      "description": "Hewlett Packard Enterprise (HPE) released security updates to patch 72 vulnerabilities in the Aruba Operating System (ArubaOS), including eight maximum-severity authentication bypass and cod",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
-      "published": "2026-10-23T12:48:00Z",
       "category": "vuln"
     },
     {
@@ -134,38 +158,6 @@
       "link": "https://www.zataz.com/fraude-bancaire-deux-mails-pour-installer-la-peur/",
       "published": "2026-10-23T10:27:14Z",
       "category": "general"
-    },
-    {
-      "title": "Railway warns devs to rotate secrets after potential breach",
-      "description": "Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this week. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
-      "published": "2026-10-22T21:25:31Z",
-      "category": "breach"
-    },
-    {
-      "title": "Capcom confirms data breach affecting 11.7 million accounts",
-      "description": "Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and associated information. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
-      "published": "2026-10-22T20:22:45Z",
-      "category": "breach"
-    },
-    {
-      "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
-      "description": "Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
-      "published": "2026-10-22T19:12:51Z",
-      "category": "attack"
-    },
-    {
-      "title": "Arista patches new VeloCloud Orchestrator zero-day exploited in attacks",
-      "description": "Arista Networks released security updates to patch an actively exploited zero-day vulnerability affecting VeloCloud Orchestrator (VCO) On-Prem deployments. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
-      "published": "2026-10-22T17:18:22Z",
-      "category": "vuln"
     },
     {
       "title": "Arrêtée pour avoir bloqué un robot de livraison Uber",
@@ -198,6 +190,14 @@
       "link": "https://www.zataz.com/libreoffice-et-openoffice-pieges-par-des-tableurs/",
       "published": "2026-10-21T14:28:13Z",
       "category": "general"
+    },
+    {
+      "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+      "description": "Ravie Lakshmanan reports: Palo Alto Networks has disclosed that it’s continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/20/qilin-and-inc-ransomware-groups-exploit-palo-alto-networks-flaw-to-bypass-mfa/",
+      "published": "2026-10-20T16:08:24Z",
+      "category": "vuln"
     }
   ]
 }
