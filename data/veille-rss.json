@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T05:05:44.741238Z",
+  "generated_at": "2026-10-27T12:11:51.907066Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,30 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
+      "description": "​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in \"extremely sophisticated\" targeted attacks on iOS devices. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+      "published": "2026-10-27T10:36:12Z",
+      "category": "vuln"
+    },
+    {
+      "title": "Energy giant ENGIE discloses data breach affecting customers",
+      "description": "French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business part",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/",
+      "published": "2026-10-27T09:25:50Z",
+      "category": "breach"
+    },
+    {
+      "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
+      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to p",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
+      "published": "2026-10-27T08:20:54Z",
+      "category": "vuln"
+    },
     {
       "title": "University of Copenhagen data breach exposes data of 525,000 people",
       "description": "The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [...]",
@@ -120,22 +144,6 @@
       "category": "attack"
     },
     {
-      "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
-      "description": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers ",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
-      "published": "2026-10-23T20:55:05Z",
-      "category": "attack"
-    },
-    {
-      "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
-      "description": "Microsoft has announced plans to add AI-powered phishing detection to Teams messages starting in early November 2026. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
-      "published": "2026-10-23T18:54:41Z",
-      "category": "attack"
-    },
-    {
       "title": "Technostress : une faille pour l’ingénierie sociale",
       "description": "Technostress et ingénierie sociale : comment la surcharge numérique peut fragiliser la vigilance face aux manipulations.",
       "source": "ZATAZ",
@@ -190,14 +198,6 @@
       "link": "https://www.zataz.com/libreoffice-et-openoffice-pieges-par-des-tableurs/",
       "published": "2026-10-21T14:28:13Z",
       "category": "general"
-    },
-    {
-      "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
-      "description": "Ravie Lakshmanan reports: Palo Alto Networks has disclosed that it’s continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/20/qilin-and-inc-ransomware-groups-exploit-palo-alto-networks-flaw-to-bypass-mfa/",
-      "published": "2026-10-20T16:08:24Z",
-      "category": "vuln"
     }
   ]
 }
