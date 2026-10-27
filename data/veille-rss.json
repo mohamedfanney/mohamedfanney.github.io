@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T12:11:51.907066Z",
+  "generated_at": "2026-10-27T18:00:47.879093Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,38 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Warp discloses breach exposing AI agent logs, user telemetry data",
+      "description": "Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project's infrastructure. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
+      "published": "2026-10-27T16:15:39Z",
+      "category": "breach"
+    },
+    {
+      "title": "System Note: October 27, 2026",
+      "description": "Unfortunately, a backup failure has resulted in the loss of media files and documents attached to posts. They will be restored eventually, but restoring files will take time. To make matters",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/27/system-note-october-27-2026/",
+      "published": "2026-10-27T15:05:12Z",
+      "category": "general"
+    },
+    {
+      "title": "Tailscale warns of SSH flaws allowing root privilege escalation",
+      "description": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root privileges, and more. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/tailscale-warns-of-serious-ssh-flaws-allowing-root-privilege-escalation/",
+      "published": "2026-10-27T14:09:46Z",
+      "category": "vuln"
+    },
+    {
+      "title": "The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest",
+      "description": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses. Huntress Labs ranks t",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/the-huntress-tragic-quadrant-ranking-threats-hitting-businesses-hardest/",
+      "published": "2026-10-27T14:01:11Z",
+      "category": "attack"
+    },
     {
       "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
       "description": "​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in \"extremely sophisticated\" targeted attacks on iOS devices. [...]",
@@ -96,36 +128,12 @@
       "category": "attack"
     },
     {
-      "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
-      "description": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-      "published": "2026-10-26T09:19:57Z",
-      "category": "vuln"
-    },
-    {
-      "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
-      "description": "Researchers found a malicious AGENTS markdown instruction file in a customer's Downloads folder that tricked an AI coding agent into installing a rogue npm package. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
-      "published": "2026-10-25T15:49:38Z",
-      "category": "general"
-    },
-    {
       "title": "Chimeraz revendique des fuites visant trois partis français, dont celui du groupe présidentiel",
       "description": "Chimeraz revendique des données annoncées comme volées aux partis politiques de Renaissance, LFI et du PCF.",
       "source": "ZATAZ",
       "link": "https://www.zataz.com/chimeraz-revendique-des-fuites-visant-trois-partis-francais/",
       "published": "2026-10-24T23:00:29Z",
       "category": "breach"
-    },
-    {
-      "title": "BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot",
-      "description": "A new UEFI bootkit named BlackX, deployed in an espionage campaign in early 2026, exploited the old Baton Drop vulnerability to bypass Secure Boot and load a malicious driver designed to int",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
-      "published": "2026-10-24T14:17:32Z",
-      "category": "vuln"
     },
     {
       "title": "DeepSeek banni des agences fédérales US",
@@ -189,14 +197,6 @@
       "source": "ZATAZ",
       "link": "https://www.zataz.com/musique-ia-et-faux-streams-18-mois-de-prison/",
       "published": "2026-10-21T14:42:22Z",
-      "category": "general"
-    },
-    {
-      "title": "LibreOffice et OpenOffice piégés par des tableurs",
-      "description": "LibreOffice et OpenOffice : des tableurs piégés exécutent du code Java. Correctifs et protections à connaître.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/libreoffice-et-openoffice-pieges-par-des-tableurs/",
-      "published": "2026-10-21T14:28:13Z",
       "category": "general"
     }
   ]
