@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T05:42:39.778220Z",
+  "generated_at": "2026-10-28T12:55:21.634305Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,94 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "KR: Bithumb discloses data leak after internal system breach; One of three financial firm breaches reported that day",
+      "description": "CoinTelegraph reports: South Korea’s crypto exchange Bithumb is investigating the extent of a data leak caused by a hack of its internal mobile system earlier this week, Yonhap News Agency r",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/28/kr-bithumb-discloses-data-leak-after-internal-system-breach-one-of-three-financial-firm-breaches-reported-that-day/",
+      "published": "2026-10-28T12:42:32Z",
+      "category": "breach"
+    },
+    {
+      "title": "Japanese internet giant GMO tells customers to shut down and disconnect PCs from the internet following data breach and ransomware threat",
+      "description": "Sead Fadilpašić reports: Japanese internet giant GMO Group has told its customers to scan their computers for viruses, back up all of their data, disconnect the devices from the internet and",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/28/japanese-internet-giant-gmo-tells-customers-to-shut-down-and-disconnect-pcs-from-the-internet-following-data-breach-and-ransomware-threat/",
+      "published": "2026-10-28T12:31:14Z",
+      "category": "breach"
+    },
+    {
+      "title": "AU: Northern Territory Health backtracks on claim only five patients impacted by RDH privacy breach",
+      "description": "Grace Atta reports: The Northern Territory health department has backtracked on its claim that only five patients were affected by a privacy breach that led to pregnant women’s confidential ",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/28/au-northern-territory-health-backtracks-on-claim-only-five-patients-impacted-by-rdh-privacy-breach/",
+      "published": "2026-10-28T12:25:38Z",
+      "category": "breach"
+    },
+    {
+      "title": "Hackers now scanning systems for recently-patched Oracle flaw",
+      "description": "Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/",
+      "published": "2026-10-28T12:19:57Z",
+      "category": "vuln"
+    },
+    {
+      "title": "Traceability becomes the new battleground in healthcare data breach litigation",
+      "description": "Abbye Alexander, Esq., Henry Norwood, Esq., and Emily Taing, Esq. of Kaufman Dolowich LLP write: Recent caselaw suggests a shift in how courts analyze healthcare data breach claims. For year",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/28/traceability-becomes-the-new-battleground-in-healthcare-data-breach-litigation/",
+      "published": "2026-10-28T12:10:21Z",
+      "category": "breach"
+    },
+    {
+      "title": "Court denies motions to dismiss in PowerSchool Data Breach Litigation",
+      "description": "In previous litigation involving Illuminate (J.M. v. Illuminate Educ. Inc.), the district court held that Illuminate could be considered a provider of healthcare under the wording of the Cal",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/28/court-denies-motions-to-dismiss-in-powerschool-data-breach-litigation/",
+      "published": "2026-10-28T12:03:40Z",
+      "category": "breach"
+    },
+    {
+      "title": "Ukrainian National Sentenced for Role in Hacking Hospitals, Businesses, and Governments as Part of Ransomware Conspiracies Causing Over $100 Million in Losses",
+      "description": "A press release from the U.S. Department of Justice: Artem Stryzhak, 36, a Ukrainian national, was sentenced today to 70 months in prison for conspiracy to commit computer fraud in connectio",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/28/ukrainian-national-sentenced-for-role-in-hacking-hospitals-businesses-and-governments-as-part-of-ransomware-conspiracies-causing-over-100-million-in-losses/",
+      "published": "2026-10-28T12:01:42Z",
+      "category": "attack"
+    },
+    {
+      "title": "Whitsett, NC sends out alert about phishing email",
+      "description": "The Town of Whitsett, North Carolina issued an alert on Facebook on October 22: The Town of Whitsett is notifying residents, vendors, community partners, and other email recipients of a secu",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/28/whitsett-nc-sends-out-alert-about-phishing-email/",
+      "published": "2026-10-28T12:00:38Z",
+      "category": "attack"
+    },
+    {
+      "title": "NZ: Grieving families’ ‘incredibly stressful’ wait for answers after major NZ cyber attack",
+      "description": "Nicholas Jones reports: A major cyber attack has caused delays to coronial investigations, with one grieving family wanting answers after their mother’s unexpected death telling Stuff the wa",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/28/nz-grieving-families-incredibly-stressful-wait-for-answers-after-major-nz-cyber-attack/",
+      "published": "2026-10-28T11:58:16Z",
+      "category": "attack"
+    },
+    {
+      "title": "CISA warns of hackers now exploiting critical Node2Shell flaw",
+      "description": "On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as Node2Shell, Broccoli2Shell, a",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/",
+      "published": "2026-10-28T10:46:23Z",
+      "category": "vuln"
+    },
+    {
+      "title": "Nefilim and Hive ransomware affiliate gets 70 months in prison",
+      "description": "A Ukrainian national was sentenced to 70 months in prison for his role in ransomware attacks targeting hospitals, government entities, and high-revenue businesses worldwide between 2018 and ",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/",
+      "published": "2026-10-28T09:43:15Z",
+      "category": "attack"
+    },
     {
       "title": "Privacy Commissioner of Canada to investigate data breach involving Crime Stoppers",
       "description": "October 27, 2026 – Gatineau, Quebec Privacy Commissioner of Canada Philippe Dufresne has opened an investigation related to a cybersecurity incident involving tips shared with Crime Stoppers",
@@ -45,70 +133,6 @@
       "source": "DataBreaches.net",
       "link": "https://databreaches.net/2026/10/27/navigate360s-lack-of-transparency-is-catching-up-with-them-more-organizations-tell-people-not-to-use-their-tiplines/",
       "published": "2026-10-27T20:36:24Z",
-      "category": "breach"
-    },
-    {
-      "title": "University of Copenhagen data breach exposes data of 525,000 people",
-      "description": "Bill Toulas reports: The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. The educationa",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/27/university-of-copenhagen-data-breach-exposes-data-of-525000-people/",
-      "published": "2026-10-27T20:10:30Z",
-      "category": "breach"
-    },
-    {
-      "title": "Hacking attempts against US Federal Election Commission system triggered outage, email shows",
-      "description": "Dawn Kopecki reports: The US Federal Election Commission’s website has been targeted by a hacker or hackers, disrupting the agency’s electronic filings system a week before the November 3 el",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/27/hacking-attempts-against-us-federal-election-commission-system-triggered-outage-email-shows/",
-      "published": "2026-10-27T19:49:30Z",
-      "category": "attack"
-    },
-    {
-      "title": "Moldova Issues Warning About New Cyberattacks Following a Data Breach",
-      "description": "UA News reports: In Moldova, the personal data of approximately 750,000 people may have been stolen following a cyberattack on government digital services. Prime Minister Vasile Tofan stated",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/27/moldova-issues-warning-about-new-cyberattacks-following-a-data-breach/",
-      "published": "2026-10-27T19:01:39Z",
-      "category": "breach"
-    },
-    {
-      "title": "Ohio auditor: Cyber attack on state server carried out by possible ‘foreign state actors’",
-      "description": "Avery Kreemer reports: Ohio Auditor Keith Faber announced that his office’s web server was attacked by “overseas cybercriminals and potentially foreign state actors,” prompting the state to ",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/27/ohio-auditor-cyber-attack-on-state-server-carried-out-by-possible-foreign-state-actors/",
-      "published": "2026-10-27T18:59:41Z",
-      "category": "attack"
-    },
-    {
-      "title": "IN: 9 servers of Bajaj Hospital hacked in cyberattack at 3 am, sensitive data stolen; systems encrypted",
-      "description": "The Lokmat Times Desk reports: A cyber attack on the digital systems of Kamalnayan Bajaj Hospital has sent shockwaves through the city. Around midnight, hackers broke into all nine of the ho",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/27/in-9-servers-of-bajaj-hospital-hacked-in-cyberattack-at-3-am-sensitive-data-stolen-systems-encrypted/",
-      "published": "2026-10-27T18:53:14Z",
-      "category": "attack"
-    },
-    {
-      "title": "Cyberattack forces University of New Mexico Health to divert ambulances, cancel appointments",
-      "description": "DysruptionHub reports: A cyberattack forced the University of New Mexico Health System to divert ambulances and cancel clinic appointments Monday, interrupting care at the state’s only Level",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/27/cyberattack-forces-university-of-new-mexico-health-to-divert-ambulances-cancel-appointments/",
-      "published": "2026-10-27T18:49:27Z",
-      "category": "attack"
-    },
-    {
-      "title": "Covered California Agent Data Exposed In Phishing Attack",
-      "description": "John & Rusty Report: An attacker used a “phishing” strategy to get unauthorized access to Covered California agent information spreadsheets May 13, according to a sample breach notice letter",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/27/covered-california-agent-data-exposed-in-phishing-attack/",
-      "published": "2026-10-27T18:41:50Z",
-      "category": "attack"
-    },
-    {
-      "title": "Conduent to pay $80M to settle 3rd-largest healthcare data breach",
-      "description": "Bruce Giles reports: Business services provider Conduent has agreed to pay $80 million to settle class action litigation over the third-largest healthcare data breach on record, which expose",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/27/conduent-to-pay-80m-to-settle-3rd-largest-healthcare-data-breach/",
-      "published": "2026-10-27T18:21:15Z",
       "category": "breach"
     },
     {
@@ -168,36 +192,12 @@
       "category": "breach"
     },
     {
-      "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
-      "description": "South Korean police identified seven suspects linked to a cybercrime operation that breached more than 90 organizations in the country, with ARTEX AI pentesting framework used in most of the",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
-      "published": "2026-10-26T21:08:28Z",
-      "category": "breach"
-    },
-    {
-      "title": "DreamHost forces password resets in ongoing \"incident\"",
-      "description": "DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/",
-      "published": "2026-10-26T19:26:20Z",
-      "category": "general"
-    },
-    {
       "title": "Chimeraz revendique des fuites visant trois partis français, dont celui du groupe présidentiel",
       "description": "Chimeraz revendique des données annoncées comme volées aux partis politiques de Renaissance, LFI et du PCF.",
       "source": "ZATAZ",
       "link": "https://www.zataz.com/chimeraz-revendique-des-fuites-visant-trois-partis-francais/",
       "published": "2026-10-24T23:00:29Z",
       "category": "breach"
-    },
-    {
-      "title": "DeepSeek banni des agences fédérales US",
-      "description": "DeepSeek banni des agences fédérales civiles américaines : portée, calendrier et risques pour les données.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/deepseek-banni-des-agences-federales-civiles-americaines/",
-      "published": "2026-10-24T10:46:39Z",
-      "category": "general"
     }
   ]
 }
