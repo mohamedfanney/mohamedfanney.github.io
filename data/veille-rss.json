@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T05:48:33.282959Z",
+  "generated_at": "2026-10-29T13:01:37.648524Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,14 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
+      "description": "Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash v",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/",
+      "published": "2026-10-29T11:10:13Z",
+      "category": "vuln"
+    },
     {
       "title": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime",
       "description": "U.S. law enforcement has seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. [...]",
@@ -181,14 +189,6 @@
       "source": "BleepingComputer",
       "link": "https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/",
       "published": "2026-10-27T22:07:34Z",
-      "category": "attack"
-    },
-    {
-      "title": "Hackers hijack Convertr analytics script to steal payment card data",
-      "description": "A credit card skimming group reportedly compromised a shared analytics script used by e-commerce platform Convertr to steal shoppers' payment data during checkout. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/",
-      "published": "2026-10-27T20:57:25Z",
       "category": "attack"
     },
     {
