@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T13:01:37.648524Z",
+  "generated_at": "2026-10-29T22:45:35.703448Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,134 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Binance probes potential $5.8 billion crypto-theft hack",
+      "description": "Cryptocurrency exchange Binance is investigating a potential security breach involving up to $5.8 billion in digital assets, in what could become the largest cryptocurrency hack in history. ",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
+      "published": "2026-10-29T22:45:23Z",
+      "category": "attack"
+    },
+    {
+      "title": "Hugging Face malware campaign returns to hijack GPUs for crypto mining",
+      "description": "A crypto-mining campaign abusing Hugging Face models returned days after takedown, hijacking GPU servers and planting backdoors, with one model downloaded over 28,000 times. Separately, a fa",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
+      "published": "2026-10-29T22:09:24Z",
+      "category": "attack"
+    },
+    {
+      "title": "Japan Airlines suffers third-party data breach exposing passenger info",
+      "description": "Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/",
+      "published": "2026-10-29T22:08:04Z",
+      "category": "breach"
+    },
+    {
+      "title": "Extent of Crime Stoppers data breach unknown: Sault Police chief",
+      "description": "James Hopkin reports: The Sault’s police chief says it’s currently unclear how many anonymous tips received by Crime Stoppers locally were potentially exposed in a massive data breach. Both ",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/29/extent-of-crime-stoppers-data-breach-unknown-sault-police-chief/",
+      "published": "2026-10-29T22:06:26Z",
+      "category": "breach"
+    },
+    {
+      "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
+      "description": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approxi",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
+      "published": "2026-10-29T21:47:25Z",
+      "category": "breach"
+    },
+    {
+      "title": "UNM Health addresses cyberattack in New Mexico after ransomware group claims responsibility",
+      "description": "John Rupolo reports: University of New Mexico Health is addressing concerns after a cyberattack on Monday, with reports surfacing this week that a ransomware group claimed responsibility for",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/29/unm-health-addresses-cyberattack-in-new-mexico-after-ransomware-group-claims-responsibility/",
+      "published": "2026-10-29T20:10:54Z",
+      "category": "attack"
+    },
+    {
+      "title": "Florida education department says data breach may affect 4.9 million people",
+      "description": "Eric Weiss reports: The Florida Department of Education says a breach of its student financial aid website may have exposed personal information, including Social Security numbers, belonging",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/29/florida-education-department-says-data-breach-may-affect-4-9-million-people/",
+      "published": "2026-10-29T20:07:52Z",
+      "category": "breach"
+    },
+    {
+      "title": "A RIZAP Employee Uploaded 726 People’s Health Records to a Personal AI Chat",
+      "description": "Rowan Sterling reports: On 20 August 2026 an employee of RIZAP Inc., the Japanese fitness and health-guidance group, was pulling records out of the health-guidance management system it opera",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/29/a-rizap-employee-uploaded-726-peoples-health-records-to-a-personal-ai-chat/",
+      "published": "2026-10-29T19:59:37Z",
+      "category": "general"
+    },
+    {
+      "title": "Australia severs criminal access to 180,000 computers after breaching Amadey malware backend",
+      "description": "Lukas Brandt writes: Criminals using the Amadey malware lost control of about 180,000 infected computers after operators from the Australian Signals Directorate (ASD) gained access to the op",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/29/australia-severs-criminal-access-to-180000-computers-after-breaching-amadey-malware-backend/",
+      "published": "2026-10-29T19:55:58Z",
+      "category": "breach"
+    },
+    {
+      "title": "Student SSNs and Medicaid IDs Exposed in Frontline School Software Breach",
+      "description": "Kalleigh Lane reports: If your school district used Frontline Central or School Health Management, your Social Security number, date of birth, or government ID could have been caught up in a",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/29/student-ssns-and-medicaid-ids-exposed-in-frontline-school-software-breach/",
+      "published": "2026-10-29T19:45:40Z",
+      "category": "breach"
+    },
+    {
+      "title": "DHS personnel leak exposes contact details and sensitive job information",
+      "description": "David DiMolfetta reports: Searchable records identifying more than 41,000 current and former Department of Homeland Security employees and contractors were published Wednesday, exposing cont",
+      "source": "DataBreaches.net",
+      "link": "https://databreaches.net/2026/10/29/dhs-personnel-leak-exposes-contact-details-and-sensitive-job-information/",
+      "published": "2026-10-29T19:41:47Z",
+      "category": "breach"
+    },
+    {
+      "title": "Fake crypto app on Apple App Store linked to $23K wallet theft",
+      "description": "A fake cryptocurrency trading app called Padre Terminal, previously available on the Apple App Store for iOS devices, has been linked to the theft of approximately $23,000 from 27 Solana wal",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/",
+      "published": "2026-10-29T19:23:41Z",
+      "category": "general"
+    },
+    {
+      "title": "Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware",
+      "description": "A newly identified advanced persistent threat (APT) group tracked as UAT-11473 was observed exploiting CVE-2026-20127, an authentication-bypass flaw in Cisco Catalyst SD-WAN Controllers, to ",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/",
+      "published": "2026-10-29T18:38:26Z",
+      "category": "vuln"
+    },
+    {
+      "title": "Chrome extensions with 13.4 million installs caught hijacking searches",
+      "description": "A massive search-hijacking campaign involving 319 Chrome extensions with a combined 13.4 million reported installations redirected users' searches through tracking servers to generate advert",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/chrome-extensions-with-134-million-installs-caught-hijacking-searches/",
+      "published": "2026-10-29T16:10:31Z",
+      "category": "general"
+    },
+    {
+      "title": "3 Ways AI Agents Already Operate in Your Browser",
+      "description": "AI agents can control authenticated browsers, interact with corporate applications, and access sensitive data while appearing to act as legitimate employees. Keep Aware examines three ways a",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/3-ways-ai-agents-already-operate-in-your-browser/",
+      "published": "2026-10-29T14:00:10Z",
+      "category": "general"
+    },
+    {
+      "title": "CISA warns of Fragnesia Linux flaw chained in PHP2Shell attacks",
+      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies to patch a high-severity Linux kernel privilege escalation bug that attackers are chaining with the P",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-fragnesia-linux-flaw-chained-in-php2shell-attacks/",
+      "published": "2026-10-29T13:59:48Z",
+      "category": "vuln"
+    },
     {
       "title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
       "description": "Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash v",
@@ -40,44 +168,12 @@
       "category": "breach"
     },
     {
-      "title": "Volt Typhoon hides zero-day attacks using 'Silent Train' framework",
-      "description": "Chinese state-sponsored hacking group Volt Typhoon has been using a framework that relies on rotating chains of connected devices compromised on demand, including for zero-day attacks target",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
-      "published": "2026-10-28T16:00:00Z",
-      "category": "vuln"
-    },
-    {
       "title": "JPN: Times Car reporting ¥5.5 billion loss has firms bracing for data breach fallout",
       "description": "Maddie Baker and Spencer Landers As cyberattacks continue across Japan, companies are coming to realize the great financial risk of such attacks if their lax cybersecurity systems cause mill",
       "source": "DataBreaches.net",
       "link": "https://databreaches.net/2026/10/28/jpn-times-car-reporting-%c2%a55-5-billion-loss-has-firms-bracing-for-data-breach-fallout/",
       "published": "2026-10-28T15:22:48Z",
       "category": "breach"
-    },
-    {
-      "title": "Microsoft urges Entra ID admins to migrate users to passkeys",
-      "description": "Microsoft again asked Entra ID administrators to migrate users to phishing-resistant methods to avoid sign-in disruptions before it retires SMS and voice authentication in February 2027. [..",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-entra-id-admins-to-migrate-users-to-passkeys/",
-      "published": "2026-10-28T14:48:32Z",
-      "category": "attack"
-    },
-    {
-      "title": "InfraTrust report warns of exploited flaws in critical network infrastructure",
-      "description": "Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as \"PHP2Shell\" put the web management interfaces of firewalls, VPNs, application",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/",
-      "published": "2026-10-28T14:00:00Z",
-      "category": "vuln"
-    },
-    {
-      "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
-      "description": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the access of service accounts",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/even-after-php2shell-blast-radius-matters-more-than-a-cvss-score/",
-      "published": "2026-10-28T13:50:59Z",
-      "category": "vuln"
     },
     {
       "title": "KR: Bithumb discloses data leak after internal system breach; One of three financial firm breaches reported that day",
@@ -94,102 +190,6 @@
       "link": "https://databreaches.net/2026/10/28/japanese-internet-giant-gmo-tells-customers-to-shut-down-and-disconnect-pcs-from-the-internet-following-data-breach-and-ransomware-threat/",
       "published": "2026-10-28T12:31:14Z",
       "category": "breach"
-    },
-    {
-      "title": "AU: Northern Territory Health backtracks on claim only five patients impacted by RDH privacy breach",
-      "description": "Grace Atta reports: The Northern Territory health department has backtracked on its claim that only five patients were affected by a privacy breach that led to pregnant women’s confidential ",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/28/au-northern-territory-health-backtracks-on-claim-only-five-patients-impacted-by-rdh-privacy-breach/",
-      "published": "2026-10-28T12:25:38Z",
-      "category": "breach"
-    },
-    {
-      "title": "Hackers now scanning systems for recently-patched Oracle flaw",
-      "description": "Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/",
-      "published": "2026-10-28T12:19:57Z",
-      "category": "vuln"
-    },
-    {
-      "title": "Traceability becomes the new battleground in healthcare data breach litigation",
-      "description": "Abbye Alexander, Esq., Henry Norwood, Esq., and Emily Taing, Esq. of Kaufman Dolowich LLP write: Recent caselaw suggests a shift in how courts analyze healthcare data breach claims. For year",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/28/traceability-becomes-the-new-battleground-in-healthcare-data-breach-litigation/",
-      "published": "2026-10-28T12:10:21Z",
-      "category": "breach"
-    },
-    {
-      "title": "Court denies motions to dismiss in PowerSchool Data Breach Litigation",
-      "description": "In previous litigation involving Illuminate (J.M. v. Illuminate Educ. Inc.), the district court held that Illuminate could be considered a provider of healthcare under the wording of the Cal",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/28/court-denies-motions-to-dismiss-in-powerschool-data-breach-litigation/",
-      "published": "2026-10-28T12:03:40Z",
-      "category": "breach"
-    },
-    {
-      "title": "Ukrainian National Sentenced for Role in Hacking Hospitals, Businesses, and Governments as Part of Ransomware Conspiracies Causing Over $100 Million in Losses",
-      "description": "A press release from the U.S. Department of Justice: Artem Stryzhak, 36, a Ukrainian national, was sentenced today to 70 months in prison for conspiracy to commit computer fraud in connectio",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/28/ukrainian-national-sentenced-for-role-in-hacking-hospitals-businesses-and-governments-as-part-of-ransomware-conspiracies-causing-over-100-million-in-losses/",
-      "published": "2026-10-28T12:01:42Z",
-      "category": "attack"
-    },
-    {
-      "title": "Whitsett, NC sends out alert about phishing email",
-      "description": "The Town of Whitsett, North Carolina issued an alert on Facebook on October 22: The Town of Whitsett is notifying residents, vendors, community partners, and other email recipients of a secu",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/28/whitsett-nc-sends-out-alert-about-phishing-email/",
-      "published": "2026-10-28T12:00:38Z",
-      "category": "attack"
-    },
-    {
-      "title": "NZ: Grieving families’ ‘incredibly stressful’ wait for answers after major NZ cyber attack",
-      "description": "Nicholas Jones reports: A major cyber attack has caused delays to coronial investigations, with one grieving family wanting answers after their mother’s unexpected death telling Stuff the wa",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/28/nz-grieving-families-incredibly-stressful-wait-for-answers-after-major-nz-cyber-attack/",
-      "published": "2026-10-28T11:58:16Z",
-      "category": "attack"
-    },
-    {
-      "title": "CISA warns of hackers now exploiting critical Node2Shell flaw",
-      "description": "On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as Node2Shell, Broccoli2Shell, a",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/",
-      "published": "2026-10-28T10:46:23Z",
-      "category": "vuln"
-    },
-    {
-      "title": "Nefilim and Hive ransomware affiliate gets 70 months in prison",
-      "description": "A Ukrainian national was sentenced to 70 months in prison for his role in ransomware attacks targeting hospitals, government entities, and high-revenue businesses worldwide between 2018 and ",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/",
-      "published": "2026-10-28T09:43:15Z",
-      "category": "attack"
-    },
-    {
-      "title": "Privacy Commissioner of Canada to investigate data breach involving Crime Stoppers",
-      "description": "October 27, 2026 – Gatineau, Quebec Privacy Commissioner of Canada Philippe Dufresne has opened an investigation related to a cybersecurity incident involving tips shared with Crime Stoppers",
-      "source": "DataBreaches.net",
-      "link": "https://databreaches.net/2026/10/27/privacy-commissioner-of-canada-to-investigate-data-breach-involving-crime-stoppers/",
-      "published": "2026-10-28T00:47:17Z",
-      "category": "breach"
-    },
-    {
-      "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
-      "description": "The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to lau",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
-      "published": "2026-10-27T23:35:51Z",
-      "category": "attack"
-    },
-    {
-      "title": "UNM Health ransomware attack disrupts patient care, surgeries",
-      "description": "The University of New Mexico Health Sciences Center disclosed a cyberattack that caused system outages and disrupted patient care and academic activities. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/",
-      "published": "2026-10-27T22:07:34Z",
-      "category": "attack"
     },
     {
       "title": "Chimeraz revendique des fuites visant trois partis français, dont celui du groupe présidentiel",
