@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T12:55:59.635883Z",
+  "generated_at": "2026-10-30T22:20:49.802640Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,46 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
+      "description": "Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers ru",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+      "published": "2026-10-30T21:09:46Z",
+      "category": "vuln"
+    },
+    {
+      "title": "Trezor warns of suspected crypto-theft implant in hardware wallet",
+      "description": "Hardware wallet device maker Trezor has received credible reports about a suspected hardware crypto-theft implant in a Trezor Safe 5 sold by its reseller CryptoBilis in Southeast Asia. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
+      "published": "2026-10-30T15:58:20Z",
+      "category": "general"
+    },
+    {
+      "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
+      "description": "A malicious version of Anthropic's Claude Code VS Code extension was distributed through Cursor's extension marketplace for approximately 11 hours on October 29, exposing up to 5,000 develop",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+      "published": "2026-10-30T14:36:54Z",
+      "category": "general"
+    },
+    {
+      "title": "SS7 and Diameter Attacks: How Signaling Flaws Expose Your Phone",
+      "description": "Flaws in SS7 and Diameter signaling protocols can allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising their",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/",
+      "published": "2026-10-30T14:00:10Z",
+      "category": "vuln"
+    },
+    {
+      "title": "CISA says max severity GitLab flaw now exploited in the wild",
+      "description": "Attackers have started exploiting a maximum-severity GitLab vulnerability patched earlier this month, according to the US Cybersecurity and Infrastructure Security Agency (CISA). [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/",
+      "published": "2026-10-30T13:00:32Z",
+      "category": "vuln"
+    },
     {
       "title": "Drupal warns of critical Commerce Core flaw exploited in attacks",
       "description": "Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild. [...]",
@@ -128,30 +168,6 @@
       "category": "vuln"
     },
     {
-      "title": "Chrome extensions with 13.4 million installs caught hijacking searches",
-      "description": "A massive search-hijacking campaign involving 319 Chrome extensions with a combined 13.4 million reported installations redirected users' searches through tracking servers to generate advert",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/chrome-extensions-with-134-million-installs-caught-hijacking-searches/",
-      "published": "2026-10-29T16:10:31Z",
-      "category": "general"
-    },
-    {
-      "title": "3 Ways AI Agents Already Operate in Your Browser",
-      "description": "AI agents can control authenticated browsers, interact with corporate applications, and access sensitive data while appearing to act as legitimate employees. Keep Aware examines three ways a",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/3-ways-ai-agents-already-operate-in-your-browser/",
-      "published": "2026-10-29T14:00:10Z",
-      "category": "general"
-    },
-    {
-      "title": "CISA warns of Fragnesia Linux flaw chained in PHP2Shell attacks",
-      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies to patch a high-severity Linux kernel privilege escalation bug that attackers are chaining with the P",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-fragnesia-linux-flaw-chained-in-php2shell-attacks/",
-      "published": "2026-10-29T13:59:48Z",
-      "category": "vuln"
-    },
-    {
       "title": "JPN: Times Car reporting ¥5.5 billion loss has firms bracing for data breach fallout",
       "description": "Maddie Baker and Spencer Landers As cyberattacks continue across Japan, companies are coming to realize the great financial risk of such attacks if their lax cybersecurity systems cause mill",
       "source": "DataBreaches.net",
@@ -182,22 +198,6 @@
       "link": "https://www.zataz.com/chimeraz-revendique-des-fuites-visant-trois-partis-francais/",
       "published": "2026-10-24T23:00:29Z",
       "category": "breach"
-    },
-    {
-      "title": "DeepSeek banni des agences fédérales US",
-      "description": "DeepSeek banni des agences fédérales civiles américaines : portée, calendrier et risques pour les données.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/deepseek-banni-des-agences-federales-civiles-americaines/",
-      "published": "2026-10-24T10:46:39Z",
-      "category": "general"
-    },
-    {
-      "title": "Point Vision : des données de patients dérobées",
-      "description": "Cyberattaque chez Point Vision : données de patients volées, exposition possible des motifs de rendez-vous.",
-      "source": "ZATAZ",
-      "link": "https://www.zataz.com/point-vision-des-donnees-de-patients-derobees/",
-      "published": "2026-10-24T09:29:23Z",
-      "category": "attack"
     }
   ]
 }
