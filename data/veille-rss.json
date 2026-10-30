@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T05:50:00.770215Z",
+  "generated_at": "2026-10-30T12:55:59.635883Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,22 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Drupal warns of critical Commerce Core flaw exploited in attacks",
+      "description": "Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
+      "published": "2026-10-30T10:16:07Z",
+      "category": "vuln"
+    },
+    {
+      "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
+      "description": "Binance, the world's largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer's compromised laptop. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
+      "published": "2026-10-30T09:18:13Z",
+      "category": "general"
+    },
     {
       "title": "Binance probes potential $5.8 billion crypto-theft hack",
       "description": "Cryptocurrency exchange Binance is investigating a potential security breach involving up to $5.8 billion in digital assets, in what could become the largest cryptocurrency hack in history. ",
@@ -136,30 +152,6 @@
       "category": "vuln"
     },
     {
-      "title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
-      "description": "Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash v",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/",
-      "published": "2026-10-29T11:10:13Z",
-      "category": "vuln"
-    },
-    {
-      "title": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime",
-      "description": "U.S. law enforcement has seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
-      "published": "2026-10-28T20:47:22Z",
-      "category": "general"
-    },
-    {
-      "title": "Discord to let search engines index public server messages",
-      "description": "Discord will allow search engines to index discussions in Discoverable Servers and make them accessible on the web to users outside the platform without an account or invitation. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/",
-      "published": "2026-10-28T18:44:16Z",
-      "category": "general"
-    },
-    {
       "title": "JPN: Times Car reporting ¥5.5 billion loss has firms bracing for data breach fallout",
       "description": "Maddie Baker and Spencer Landers As cyberattacks continue across Japan, companies are coming to realize the great financial risk of such attacks if their lax cybersecurity systems cause mill",
       "source": "DataBreaches.net",
@@ -198,6 +190,14 @@
       "link": "https://www.zataz.com/deepseek-banni-des-agences-federales-civiles-americaines/",
       "published": "2026-10-24T10:46:39Z",
       "category": "general"
+    },
+    {
+      "title": "Point Vision : des données de patients dérobées",
+      "description": "Cyberattaque chez Point Vision : données de patients volées, exposition possible des motifs de rendez-vous.",
+      "source": "ZATAZ",
+      "link": "https://www.zataz.com/point-vision-des-donnees-de-patients-derobees/",
+      "published": "2026-10-24T09:29:23Z",
+      "category": "attack"
     }
   ]
 }
