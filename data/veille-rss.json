@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T12:29:47.066763Z",
+  "generated_at": "2026-10-31T21:35:02.978825Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,46 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "Northflank security breach leads to abuse of customers' AI API keys",
+      "description": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' ",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+      "published": "2026-10-31T18:01:12Z",
+      "category": "breach"
+    },
+    {
+      "title": "New Android SMS of Death exploit can remotely crash unpatched phones",
+      "description": "A security researcher has released a proof-of-concept exploit for a recently patched Android vulnerability, dubbed \"SMS of Death\" and tracked as CVE-2026-58882, that lets attackers remotely ",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
+      "published": "2026-10-31T15:35:11Z",
+      "category": "vuln"
+    },
+    {
+      "title": "Reddit to lock content behind logins to fight scrapers",
+      "description": "Reddit announced in a post by co-founder Steve Huffman that the site will gradually become a \"logged-in service,\" offering limited access to visitors without accounts. [...]",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
+      "published": "2026-10-31T14:05:15Z",
+      "category": "general"
+    },
+    {
+      "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+      "description": "AI-generated vulnerability reports are overwhelming some bug bounty programs, making it harder for aspiring security researchers to know where to start. TryHackMe explains how beginners can ",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
+      "published": "2026-10-31T13:10:19Z",
+      "category": "vuln"
+    },
+    {
+      "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+      "description": "Blockchain analytics firm Chainalysis disclosed a data breach after attackers used \"offensive agentic techniques\" to access internal systems and tools, exposing customer names, email address",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+      "published": "2026-10-31T12:50:09Z",
+      "category": "breach"
+    },
     {
       "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
       "description": "Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers ru",
@@ -72,35 +112,11 @@
       "category": "attack"
     },
     {
-      "title": "Hugging Face malware campaign returns to hijack GPUs for crypto mining",
-      "description": "A crypto-mining campaign abusing Hugging Face models returned days after takedown, hijacking GPU servers and planting backdoors, with one model downloaded over 28,000 times. Separately, a fa",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
-      "published": "2026-10-29T22:09:24Z",
-      "category": "attack"
-    },
-    {
-      "title": "Japan Airlines suffers third-party data breach exposing passenger info",
-      "description": "Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/",
-      "published": "2026-10-29T22:08:04Z",
-      "category": "breach"
-    },
-    {
       "title": "Extent of Crime Stoppers data breach unknown: Sault Police chief",
       "description": "James Hopkin reports: The Sault’s police chief says it’s currently unclear how many anonymous tips received by Crime Stoppers locally were potentially exposed in a massive data breach. Both ",
       "source": "DataBreaches.net",
       "link": "https://databreaches.net/2026/10/29/extent-of-crime-stoppers-data-breach-unknown-sault-police-chief/",
       "published": "2026-10-29T22:06:26Z",
-      "category": "breach"
-    },
-    {
-      "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
-      "description": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approxi",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
-      "published": "2026-10-29T21:47:25Z",
       "category": "breach"
     },
     {
@@ -150,22 +166,6 @@
       "link": "https://databreaches.net/2026/10/29/dhs-personnel-leak-exposes-contact-details-and-sensitive-job-information/",
       "published": "2026-10-29T19:41:47Z",
       "category": "breach"
-    },
-    {
-      "title": "Fake crypto app on Apple App Store linked to $23K wallet theft",
-      "description": "A fake cryptocurrency trading app called Padre Terminal, previously available on the Apple App Store for iOS devices, has been linked to the theft of approximately $23,000 from 27 Solana wal",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/",
-      "published": "2026-10-29T19:23:41Z",
-      "category": "general"
-    },
-    {
-      "title": "Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware",
-      "description": "A newly identified advanced persistent threat (APT) group tracked as UAT-11473 was observed exploiting CVE-2026-20127, an authentication-bypass flaw in Cisco Catalyst SD-WAN Controllers, to ",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/",
-      "published": "2026-10-29T18:38:26Z",
-      "category": "vuln"
     },
     {
       "title": "JPN: Times Car reporting ¥5.5 billion loss has firms bracing for data breach fallout",
