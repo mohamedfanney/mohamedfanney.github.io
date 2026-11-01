@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T13:25:19.641536Z",
+  "generated_at": "2026-11-01T22:02:09.771890Z",
   "sources_ok": [
     "ZATAZ",
     "DataBreaches.net",
@@ -7,6 +7,22 @@
   ],
   "sources_unavailable": [],
   "items": [
+    {
+      "title": "FBI links $6.3 billion Binance crypto heist to North Korean hackers",
+      "description": "The FBI has confirmed that North Korean state-sponsored hackers known as TraderTraitor were behind the $6.3 billion crypto-theft attack on Binance, making it the largest cryptocurrency heist",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/",
+      "published": "2026-11-01T19:57:53Z",
+      "category": "attack"
+    },
+    {
+      "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
+      "description": "Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20-21, prompting the open-source project to rebuild its GitLab server and",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+      "published": "2026-11-01T15:11:21Z",
+      "category": "attack"
+    },
     {
       "title": "Northflank security breach leads to abuse of customers' AI API keys",
       "description": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' ",
@@ -94,22 +110,6 @@
       "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
       "published": "2026-10-30T10:16:07Z",
       "category": "vuln"
-    },
-    {
-      "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
-      "description": "Binance, the world's largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer's compromised laptop. [...]",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
-      "published": "2026-10-30T09:18:13Z",
-      "category": "general"
-    },
-    {
-      "title": "Binance probes potential $5.8 billion crypto-theft hack",
-      "description": "Cryptocurrency exchange Binance is investigating a potential security breach involving up to $5.8 billion in digital assets, in what could become the largest cryptocurrency hack in history. ",
-      "source": "BleepingComputer",
-      "link": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
-      "published": "2026-10-29T22:45:23Z",
-      "category": "attack"
     },
     {
       "title": "Extent of Crime Stoppers data breach unknown: Sault Police chief",
