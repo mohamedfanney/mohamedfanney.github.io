@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille Wazuh – BTS SIO SISR | Mohamed Hemamda</title>
+<style>
+*{box-sizing:border-box}html{color-scheme:dark}body{margin:0;background:#090d17;color:#eaf0f8;font:15px/1.7 Inter,system-ui,sans-serif}
+header,main,footer{max-width:1000px;margin:auto;padding:23px}header{border-bottom:1px solid #353c53;display:flex;justify-content:space-between;gap:20px}
+a{color:#a8d1ff}h1{font-size:clamp(24px,4vw,38px);line-height:1.2}h2{font-size:20px;color:#deb2ff;margin:24px 0 10px}
+p,li{color:#c4ccda}.kicker{color:#c3a7f6;font-size:12px;letter-spacing:.08em;font-weight:700}
+.box{background:#121a2b;border:1px solid #343d52;padding:16px;border-radius:13px;margin:12px 0}
+.warn{border-left:3px solid #ecae75;padding:15px;background:#22202b}
+.arch{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin:20px 0}
+.node{flex:1 1 155px;background:#193148;border:1px solid #4a709a;border-radius:10px;text-align:center;padding:16px;font-weight:700}.node small{font-weight:400;display:block;color:#cbd4e2}
+.arrow{color:#cfb2ff;font-size:24px}
+table{border-collapse:collapse;width:100%;min-width:630px}th,td{padding:11px;border-bottom:1px solid #343b4b;text-align:left;vertical-align:top}th{color:#dfbaff}.scroll{overflow-x:auto}
+.tags span{display:inline-block;padding:4px 10px;margin:4px;border-radius:20px;border:1px solid #5b4374;color:#ebcef5;font-size:12px}
+@media print{*{background:#fff!important;color:#111!important;box-shadow:none!important}body{font-size:10pt}main,header{padding:8px 12px}h1{font-size:20pt}h2{font-size:12pt}section{break-inside:avoid}.box{border:1px solid #ccc}.node{padding:9px;border:1px solid #777}footer{display:none}}
+</style></head><body>
+<header><a href="./#veille">← Retour à la veille</a><span class="kicker">MOHAMED HEMAMDA · BTS SIO SISR</span></header><main>
+<p class="kicker">FICHE DE VEILLE · ÉTAT INITIAL AU 02/11/2026</p>
+<h1>Wazuh – suivi d'une plateforme de supervision de sécurité SIEM/XDR</h1>
+<section><h2>1. Contexte, problématique et objectifs</h2>
+<p>Une entreprise dispose de postes Windows et Linux, de serveurs et d'équipements réseau. Elle souhaite centraliser les événements de sécurité, détecter les anomalies et réagir aux failles connues. <strong>Problématique :</strong> comment suivre les versions, correctifs et fonctionnalités de Wazuh pour maintenir une supervision de sécurité fiable ?</p>
+<p>Objectifs : surveiller les notes de version et les préversions, les avis de sécurité (GHSA/CVE), les nouveautés de détection et la compatibilité des agents et du serveur.</p>
+<div class="tags"><span>Wazuh release</span><span>CVE Wazuh</span><span>GHSA</span><span>SIEM</span><span>XDR</span><span>FIM</span><span>Security agent</span></div></section>
+<section><h2>2. Sources fiables et outils de veille</h2>
+<div class="scroll"><table><thead><tr><th>Source</th><th>Informations recherchées</th><th>Fréquence</th><th>Consultation manuelle</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/wazuh/wazuh/releases">Releases GitHub</a></td><td>Versions et notes</td><td>Collecte auto 6 h, analyse hebdomadaire</td><td>Première analyse : 02/11/2026</td></tr>
+<tr><td><a href="https://wazuh.com/feed/">Flux officiel Wazuh</a></td><td>Fonctionnalités, usages</td><td>Collecte auto 6 h</td><td>À réaliser</td></tr>
+<tr><td><a href="https://github.com/wazuh/wazuh/security/advisories">Advisories GitHub</a></td><td>Failles et correctifs</td><td>Suivi hebdomadaire et en cas d'alerte</td><td>Première analyse : 02/11/2026</td></tr>
+<tr><td><a href="https://www.cert.cyber.gouv.fr/flux-rss">CERT-FR</a></td><td>Alertes de sécurité pertinentes</td><td>Collecte auto 6 h</td><td>À réaliser</td></tr>
+</tbody></table></div>
+<p>Outils : agrégation RSS/GitHub, GitHub Actions, index JSON, moteur de recherche sur le portfolio, tableau de suivi. <strong>Alertes e-mail non configurées</strong> : il faudra mettre en place puis tester les notifications si elles sont demandées.</p></section>
+<section><h2>3. Architecture de référence</h2>
+<div class="arch" role="img" aria-label="Agents Windows et Linux vers serveur Wazuh, indexer puis dashboard">
+<div class="node">Postes / serveurs<small>Agents Wazuh, journaux</small></div><span class="arrow">→</span>
+<div class="node">Wazuh server<small>Collecte, analyse, alertes</small></div><span class="arrow">→</span>
+<div class="node">Wazuh indexer<small>Stockage, recherche</small></div><span class="arrow">↔</span>
+<div class="node">Wazuh dashboard<small>Visualisation, analyste</small></div>
+</div>
+<p>Les équipements réseau sans agent peuvent transmettre leurs logs par Syslog sous réserve de configuration. Pour un petit laboratoire, les composants centraux peuvent être regroupés sur une VM.</p>
+<p class="warn"><strong>Ce schéma est théorique.</strong> Il ne représente pas un déploiement personnel déjà réalisé. Source : <a href="https://documentation.wazuh.com/current/getting-started/architecture.html">architecture officielle Wazuh</a>.</p></section>
+<section><h2>4. Synthèse initiale datée et décisions proposées</h2>
+<div class="box"><strong>Versions :</strong> la <a href="https://documentation.wazuh.com/current/release-notes/index.html">version 4.14.9 apparaît datée du 14 octobre 2026</a> dans les notes officielles. <strong>Décision proposée :</strong> contrôler les prérequis, vérifier la version stable en vigueur au moment du déploiement, préparer une sauvegarde et tester la mise à niveau en laboratoire.</div>
+<div class="box"><strong>Sécurité :</strong> des <a href="https://github.com/wazuh/wazuh/security/advisories">avis de sécurité Wazuh</a> ont été publiés en octobre 2026. <strong>Décision proposée :</strong> identifier les composants et versions concernés, analyser l'exposition, consulter les correctifs officiels et prioriser les mises à jour selon le risque.</div>
+<div class="box"><strong>Évolution :</strong> Wazuh comprend agents, serveur, indexer et dashboard. <strong>Décision proposée :</strong> planifier un laboratoire à deux agents Windows et Linux, tester la collecte d'événements et documenter les règles, alertes et éventuels faux positifs.</div>
+<p>Les décisions ci-dessus sont des recommandations de veille et <strong>non des travaux réalisés</strong>. Toute migration et toute configuration réelles devront être prouvées séparément.</p></section>
+<section><h2>5. Suivi hebdomadaire et livrables</h2>
+<p>Consulter une fois par semaine les nouvelles publications, noter la date du relevé, l'URL, la version ou vulnérabilité étudiée, les impacts et la décision (surveiller, tester, mettre à jour). Associer les captures et résultats si une mise en pratique a été effectuée.</p>
+<div class="box"><strong>Modèle de ligne :</strong> JJ/MM/AAAA · Source/URL · Information retenue · Versions concernées · Risque/bénéfice · Décision proposée · Validation et test (si réalisés).</div>
+<p>Le <a href="./#veille">portfolio</a> fournit un tableau de collecte automatisée, mais la synthèse personnelle doit être enrichie au fil des semaines. Cette fiche constitue le relevé initial, imprimable depuis le navigateur.</p></section>
+</main><footer>Mohamed Hemamda · Veille Wazuh · Date de première synthèse : 2 novembre 2026.</footer></body></html>
