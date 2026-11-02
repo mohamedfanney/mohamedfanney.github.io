@@ -20,13 +20,13 @@ table{border-collapse:collapse;width:100%;min-width:630px}th,td{padding:11px;bor
 <h1>Wazuh – suivi d'une plateforme de supervision de sécurité SIEM/XDR</h1>
 <section><h2>1. Contexte, problématique et objectifs</h2>
 <p>Une entreprise dispose de postes Windows et Linux, de serveurs et d'équipements réseau. Elle souhaite centraliser les événements de sécurité, détecter les anomalies et réagir aux failles connues. <strong>Problématique :</strong> comment suivre les versions, correctifs et fonctionnalités de Wazuh pour maintenir une supervision de sécurité fiable ?</p>
-<p>Objectifs : surveiller les notes de version et les préversions, les avis de sécurité (GHSA/CVE), les nouveautés de détection et la compatibilité des agents et du serveur.</p>
+<p>Objectifs : surveiller les notes de version et les préversions, les avis de sécurité (GHSA/CVE), les nouveautés de détection et la compatibilité des agents et du serveur. Vérifier également la durée et les conditions de support annoncées pour chaque branche, sans supposer qu'une version est LTS.</p>
 <div class="tags"><span>Wazuh release</span><span>CVE Wazuh</span><span>GHSA</span><span>SIEM</span><span>XDR</span><span>FIM</span><span>Security agent</span></div></section>
 <section><h2>2. Sources fiables et outils de veille</h2>
 <div class="scroll"><table><thead><tr><th>Source</th><th>Informations recherchées</th><th>Fréquence</th><th>Consultation manuelle</th></tr></thead><tbody>
-<tr><td><a href="https://github.com/wazuh/wazuh/releases">Releases GitHub</a></td><td>Versions et notes</td><td>Collecte auto 6 h, analyse hebdomadaire</td><td>Première analyse : 02/11/2026</td></tr>
+<tr><td><a href="https://github.com/wazuh/wazuh/releases">Releases GitHub</a></td><td>Versions et notes</td><td>Collecte auto 6 h, analyse hebdomadaire</td><td>Sources examinées pour la synthèse initiale du 02/11/2026</td></tr>
 <tr><td><a href="https://wazuh.com/feed/">Flux officiel Wazuh</a></td><td>Fonctionnalités, usages</td><td>Collecte auto 6 h</td><td>À réaliser</td></tr>
-<tr><td><a href="https://github.com/wazuh/wazuh/security/advisories">Advisories GitHub</a></td><td>Failles et correctifs</td><td>Suivi hebdomadaire et en cas d'alerte</td><td>Première analyse : 02/11/2026</td></tr>
+<tr><td><a href="https://github.com/wazuh/wazuh/security/advisories">Advisories GitHub</a></td><td>Failles et correctifs</td><td>Suivi hebdomadaire et en cas d'alerte</td><td>Sources examinées pour la synthèse initiale du 02/11/2026</td></tr>
 <tr><td><a href="https://www.cert.cyber.gouv.fr/flux-rss">CERT-FR</a></td><td>Alertes de sécurité pertinentes</td><td>Collecte auto 6 h</td><td>À réaliser</td></tr>
 </tbody></table></div>
 <p>Outils : agrégation RSS/GitHub, GitHub Actions, index JSON, moteur de recherche sur le portfolio, tableau de suivi. <strong>Alertes e-mail non configurées</strong> : il faudra mettre en place puis tester les notifications si elles sont demandées.</p></section>
