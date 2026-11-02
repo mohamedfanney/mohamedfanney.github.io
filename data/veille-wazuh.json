@@ -1,37 +1,93 @@
 {
-  "topic": "Veille BTS SIO – Wazuh SIEM/XDR",
-  "generated_at": null,
+  "topic": "Wazuh SIEM/XDR",
+  "generated_at": "2026-11-02T15:46:55.686756Z",
   "sources": [
     {
-      "name": "Wazuh – publications officielles",
+      "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": null,
-      "status": "Programmée",
-      "selected": "Fonctionnalités et sécurité"
+      "checked": "2026-11-02T15:46:55.686756Z",
+      "status": "OK",
+      "selected": "Actualités et fonctionnalités"
     },
     {
-      "name": "Wazuh – GitHub Releases",
-      "url": "https://github.com/wazuh/wazuh/releases",
-      "checked": null,
-      "status": "Programmée",
-      "selected": "Nouvelles versions et correctifs"
+      "name": "Wazuh GitHub Releases",
+      "url": "https://github.com/wazuh/wazuh/releases.atom",
+      "checked": "2026-11-02T15:46:55.686756Z",
+      "status": "OK",
+      "selected": "Versions et correctifs"
     },
     {
-      "name": "Wazuh – avis de sécurité GitHub",
+      "name": "CERT-FR – avis",
+      "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
+      "checked": "2026-11-02T15:46:55.686756Z",
+      "status": "OK",
+      "selected": "Avis liés à Wazuh"
+    },
+    {
+      "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": null,
-      "status": "Programmée",
-      "selected": "Vulnérabilités publiées"
-    },
-    {
-      "name": "CERT-FR",
-      "url": "https://www.cert.cyber.gouv.fr/flux-rss",
-      "checked": null,
-      "status": "Programmée",
-      "selected": "Alertes et avis pertinents"
+      "checked": "2026-11-02T15:46:55.686756Z",
+      "status": "OK",
+      "selected": "Vulnérabilités officielles"
     }
   ],
   "items": [
+    {
+      "title": "v5.0.0-rc2",
+      "description": "[v5.0.0] Manager Added Issue Comment #37702 Added HTTPS communication between Wazuh agents and the manager: a new HTTPS transport, protocol, and control plane (connection, configuration, statistics, task dispat",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v5.0.0-rc2",
+      "published": "2026-10-30T15:07:12Z",
+      "category": "version"
+    },
+    {
+      "title": "Wazuh and State Information Technology Agency Partner to Improve Cybersecurity Services",
+      "description": "San Jose, California, May 2026 – Wazuh, the leading open source Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) solution, announced a partnership with State Informatio",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/wazuh-sita-cybersecurity-partnership/",
+      "published": "2026-10-30T15:07:09Z",
+      "category": "feature"
+    },
+    {
+      "title": "Detecting PHP2Shell remote code execution with Wazuh",
+      "description": "Detecting PHP2Shell remote code execution with Wazuh The post Detecting PHP2Shell remote code execution with Wazuh appeared first on Wazuh .",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/detecting-php2shell-remote-code-execution-with-wazuh/",
+      "published": "2026-10-29T11:37:25Z",
+      "category": "feature"
+    },
+    {
+      "title": "Wazuh v4.14.10 RC 2",
+      "description": "What's Changed Use the package CNA source in solved vulnerability alerts by @Antoniogm03 in #40668 Keep OpenSSL cleanup out of exit() so wazuh-agentd stop leaves no stale pid file by @lchico in #40760 Retry pos",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.10-rc2",
+      "published": "2026-10-28T16:59:28Z",
+      "category": "security"
+    },
+    {
+      "title": "Wazuh v4.14.10 RC 1",
+      "description": "What's Changed Bump 4.14.10 branch by @wazuhci in #39241 Stop buffering request bodies before authentication in the API access logger by @jotacarma90 in #39403 Merge 4.14.9 into 4.14.10 by @jotacarma90 in #3944",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.10-rc1",
+      "published": "2026-10-21T14:22:51Z",
+      "category": "version"
+    },
+    {
+      "title": "Wazuh v4.14.9",
+      "description": "Manager Changed Added the missing compiler hardening flags (stack canary, PIE, full RELRO and FORTIFY_SOURCE) to the Linux binaries. ( #38571 ) The API access log no longer writes the run_as authorization conte",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.9",
+      "published": "2026-10-15T17:40:40Z",
+      "category": "version"
+    },
+    {
+      "title": "Detecting and responding to REVSTEALER malware with Wazuh",
+      "description": "REVSTEALER is a Windows information stealer that targets browser credentials, cryptocurrency wallets, gaming accounts, and other sensitive data. Researchers have documented its distribution through game-cheat l",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/detecting-and-responding-to-revstealer-malware-with-wazuh/",
+      "published": "2026-10-15T10:02:41Z",
+      "category": "feature"
+    },
     {
       "title": "Wazuh 4.14.9 – publication du 14 octobre 2026",
       "description": "Version répertoriée dans les notes de version officielles. Vérifier les changements et la compatibilité avant tout déploiement.",
@@ -41,11 +97,347 @@
       "category": "version"
     },
     {
-      "title": "Wazuh – avis de sécurité GHSA-cjf8-wjx6-hjw6",
-      "description": "Un avis de sécurité Wazuh du 13 octobre 2026 concerne la validation de commandes distantes. Examiner les versions affectées et les correctifs.",
-      "source": "Wazuh – avis de sécurité GitHub",
+      "title": "Case-sensitivity mismatch bypasses remote-command validation, allowing command execution as root",
+      "description": "### Summary The manager validates an uploaded `ossec.conf` with `check_remote_commands` (Python) before writing it, and `wazuh-logcollector` (C) later parses and executes the same file. The two components read ",
+      "source": "Wazuh GitHub Advisories",
       "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-cjf8-wjx6-hjw6",
-      "published": "2026-10-13T00:00:00Z",
+      "published": "2026-10-13T08:32:07Z",
+      "category": "security"
+    },
+    {
+      "title": "Missing destination-path validation in CDB list cluster-callable handlers allows arbitrary file read/delete on the manager",
+      "description": "### Summary `wazuh.cdb_list.get_lists()` and `wazuh.cdb_list.delete_list_file()` build filesystem paths from a caller-supplied `filename` without validating that the resolved path stays inside `USER_LISTS_PATH`",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-vc33-wcqf-cwgv",
+      "published": "2026-10-13T08:31:56Z",
+      "category": "security"
+    },
+    {
+      "title": "Improper session invalidation in check_token: revoking a run_as user's administrator grant does not invalidate their token, enabling permanent self-re-grant of administrator",
+      "description": "https://github.com/user-attachments/assets/43bfd8bd-4d44-4d54-8d74-a6303f3b5f70 [capture3.py](https://github.com/user-attachments/files/30628278/capture3.py) ### Summary In a Wazuh SSO / authorization-context d",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-3xm6-wp5v-2fm9",
+      "published": "2026-10-13T08:31:46Z",
+      "category": "security"
+    },
+    {
+      "title": "Heap buffer overflow in wazuh-analysisd fim_generate_alert() lets an enrolled agent corrupt manager heap memory and terminate the analysis engine",
+      "description": "### Summary An enrolled Wazuh agent can send a single crafted FIM (syscheck) event that causes `wazuh-analysisd` — running as **root** on the manager — to write past the end of a heap allocation with attacker-i",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-gc4j-j9fg-4cfr",
+      "published": "2026-10-13T08:31:35Z",
+      "category": "security"
+    },
+    {
+      "title": "An empty password bypasses both the password policy and the reserved user guard in `security.update_user`, allowing a delegated user administrator to take over the `wazuh` superuser account",
+      "description": "`framework/wazuh/security.py::update_user` places the password length check, the password complexity check, and the reserved user guard **inside** an `if password:` block. In Python the empty string is falsy, s",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-27gv-q7q6-f5qh",
+      "published": "2026-10-13T08:31:21Z",
+      "category": "security"
+    },
+    {
+      "title": "API brute-force protection is still bypassable by concurrent login requests, the `asyncio.Lock` fix for GHSA-m2mr-xhhv-jx58 serializes the counter but does not close the check-then-count race",
+      "description": "### Summary Advisory **GHSA-m2mr-xhhv-jx58** (\"API brute-force protection bypass via race condition in login attempt tracking\") was fixed by wrapping the per-IP failed-login counter in an `asyncio.Lock`. That c",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-crrg-5qvw-8wjx",
+      "published": "2026-10-13T08:31:06Z",
+      "category": "security"
+    },
+    {
+      "title": "Remote code execution as root on Wazuh agents via SCA command policies",
+      "description": "## Summary The `sca.remote_commands` setting, disabled by default, is meant to prevent the manager from running arbitrary shell commands on agents through SCA policies. The check that enforces this decides whet",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-qmhg-366r-jjfp",
+      "published": "2026-10-13T08:30:51Z",
+      "category": "security"
+    },
+    {
+      "title": "Path traversal in cluster-callable get_list_file allows arbitrary file read as the wazuh user",
+      "description": "### Summary This is the same class as the upload path traversal fixed in PR #37691, on the **read** side, which that fix did not cover. The `@expose_resources` framework helper `get_list_file` (`lists:read`) re",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-xrjw-cqrv-j92g",
+      "published": "2026-10-13T08:29:54Z",
+      "category": "security"
+    },
+    {
+      "title": "Path traversal in cluster-callable rule/decoder delete helpers allows arbitrary file deletion as the wazuh user",
+      "description": "### Summary This is the same class as the upload path traversal fixed in PR #37691, on the **delete** side, which that fix did not cover. The `@expose_resources` framework helpers `delete_rule_file` and `delete",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-w4qc-m4j4-6m9c",
+      "published": "2026-10-13T08:29:43Z",
+      "category": "security"
+    },
+    {
+      "title": "Arbitrary file read as root via agent-injected upgrade_custom command",
+      "description": "## Summary The `wm_agent_upgrade` manager module (`wazuh-modulesd`, running as root) processes upgrade commands received on the `WM_UPGRADE_SOCK` unix socket. That socket is fed by two producers: the management",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-r7hm-43xr-477j",
+      "published": "2026-10-13T08:29:34Z",
+      "category": "security"
+    },
+    {
+      "title": "RBAC Authorization Bypass in Wazuh API",
+      "description": "Description ----------- The REST API endpoints: * GET /security/actions * GET /security/resources allow any authenticated user to retrieve the complete RBAC action and resource catalog, even when the user lacks",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-vh8p-3xvw-w536",
+      "published": "2026-10-13T08:29:20Z",
+      "category": "security"
+    },
+    {
+      "title": "authd.pass disclosed to low-privileged users through the per-agent active configuration endpoint",
+      "description": "### Summary Wazuh's API leaks the manager's authd.pass, the shared secret wazuh-authd uses to authenticate new agent enrollments, to anyone holding nothing more than agent:read. That includes the stock readonly",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-qj8j-r988-54rx",
+      "published": "2026-10-13T08:29:09Z",
+      "category": "security"
+    },
+    {
+      "title": "Path traversal in cluster-callable upload functions allows arbitrary file write as the wazuh user",
+      "description": "### Summary The `@expose_resources` framework upload helpers `upload_list_file`, `upload_rule_file`, and `upload_decoder_file` build their destination path from a caller-supplied `filename` with **no traversal ",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-cw26-jj8q-x7w5",
+      "published": "2026-10-13T08:28:54Z",
+      "category": "security"
+    },
+    {
+      "title": "Cluster worker can overwrite arbitrary master files (incl. ossec.conf) → root RCE on manager and every agent — bypass of #36296 excluded_files guard + missing extra_valid enforcement",
+      "description": "## Summary `MasterHandler.process_files_from_worker` (`framework/wazuh/core/cluster/master.py`) lets a **cluster worker** drive the master into overwriting **arbitrary master files**, including the master's own",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-88p6-7cm8-xwj8",
+      "published": "2026-10-13T08:28:32Z",
+      "category": "security"
+    },
+    {
+      "title": "SCA YAML alias expansion causes memory exhaustion",
+      "description": "## Summary SCA policy YAML files are parsed without any cap on alias expansion, recursion depth, or final-output size. A 394-byte input expands to 234,583 cJSON nodes and 2.1 MB of printed JSON. A 573-byte inpu",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-x8v7-g49q-ff7j",
+      "published": "2026-10-13T08:28:19Z",
+      "category": "security"
+    },
+    {
+      "title": "Detecting eBPF-based attacks on Linux endpoints with Wazuh",
+      "description": "Extended Berkeley Packet Filter (eBPF) is a Linux technology that allows sandboxed programs to run in the Linux kernel. The kernel manages system memory, running processes, and hardware resources. eBPF supports",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/detecting-ebpf-based-attacks-on-linux-endpoints-with-wazuh/",
+      "published": "2026-10-08T15:03:31Z",
+      "category": "feature"
+    },
+    {
+      "title": "Wazuh and Selenium Announce Partnership to Improve Digital Environments",
+      "description": "San Jose, California, August 2026 – Wazuh, the leading open-source Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) solution, announced a partnership with Selenium, a t",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/wazuh-and-selenium-announce-partnership-to-improve-digital-environments/",
+      "published": "2026-10-07T11:17:04Z",
+      "category": "feature"
+    },
+    {
+      "title": "v5.0.0-rc1",
+      "description": "[v5.0.0] Manager Added Issue Comment #38260 Added HTTPS communication between Wazuh agents and the manager: a new HTTPS transport, protocol, and control plane (connection, configuration, statistics, task dispat",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v5.0.0-rc1",
+      "published": "2026-10-05T13:36:38Z",
+      "category": "version"
+    },
+    {
+      "title": "Wazuh and Cyber Guard Pro Partner to Enhance Security Visibility",
+      "description": "San Jose, California, June 2026 – Wazuh, the leading open-source Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) platform, announced a partnership with Cyber Guard Pro",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/wazuh-and-cyber-guard-pro-partner-to-enhance-security-visibility/",
+      "published": "2026-10-02T13:22:25Z",
+      "category": "feature"
+    },
+    {
+      "title": "Monitoring Kyverno policy violations with Wazuh",
+      "description": "Kubernetes workloads introduce security risks when deployed with excessive privileges, unsafe configurations, or settings that do not meet organizational requirements. Admission controls evaluate resource reque",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/monitoring-kyverno-policy-violations-with-wazuh/",
+      "published": "2026-10-01T15:18:27Z",
+      "category": "feature"
+    },
+    {
+      "title": "Wazuh and AI Cyber Consulting Announce Partnership to Strengthen SOC Services",
+      "description": "San Jose, California, September 2026 – Wazuh, the leading open-source Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) solution, announced a partnership with AI Cyber C",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/wazuh-and-ai-cyber-consulting-announce-partnership-to-strengthen-soc-services/",
+      "published": "2026-09-28T14:44:48Z",
+      "category": "feature"
+    },
+    {
+      "title": "Wazuh v4.14.8",
+      "description": "Manager Fixed Fixed AES connection getting reset to blowfish on keystore rebuild. ( #37524 ) Fixed a deadlock in wazuh-analysisd that stopped alert generation when the Active Response queue filled up. ( #37764 ",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.8",
+      "published": "2026-09-25T18:19:40Z",
+      "category": "version"
+    },
+    {
+      "title": "Detecting common Windows privilege escalation techniques with Wazuh",
+      "description": "Privilege escalation is the process by which an attacker gains permissions beyond those assigned to their current account. On Windows endpoints, threat actors who gain initial access as a standard user may expl",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/detecting-common-windows-privilege-escalation-techniques-with-wazuh/",
+      "published": "2026-09-24T12:54:56Z",
+      "category": "feature"
+    },
+    {
+      "title": "Securing web applications with Coraza WAF and Wazuh",
+      "description": "Web application firewalls (WAFs) secure web applications by inspecting HTTP traffic and blocking malicious requests before they reach backend services. They help protect applications from attacks such as SQL in",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/securing-web-applications-with-coraza-waf-and-wazuh/",
+      "published": "2026-09-17T11:48:38Z",
+      "category": "feature"
+    },
+    {
+      "title": "Wazuh v4.10.5",
+      "description": "Manager Fixed Hardened RSA decryption to reject malformed ciphertext blobs. ( #36243 ) Improved cluster merged file parameter validation to prevent directory escape. ( #38375 ) Improved tmp_file path validation",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.10.5",
+      "published": "2026-09-15T13:43:34Z",
+      "category": "version"
+    },
+    {
+      "title": "Wazuh v5.0.0 Beta 5",
+      "description": "What's Changed fix(ci): correct S3 artifact run directory layout for 4.14.7 by @jr0me in #37377 Lower log level of transient cluster failures by @ignaciogalle12git in #37338 Fix github actions shell by @Miguevr",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v5.0.0-beta5",
+      "published": "2026-09-07T12:33:16Z",
+      "category": "version"
+    },
+    {
+      "title": "Heap Buffer Overflow in DecodeWinevt() join_data Accumulation via Crafted EventChannel XML",
+      "description": "## Summary `DecodeWinevt()` in `src/analysisd/decoders/winevtchannel.c` accumulates the content of unnamed Windows EventChannel ` ` elements into a fixed 65,535-byte heap buffer (`join_data`). The `snprintf` ca",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-whhr-gxxr-f6pm",
+      "published": "2026-08-18T07:29:31Z",
+      "category": "security"
+    },
+    {
+      "title": "Unbounded Recursion in os_xml `_getattributes()` Causes analysisd Worker Thread Stack Exhaustion",
+      "description": "**Product:** Wazuh Manager **Version:** ≤ v4.14.5 (latest) **Component:** `src/os_xml/os_xml.c:641` **CVSS 3.1:** 7.5 (AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H) **CWE:** CWE-674: Uncontrolled Recursion **Severity:**",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-9wv5-7qwx-m9w5",
+      "published": "2026-08-18T07:29:08Z",
+      "category": "security"
+    },
+    {
+      "title": "RBAC permission-effect check in mask_sensitive_config allows low-privilege users to read cluster.key",
+      "description": "## Summary - A read-only monitoring account that you *harden* by explicitly denying config edits (`cluster:update_config: deny`) ends up able to read `cluster.key` in clear — while the same account **without** ",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-vjcq-cf36-f5gx",
+      "published": "2026-08-18T07:28:39Z",
+      "category": "security"
+    },
+    {
+      "title": "Wazuh agent enrollment NULL pointer dereference via malformed manager response",
+      "description": "# Wazuh agent enrollment NULL pointer dereference via malformed manager response ## Summary A malicious or man-in-the-middle enrollment manager can crash a Wazuh agent during enrollment by returning a malformed",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-ppc7-hj9v-vx39",
+      "published": "2026-08-18T07:23:54Z",
+      "category": "security"
+    },
+    {
+      "title": "Missing input validation in multiple active response scripts allows argument injection",
+      "description": "### Summary Five out of eight active response scripts that handle `srcip` from alert JSON data do not call `get_ip_version()` to validate the input is a legitimate IP address before passing it to firewall/route",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-mvh4-g699-984j",
+      "published": "2026-08-18T07:23:29Z",
+      "category": "security"
+    },
+    {
+      "title": "Path traversal in ip-customblock active response allows arbitrary file creation and deletion",
+      "description": "### Summary The `ip-customblock` active response script in Wazuh constructs a file path by directly concatenating the `srcip` field from alert JSON data into a fixed base directory (`/ipblock/`). The `srcip` va",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-m4mf-qmhf-8vj6",
+      "published": "2026-08-18T07:22:52Z",
+      "category": "security"
+    },
+    {
+      "title": "Cluster authentication key disclosed to low-privilege cluster:read API users via GET /cluster/local/config (missing mask_sensitive_config) — enables cluster-peer RCE chain",
+      "description": "## Summary The Wazuh REST API ships a secret-masking control, `mask_sensitive_config`, whose job is to redact `SENSITIVE_FIELD_PATHS = (\"authd.pass\", \"cluster.key\")` from configuration responses for any user th",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-chmg-89pf-2q82",
+      "published": "2026-08-18T07:17:13Z",
+      "category": "security"
+    },
+    {
+      "title": "SQL injection → RCE in wazuh-dbd (PostgreSQL output)",
+      "description": "https://github.com/user-attachments/assets/0d9a5012-3764-496a-a70e-1a185ddb8338 ## Summary `wazuh-dbd` writes alerts to a SQL database. On the PostgreSQL backend it builds the `INSERT` by string-concatenation, ",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-6j39-726h-fx6p",
+      "published": "2026-08-18T07:15:12Z",
+      "category": "security"
+    },
+    {
+      "title": "Incomplete fix for CVE-2026-30893: missing directory confinement in cluster worker file sync allows arbitrary file write under /var/ossec on worker nodes",
+      "description": "### Summary A node that can act as the master toward a worker, meaning a compromised or malicious master or any party holding the cluster key, can write, overwrite, or delete arbitrary files under `/var/ossec` ",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-3jff-488g-335f",
+      "published": "2026-08-18T07:14:31Z",
+      "category": "security"
+    },
+    {
+      "title": "zlib decompression bomb in cluster archive processing lets authenticated peer exhaust wazuh-clusterd memory",
+      "description": "## Description `decompress_files` at `framework/wazuh/core/cluster/cluster.py:499-510` calls `zlib.decompress(content)` on every archive member it parses out of a peer-uploaded extra-valid sync archive, with no",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-mr7j-w2m4-vw5j",
+      "published": "2026-08-18T06:56:37Z",
+      "category": "security"
+    },
+    {
+      "title": "Authenticated denial-of-service of the Wazuh API via `POST /security/user/authenticate/run_as`",
+      "description": "## Summary A single authenticated session with `allow_run_as=True` (the seeded `wazuh-wui` account has it; any admin can grant it to others) can repeatedly post a deeply-nested JSON `auth_context` to `POST /sec",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-5vh8-34r8-q74q",
+      "published": "2026-08-18T06:48:33Z",
+      "category": "security"
+    },
+    {
+      "title": "Wazuh v4.14.7",
+      "description": "Manager Removed Removed deprecated wazuh-dbd daemon and database_output configuration. ( #37035 ) Fixed Improved cluster payload buffer allocation strategy. ( #37280 ) Improved cluster archive decompression lim",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.7",
+      "published": "2026-07-30T16:32:45Z",
+      "category": "version"
+    },
+    {
+      "title": "Wazuh v5.0.0 Beta 4",
+      "description": "What's Changed fix: persist engine startup state for CMSync route logging by @jam300 in #37356 Fix invalid MTU value reported for Windows network interfaces by @vikman90 in #37394 Restore modern.bpf.o checkfile",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v5.0.0-beta4",
+      "published": "2026-07-21T12:27:04Z",
+      "category": "version"
+    },
+    {
+      "title": "Enrolled Agent Can Spoof Cluster Attribution in Inventory Sync Documents",
+      "description": "## Summary An enrolled Wazuh agent can persist arbitrary `cluster_name` and `cluster_node` values through the inventory synchronization path. The manager validates the `agentid` in the inventory-sync `Start` Fl",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-jv5p-fhwh-9w55",
+      "published": "2026-07-16T10:07:09Z",
+      "category": "security"
+    },
+    {
+      "title": "GitHub Actions Shell Injection via Fork Pull Request",
+      "description": "Severity: Critical CVSS Score: 10.0 CVSS Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H CWE: CWE-78 (Improper Neutralization of Special Elements used in an OS Command) Status: Exploitable â€” confirmed Af",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-95w2-gpvr-q4jh",
+      "published": "2026-07-16T09:28:27Z",
+      "category": "security"
+    },
+    {
+      "title": "Enrolled agent can smuggle arbitrary OpenSearch _bulk operations via DataValue.index",
+      "description": "# Wazuh Manager — NDJSON Injection in `inventory_sync` via Agent-Controlled `DataValue.index` **Reporter:** TarPeg007 **Affected:** `wazuh-manager` 5.0.0-beta1 (new `inventory_sync` subsystem; not present in 4.",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-ff9g-85jq-r3g3",
+      "published": "2026-06-08T15:38:04Z",
+      "category": "security"
+    },
+    {
+      "title": "NULL dereference in Wazuh inventory_sync FlatBuffer DataValue handling allows enrolled agent to crash wazuh-modulesd",
+      "description": "# GHSA Draft — Wazuh inventory_sync DataValue NULL dereference DoS ## Copy-paste GHSA fields **Title:** NULL dereference in Wazuh inventory_sync FlatBuffer DataValue handling allows enrolled agent to crash wazu",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-6hxp-c9x3-qc7p",
+      "published": "2026-06-08T07:48:25Z",
       "category": "security"
     },
     {
