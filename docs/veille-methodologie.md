@@ -1,23 +1,23 @@
-# Veille technologique BTS SIO – SISR
+# Méthodologie de veille Wazuh — BTS SIO SISR
 
-## Sujet
-Suivi des fuites de données, des cyberattaques et des vulnérabilités affectant les systèmes et les réseaux.
+**Sujet :** suivi de la plateforme SIEM/XDR Wazuh, versions, correctifs de sécurité, agents et nouvelles fonctionnalités.
 
 ## Sources
-- ZATAZ : https://www.zataz.com/feed/
-- DataBreaches.net : https://databreaches.net/feed/
-- BleepingComputer : https://www.bleepingcomputer.com/feed/
+- [Blog officiel et flux RSS Wazuh](https://wazuh.com/feed/)
+- [Releases Wazuh GitHub](https://github.com/wazuh/wazuh/releases)
+- [Security Advisories Wazuh](https://github.com/wazuh/wazuh/security/advisories)
+- [Flux du CERT-FR](https://www.cert.cyber.gouv.fr/flux-rss)
 
-## Collecte
-Le programme `scripts/maj_veille.py` lit les flux RSS (ou Atom), conserve les titres, de courts extraits, la date, le lien de l'article et la source, puis classe les articles par mots-clés.
+## Collecte et recherche
+Le script `scripts/maj_veille.py` collecte les flux RSS/Atom et les avis via l'API GitHub si accessible. L'action GitHub `.github/workflows/veille-rss.yml` tente une collecte toutes les six heures, puis actualise `data/veille-wazuh.json`. Les anciennes données restent disponibles si une source échoue.
 
-Le workflow `.github/workflows/veille-rss.yml` tente une actualisation quatre fois par jour et lors d'un déclenchement manuel. Si toutes les sources échouent, les dernières données restent inchangées. Si le cache GitHub n'est pas disponible, le portfolio essaie l'ancienne passerelle RSS.
+Le champ de recherche du portfolio cherche **dans cet index local de publications**, pas sur tout Internet. Les résultats s'ouvrent en fenêtres pop-up avec lien vers la publication officielle.
 
-## Démarche pour l'épreuve
-Pour présenter une veille exploitable à l'oral, sélectionner quelques articles, justifier leur intérêt, comparer les informations, expliquer leurs conséquences et décrire les précautions adaptées à un environnement systèmes et réseaux. Ne pas présenter le simple flux automatique comme une analyse personnelle.
+## Livrables scolaires
+- Fiche de veille : `veille-wazuh.html`, imprimable
+- Architecture de référence Wazuh, incluse dans la fiche
+- Tableau de suivi : dans la section Veille du portfolio, avec sources et dates de collecte
+- Synthèse initiale datée : dans la fiche
+- Relevés hebdomadaires personnels : **à compléter** avec date, source, point retenu, impact et décision
 
-## Vérification
-1. Ouvrir le portfolio et la section « Veille technologique ».
-2. Vérifier les filtres et les liens vers les sources.
-3. Consulter GitHub > Actions > « Actualiser les flux RSS du portfolio » pour vérifier l'historique.
-4. Ouvrir `data/veille-rss.json` pour la date et les sources réellement récupérées.
+**Attention :** les e-mails d'alerte ne sont pas configurés ; une collecte RSS n'est pas une preuve de lecture personnelle. Aucun déploiement Wazuh n'est revendiqué. La politique de support ou un éventuel statut LTS doit être vérifié directement auprès de l'éditeur avant une décision de migration.
