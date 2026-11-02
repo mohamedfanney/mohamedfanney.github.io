@@ -1,4 +1,4 @@
-name: Actualiser les flux RSS du portfolio
+name: Veille Wazuh – recherche et suivi
 
 on:
   schedule:
@@ -13,25 +13,23 @@ permissions:
   contents: write
 
 concurrency:
-  group: portfolio-veille-rss
+  group: veille-wazuh
   cancel-in-progress: false
 
 jobs:
-  maj-veille:
+  collect:
     runs-on: ubuntu-latest
     steps:
-      - name: Récupérer le dépôt
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
-      - name: Générer les articles à partir des RSS
+      - name: Collecter les sources Wazuh et CERT-FR
         run: python3 scripts/maj_veille.py
-      - name: Publier les données mises à jour
+      - name: Publier le tableau de veille
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/veille-rss.json
+          git add data/veille-wazuh.json
           if ! git diff --cached --quiet; then
-            git commit -m "Actualiser la veille RSS"
+            git commit -m "Actualiser les publications de veille Wazuh"
             git push
           fi
