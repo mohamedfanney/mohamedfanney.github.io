@@ -1,0 +1,60 @@
+{
+  "topic": "Veille BTS SIO – Wazuh SIEM/XDR",
+  "generated_at": null,
+  "sources": [
+    {
+      "name": "Wazuh – publications officielles",
+      "url": "https://wazuh.com/feed/",
+      "checked": null,
+      "status": "Programmée",
+      "selected": "Fonctionnalités et sécurité"
+    },
+    {
+      "name": "Wazuh – GitHub Releases",
+      "url": "https://github.com/wazuh/wazuh/releases",
+      "checked": null,
+      "status": "Programmée",
+      "selected": "Nouvelles versions et correctifs"
+    },
+    {
+      "name": "Wazuh – avis de sécurité GitHub",
+      "url": "https://github.com/wazuh/wazuh/security/advisories",
+      "checked": null,
+      "status": "Programmée",
+      "selected": "Vulnérabilités publiées"
+    },
+    {
+      "name": "CERT-FR",
+      "url": "https://www.cert.cyber.gouv.fr/flux-rss",
+      "checked": null,
+      "status": "Programmée",
+      "selected": "Alertes et avis pertinents"
+    }
+  ],
+  "items": [
+    {
+      "title": "Wazuh 4.14.9 – publication du 14 octobre 2026",
+      "description": "Version répertoriée dans les notes de version officielles. Vérifier les changements et la compatibilité avant tout déploiement.",
+      "source": "Wazuh – notes de version",
+      "link": "https://documentation.wazuh.com/current/release-notes/index.html",
+      "published": "2026-10-14T00:00:00Z",
+      "category": "version"
+    },
+    {
+      "title": "Wazuh – avis de sécurité GHSA-cjf8-wjx6-hjw6",
+      "description": "Un avis de sécurité Wazuh du 13 octobre 2026 concerne la validation de commandes distantes. Examiner les versions affectées et les correctifs.",
+      "source": "Wazuh – avis de sécurité GitHub",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-cjf8-wjx6-hjw6",
+      "published": "2026-10-13T00:00:00Z",
+      "category": "security"
+    },
+    {
+      "title": "Architecture Wazuh : agents, server, indexer et dashboard",
+      "description": "Architecture officielle décrivant la collecte des événements, leur analyse, leur stockage et leur visualisation.",
+      "source": "Documentation Wazuh",
+      "link": "https://documentation.wazuh.com/current/getting-started/architecture.html",
+      "published": "",
+      "category": "feature"
+    }
+  ]
+}
