@@ -1,143 +1,107 @@
 #!/usr/bin/env python3
-"""Collecte automatique de flux RSS pour la veille BTS SIO SISR.
-Exécution par GitHub Actions : aucune dépendance externe.
-"""
+"""Veille BTS SIO : Wazuh RSS, versions GitHub, avis sécurité et CERT-FR."""
 import json
 import re
 import sys
+from pathlib import Path
+from urllib.request import Request, urlopen
+from urllib.parse import urlsplit
+from xml.etree import ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
-from html import unescape
 from html.parser import HTMLParser
-from pathlib import Path
-from urllib.parse import urlsplit
-from urllib.request import Request, urlopen
-from xml.etree import ElementTree as ET
+from html import unescape
 
-OUT = Path("data/veille-rss.json")
+OUT = Path("data/veille-wazuh.json")
 FEEDS = [
-    ("ZATAZ", "https://www.zataz.com/feed/"),
-    ("DataBreaches.net", "https://databreaches.net/feed/"),
-    ("BleepingComputer", "https://www.bleepingcomputer.com/feed/"),
+    ("Blog officiel Wazuh", "https://wazuh.com/feed/", "feature"),
+    ("Wazuh GitHub Releases", "https://github.com/wazuh/wazuh/releases.atom", "version"),
+    ("CERT-FR – avis", "https://www.cert.ssi.gouv.fr/avis/feed/", "security"),
 ]
-
-class TextOnly(HTMLParser):
+UA = {"User-Agent": "Mozilla/5.0 (BTS-SISR Wazuh Watch)", "Accept": "application/rss+xml, application/atom+xml, application/json, */*"}
+class Plain(HTMLParser):
     def __init__(self):
-        super().__init__(convert_charrefs=True)
-        self.parts = []
-    def handle_data(self, data):
-        self.parts.append(data)
-
-def clean(value, limit=180):
-    if not value:
-        return ""
-    text = TextOnly()
-    text.feed(value)
-    return re.sub(r"\s+", " ", unescape(" ".join(text.parts))).strip()[:limit]
-
-def normal_date(value):
-    if not value:
-        return ""
-    try:
-        d = parsedate_to_datetime(value)
-    except (ValueError, TypeError, IndexError):
-        try:
-            d = datetime.fromisoformat(value.replace("Z", "+00:00"))
-        except (ValueError, TypeError):
-            return ""
-    if d.tzinfo is None:
-        d = d.replace(tzinfo=timezone.utc)
-    return d.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
-
-def classify(title, description=""):
-    # Le titre prime sur l'extrait : évite les classements trompeurs.
-    def from_text(text):
-        value = text.lower()
-        if re.search(r"fuite|exfiltrat|breach|leak|stolen data|compromised data|data exposure", value):
-            return "breach"
-        if re.search(r"vuln[ée]rab|faille|patch|cve-|flaw|zero.day|exploit", value):
-            return "vuln"
-        if re.search(r"ransom|cyberatta|pirat|hack|malware|phishing|attaque|attack", value):
-            return "attack"
-        return "general"
-    title_category = from_text(title)
-    return title_category if title_category != "general" else from_text(description)
-
-def one(parent, name):
-    node = parent.find(name)
-    return node.text.strip() if node is not None and node.text else ""
-
-def extract(xml, source):
-    root = ET.fromstring(xml)
-    result = []
-    atom_ns = "{http://www.w3.org/2005/Atom}"
-    rss = root.findall("./channel/item")
-    atom = root.findall(f"{atom_ns}entry")
-    for entry in rss[:35]:
-        title = clean(one(entry, "title"), 190)
-        desc = clean(one(entry, "description"), 190)
-        link = one(entry, "link")
-        date = normal_date(one(entry, "pubDate") or one(entry, "{http://purl.org/dc/elements/1.1/}date"))
-        if urlsplit(link).scheme != "https" or not title:
-            continue
-        category = classify(title, desc)
-        if source == "BleepingComputer" and category == "general" and "/news/security/" not in link:
-            continue
-        result.append({"title":title, "description":desc, "source":source, "link":link,
-                       "published":date, "category":category})
-    for entry in atom[:35]:
-        title = clean(one(entry, f"{atom_ns}title"), 190)
-        desc = clean(one(entry, f"{atom_ns}summary") or one(entry, f"{atom_ns}content"), 190)
-        url = ""
-        for tag in entry.findall(f"{atom_ns}link"):
-            if tag.attrib.get("rel", "alternate") == "alternate":
-                url = tag.attrib.get("href", "")
-                break
-        date = normal_date(one(entry, f"{atom_ns}published") or one(entry, f"{atom_ns}updated"))
-        if urlsplit(url).scheme != "https" or not title:
-            continue
-        category = classify(title, desc)
-        if source == "BleepingComputer" and category == "general" and "/news/security/" not in url:
-            continue
-        result.append({"title":title, "description":desc, "source":source, "link":url,
-                       "published":date, "category":category})
-    return result
-
+        super().__init__(convert_charrefs=True); self.parts=[]
+    def handle_data(self, s): self.parts.append(s)
+def clean(s):
+    v=Plain()
+    try:v.feed(s or "")
+    except Exception:return ""
+    return re.sub(r"\s+"," ",unescape(" ".join(v.parts))).strip()[:210]
+def iso(value):
+    if not value:return ""
+    try:d=parsedate_to_datetime(value)
+    except (ValueError,TypeError,IndexError):
+        try:d=datetime.fromisoformat(value.replace("Z","+00:00"))
+        except (TypeError,ValueError):return ""
+    if d.tzinfo is None:d=d.replace(tzinfo=timezone.utc)
+    return d.astimezone(timezone.utc).isoformat().replace("+00:00","Z")
+def load(url):
+    with urlopen(Request(url,headers=UA),timeout=18) as response:data=response.read(1_000_001)
+    if len(data)>1_000_000:raise ValueError("Flux trop volumineux")
+    return data
+def category(title,desc,default):
+    t=(title+" "+desc).lower()
+    if re.search(r"cve-\d|ghsa-|vulnerab|security advisory|exploit|patch|faille|vulnérab",t):return "security"
+    if re.search(r"release|version|v\d+\.\d+|upgrade",title.lower()):return "version"
+    return default
+def extract(data,name,default):
+    root=ET.fromstring(data); atom="{http://www.w3.org/2005/Atom}"
+    entries=root.findall("./channel/item")+root.findall(atom+"entry")
+    articles=[]
+    for e in entries[:50]:
+        def field(tag):
+            v=e.find(tag);return v.text.strip() if v is not None and v.text else ""
+        title=clean(field("title") or field(atom+"title"))
+        desc=clean(field("description") or field(atom+"summary") or field(atom+"content"))
+        url=field("link")
+        if not url:
+            for link in e.findall(atom+"link"):
+                if link.attrib.get("rel","alternate")=="alternate":
+                    url=link.attrib.get("href","");break
+        published=iso(field("pubDate") or field(atom+"published") or field(atom+"updated"))
+        if not title or urlsplit(url).scheme!="https":continue
+        if name.startswith("CERT-FR") and "wazuh" not in (title+" "+desc).lower():continue
+        articles.append({"title":title,"description":desc,"source":name,"link":url,"published":published,"category":category(title,desc,default)})
+    return articles
 def main():
-    all_items, sources_ok, failed = [], [], []
-    for name, url in FEEDS:
+    previous={}
+    if OUT.exists():
+        try:previous=json.loads(OUT.read_text(encoding="utf-8"))
+        except (ValueError,OSError):pass
+    now=datetime.now(timezone.utc).isoformat().replace("+00:00","Z")
+    articles=[];sources=[]
+    for name,url,kind in FEEDS:
         try:
-            req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; PortfolioBTS-RSS/1.0)",
-                                        "Accept": "application/rss+xml, application/atom+xml, text/xml, */*"})
-            with urlopen(req, timeout=18) as response:
-                content = response.read(2_000_001)
-            if len(content) > 2_000_000:
-                raise ValueError("Flux trop volumineux")
-            current = extract(content, name)
-            if not current:
-                raise ValueError("Aucun article lisible")
-            sources_ok.append(name)
-            all_items.extend(current)
-            print(f"{name}: {len(current)} articles")
-        except Exception as exc:
-            failed.append(name)
-            print(f"{name}: {exc}", file=sys.stderr)
-    if not all_items:
-        raise SystemExit("Aucun flux disponible : données existantes conservées.")
-    seen, items = set(), []
-    for item in sorted(all_items, key=lambda a: a["published"], reverse=True):
-        key = item["link"].split("#", 1)[0].rstrip("/")
-        if key in seen:
-            continue
-        seen.add(key)
-        items.append(item)
-        if len(items) == 24:
-            break
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    output = {"generated_at":datetime.now(timezone.utc).isoformat().replace("+00:00","Z"),
-              "sources_ok": sources_ok, "sources_unavailable":failed, "items":items}
-    OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
-    print(f"Enregistré {len(items)} articles dans {OUT}")
-
-if __name__ == "__main__":
-    main()
+            current=extract(load(url),name,kind);articles.extend(current)
+            state="OK";info=("Versions et correctifs" if kind=="version" else "Avis liés à Wazuh" if kind=="security" else "Actualités et fonctionnalités")
+            print(name,len(current))
+        except Exception as error:
+            state="Indisponible";info="Collecte impossible : "+str(error)[:70]
+            print(name,error,file=sys.stderr)
+        sources.append({"name":name,"url":url,"checked":now,"status":state,"selected":info})
+    try:
+        advisories=json.loads(load("https://api.github.com/repos/wazuh/wazuh/security-advisories?per_page=30"))
+        if not isinstance(advisories,list):raise ValueError("Réponse non exploitable")
+        for a in advisories:
+            title=clean(a.get("summary") or a.get("ghsa_id") or "")
+            link=a.get("html_url","")
+            if title and urlsplit(link).scheme=="https":
+                articles.append({"title":title,"description":clean(a.get("description")),"source":"Wazuh GitHub Advisories","link":link,"published":iso(a.get("published_at")),"category":"security"})
+        state="OK"
+    except Exception as error:
+        state="Accès API non confirmé"
+        print("GitHub advisories",error,file=sys.stderr)
+    sources.append({"name":"Wazuh GitHub Advisories","url":"https://github.com/wazuh/wazuh/security/advisories","checked":now,"status":state,"selected":"Vulnérabilités officielles"})
+    all_articles=articles+previous.get("items",[])
+    distinct=set();items=[]
+    for a in sorted(all_articles,key=lambda x:x.get("published",""),reverse=True):
+        url=a.get("link","")
+        if not url.startswith("https://") or url in distinct or not a.get("title"):continue
+        distinct.add(url);items.append(a)
+        if len(items)>=100:break
+    if not items:raise SystemExit("Aucune publication, anciennes données conservées.")
+    OUT.parent.mkdir(parents=True,exist_ok=True)
+    OUT.write_text(json.dumps({"topic":"Wazuh SIEM/XDR","generated_at":now,"sources":sources,"items":items},indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    print("Index généré :",len(items),"publications.")
+if __name__=="__main__":main()
