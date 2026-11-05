@@ -1,37 +1,45 @@
 {
   "topic": "Wazuh SIEM/XDR",
-  "generated_at": "2026-11-05T06:46:37.399274Z",
+  "generated_at": "2026-11-05T19:57:12.898524Z",
   "sources": [
     {
       "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": "2026-11-05T06:46:37.399274Z",
+      "checked": "2026-11-05T19:57:12.898524Z",
       "status": "OK",
       "selected": "Actualités et fonctionnalités"
     },
     {
       "name": "Wazuh GitHub Releases",
       "url": "https://github.com/wazuh/wazuh/releases.atom",
-      "checked": "2026-11-05T06:46:37.399274Z",
+      "checked": "2026-11-05T19:57:12.898524Z",
       "status": "OK",
       "selected": "Versions et correctifs"
     },
     {
       "name": "CERT-FR – avis",
       "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
-      "checked": "2026-11-05T06:46:37.399274Z",
+      "checked": "2026-11-05T19:57:12.898524Z",
       "status": "OK",
       "selected": "Avis liés à Wazuh"
     },
     {
       "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": "2026-11-05T06:46:37.399274Z",
+      "checked": "2026-11-05T19:57:12.898524Z",
       "status": "OK",
       "selected": "Vulnérabilités officielles"
     }
   ],
   "items": [
+    {
+      "title": "v4.14.10",
+      "description": "v4.14.10",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.10",
+      "published": "2026-11-05T09:13:53Z",
+      "category": "version"
+    },
     {
       "title": "v5.0.0-rc2",
       "description": "[v5.0.0] Manager Added Issue Comment #37702 Added HTTPS communication between Wazuh agents and the manager: a new HTTPS transport, protocol, and control plane (connection, configuration, statistics, task dispat",
