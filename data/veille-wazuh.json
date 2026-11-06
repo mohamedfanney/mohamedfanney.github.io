@@ -1,37 +1,101 @@
 {
   "topic": "Wazuh SIEM/XDR",
-  "generated_at": "2026-11-06T06:46:14.628979Z",
+  "generated_at": "2026-11-06T19:24:37.109900Z",
   "sources": [
     {
       "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": "2026-11-06T06:46:14.628979Z",
+      "checked": "2026-11-06T19:24:37.109900Z",
       "status": "OK",
       "selected": "Actualités et fonctionnalités"
     },
     {
       "name": "Wazuh GitHub Releases",
       "url": "https://github.com/wazuh/wazuh/releases.atom",
-      "checked": "2026-11-06T06:46:14.628979Z",
+      "checked": "2026-11-06T19:24:37.109900Z",
       "status": "OK",
       "selected": "Versions et correctifs"
     },
     {
       "name": "CERT-FR – avis",
       "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
-      "checked": "2026-11-06T06:46:14.628979Z",
+      "checked": "2026-11-06T19:24:37.109900Z",
       "status": "OK",
       "selected": "Avis liés à Wazuh"
     },
     {
       "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": "2026-11-06T06:46:14.628979Z",
+      "checked": "2026-11-06T19:24:37.109900Z",
       "status": "OK",
       "selected": "Vulnérabilités officielles"
     }
   ],
   "items": [
+    {
+      "title": "SQL Injection in `WazuhDBBackend._substitute_params` — placeholder cross-contamination leaks agent secrets via blind oracle",
+      "description": "## Summary `WazuhDBBackend._substitute_params()` builds SQL by performing sequential regex replacements over the entire query string, one placeholder at a time. Because each pass rescans text that earlier passe",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-qj88-7rr2-4chx",
+      "published": "2026-11-06T10:29:27Z",
+      "category": "security"
+    },
+    {
+      "title": "wazuh-dashboard-plugins: authenticated user can override Manager API `Authorization` header via `/api/request`",
+      "description": "## Summary The dashboard proxies Manager API calls through `POST /api/request`. The server obtains a session Bearer token for the current user (or API host user), then builds the outbound HTTP request in `serve",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-7rvv-9467-96mc",
+      "published": "2026-11-06T10:29:15Z",
+      "category": "security"
+    },
+    {
+      "title": "Missing TLS certificate hostname verification in the `fluent-forward` module lets any certificate issued by the configured ` ` impersonate the Fluentd collector",
+      "description": "### Summary `wm_fluent_ssl_ctx()` in `src/wazuh_modules/wm_fluent.c` loads the operator's ` ` and enables `SSL_VERIFY_PEER | SSL_VERIFY_FAIL_IF_NO_PEER_CERT`, so the certificate **chain** is validated. It never",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-v8ww-qhjh-j6w9",
+      "published": "2026-11-06T10:28:53Z",
+      "category": "security"
+    },
+    {
+      "title": "WZ-2026-05 — GitHub Link next-page SSRF",
+      "description": "___________________________________________________________________________________________________________ ### Summary ------------------------------------------------------------------------------------------",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-jmq7-vgh3-wq9v",
+      "published": "2026-11-06T10:28:34Z",
+      "category": "security"
+    },
+    {
+      "title": "WZ-2026-01 — Azure Graph nextLink SSRF",
+      "description": "**### Summary** Microsoft Graph pagination in the Azure wodle follows @odata.nextLink without host pinning and reuses the Bearer token, enabling SSRF and Graph token forwarding from the Wazuh manager (CWE-918).",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-qxg8-jrjm-w96h",
+      "published": "2026-11-06T10:28:14Z",
+      "category": "security"
+    },
+    {
+      "title": "Repeated static JSON fields can exhaust memory and terminate wazuh-analysisd",
+      "description": "## Summary The legacy generic JSON decoder in Wazuh Manager 3.0.0 through 4.14.7 loses owned heap allocations when a JSON object contains repeated occurrences of a supported static field such as `id`. The bundl",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-6w6h-fwqm-6hjj",
+      "published": "2026-11-06T10:27:55Z",
+      "category": "security"
+    },
+    {
+      "title": "Wazuh Windows Agent - Stack-Based Buffer Overflow in read_snortfull() Leads to SYSTEM-Level Code Execution Primitive",
+      "description": "### Summary `read_snortfull()` assembles multi-line Snort \"full\" alert records into a fixed 65,280-byte stack buffer (`f_msg`). The bookkeeping variable that is supposed to track the remaining free space (`f_ms",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-3gq8-gg8f-5h8h",
+      "published": "2026-11-06T10:27:34Z",
+      "category": "security"
+    },
+    {
+      "title": "Out-of-bounds write in wazuh-execd when loading more Active Response commands than the table can hold",
+      "description": "`wazuh-execd` loads the Active Response command table from `etc/shared/ar.conf` into three fixed-size static arrays dimensioned for `MAX_AR` (64) commands. `ReadExecConfig()` never checked the entry counter aga",
+      "source": "Wazuh GitHub Advisories",
+      "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-f4pj-j296-jwp2",
+      "published": "2026-11-06T10:27:17Z",
+      "category": "security"
+    },
     {
       "title": "Detecting threats in an air-gapped environment with Wazuh",
       "description": "Air-gapped environments isolate critical systems from the internet and less trusted networks to reduce exposure to external threats. However, isolation alone doesn’t eliminate security risks. Removable media, f",
