@@ -1,37 +1,45 @@
 {
   "topic": "Wazuh SIEM/XDR",
-  "generated_at": "2026-11-05T19:57:12.898524Z",
+  "generated_at": "2026-11-06T06:46:14.628979Z",
   "sources": [
     {
       "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": "2026-11-05T19:57:12.898524Z",
+      "checked": "2026-11-06T06:46:14.628979Z",
       "status": "OK",
       "selected": "Actualités et fonctionnalités"
     },
     {
       "name": "Wazuh GitHub Releases",
       "url": "https://github.com/wazuh/wazuh/releases.atom",
-      "checked": "2026-11-05T19:57:12.898524Z",
+      "checked": "2026-11-06T06:46:14.628979Z",
       "status": "OK",
       "selected": "Versions et correctifs"
     },
     {
       "name": "CERT-FR – avis",
       "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
-      "checked": "2026-11-05T19:57:12.898524Z",
+      "checked": "2026-11-06T06:46:14.628979Z",
       "status": "OK",
       "selected": "Avis liés à Wazuh"
     },
     {
       "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": "2026-11-05T19:57:12.898524Z",
+      "checked": "2026-11-06T06:46:14.628979Z",
       "status": "OK",
       "selected": "Vulnérabilités officielles"
     }
   ],
   "items": [
+    {
+      "title": "Detecting threats in an air-gapped environment with Wazuh",
+      "description": "Air-gapped environments isolate critical systems from the internet and less trusted networks to reduce exposure to external threats. However, isolation alone doesn’t eliminate security risks. Removable media, f",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/detecting-threats-in-an-air-gapped-environment-with-wazuh/",
+      "published": "2026-11-05T14:33:51Z",
+      "category": "feature"
+    },
     {
       "title": "v4.14.10",
       "description": "v4.14.10",
