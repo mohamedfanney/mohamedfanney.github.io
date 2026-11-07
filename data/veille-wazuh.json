@@ -1,32 +1,32 @@
 {
   "topic": "Wazuh SIEM/XDR",
-  "generated_at": "2026-11-07T13:01:18.062457Z",
+  "generated_at": "2026-11-07T21:51:18.703340Z",
   "sources": [
     {
       "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": "2026-11-07T13:01:18.062457Z",
+      "checked": "2026-11-07T21:51:18.703340Z",
       "status": "OK",
       "selected": "Actualités et fonctionnalités"
     },
     {
       "name": "Wazuh GitHub Releases",
       "url": "https://github.com/wazuh/wazuh/releases.atom",
-      "checked": "2026-11-07T13:01:18.062457Z",
+      "checked": "2026-11-07T21:51:18.703340Z",
       "status": "OK",
       "selected": "Versions et correctifs"
     },
     {
       "name": "CERT-FR – avis",
       "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
-      "checked": "2026-11-07T13:01:18.062457Z",
+      "checked": "2026-11-07T21:51:18.703340Z",
       "status": "OK",
       "selected": "Avis liés à Wazuh"
     },
     {
       "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": "2026-11-07T13:01:18.062457Z",
+      "checked": "2026-11-07T21:51:18.703340Z",
       "status": "OK",
       "selected": "Vulnérabilités officielles"
     }
