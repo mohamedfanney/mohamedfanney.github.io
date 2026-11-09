@@ -1,37 +1,45 @@
 {
   "topic": "Wazuh SIEM/XDR",
-  "generated_at": "2026-11-09T06:29:26.437400Z",
+  "generated_at": "2026-11-09T22:21:51.004169Z",
   "sources": [
     {
       "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": "2026-11-09T06:29:26.437400Z",
+      "checked": "2026-11-09T22:21:51.004169Z",
       "status": "OK",
       "selected": "Actualités et fonctionnalités"
     },
     {
       "name": "Wazuh GitHub Releases",
       "url": "https://github.com/wazuh/wazuh/releases.atom",
-      "checked": "2026-11-09T06:29:26.437400Z",
+      "checked": "2026-11-09T22:21:51.004169Z",
       "status": "OK",
       "selected": "Versions et correctifs"
     },
     {
       "name": "CERT-FR – avis",
       "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
-      "checked": "2026-11-09T06:29:26.437400Z",
+      "checked": "2026-11-09T22:21:51.004169Z",
       "status": "OK",
       "selected": "Avis liés à Wazuh"
     },
     {
       "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": "2026-11-09T06:29:26.437400Z",
+      "checked": "2026-11-09T22:21:51.004169Z",
       "status": "OK",
       "selected": "Vulnérabilités officielles"
     }
   ],
   "items": [
+    {
+      "title": "Wazuh v4.14.10",
+      "description": "Manager Added Added a warning to the log when a queue of the indexer connector or of the vulnerability scanner holds 100000 elements or more, and each time its size doubles. ( #39607 ) Added the tcp_sessions_un",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.10",
+      "published": "2026-11-09T10:33:53Z",
+      "category": "security"
+    },
     {
       "title": "SQL Injection in `WazuhDBBackend._substitute_params` — placeholder cross-contamination leaks agent secrets via blind oracle",
       "description": "## Summary `WazuhDBBackend._substitute_params()` builds SQL by performing sequential regex replacements over the entire query string, one placeholder at a time. Because each pass rescans text that earlier passe",
@@ -103,14 +111,6 @@
       "link": "https://wazuh.com/blog/detecting-threats-in-an-air-gapped-environment-with-wazuh/",
       "published": "2026-11-05T14:33:51Z",
       "category": "feature"
-    },
-    {
-      "title": "v4.14.10",
-      "description": "v4.14.10",
-      "source": "Wazuh GitHub Releases",
-      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.10",
-      "published": "2026-11-05T09:13:53Z",
-      "category": "version"
     },
     {
       "title": "v5.0.0-rc2",
@@ -503,6 +503,14 @@
       "link": "https://github.com/wazuh/wazuh/security/advisories/GHSA-95w2-gpvr-q4jh",
       "published": "2026-07-16T09:28:27Z",
       "category": "security"
+    },
+    {
+      "title": "Wazuh v5.0.0 Beta 3",
+      "description": "What's Changed Improve cluster file synchronization error handling by @TomasTurina in #36129 Update trojan signatures to avoid false positives on modern distros by @Miguevrgo in #35927 Improve cluster merged fi",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v5.0.0-beta3",
+      "published": "2026-07-02T15:48:47Z",
+      "category": "version"
     },
     {
       "title": "Enrolled agent can smuggle arbitrary OpenSearch _bulk operations via DataValue.index",
