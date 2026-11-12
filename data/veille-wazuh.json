@@ -1,32 +1,32 @@
 {
   "topic": "Wazuh SIEM/XDR",
-  "generated_at": "2026-11-12T07:10:44.529262Z",
+  "generated_at": "2026-11-12T19:54:17.949541Z",
   "sources": [
     {
       "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": "2026-11-12T07:10:44.529262Z",
+      "checked": "2026-11-12T19:54:17.949541Z",
       "status": "OK",
       "selected": "Actualités et fonctionnalités"
     },
     {
       "name": "Wazuh GitHub Releases",
       "url": "https://github.com/wazuh/wazuh/releases.atom",
-      "checked": "2026-11-12T07:10:44.529262Z",
+      "checked": "2026-11-12T19:54:17.949541Z",
       "status": "OK",
       "selected": "Versions et correctifs"
     },
     {
       "name": "CERT-FR – avis",
       "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
-      "checked": "2026-11-12T07:10:44.529262Z",
+      "checked": "2026-11-12T19:54:17.949541Z",
       "status": "OK",
       "selected": "Avis liés à Wazuh"
     },
     {
       "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": "2026-11-12T07:10:44.529262Z",
+      "checked": "2026-11-12T19:54:17.949541Z",
       "status": "OK",
       "selected": "Vulnérabilités officielles"
     }
@@ -37,7 +37,7 @@
       "description": "What's Changed Bump 4.14.11 branch by @wazuhci in #40319 Merge 4.14.10 into 4.14.11 by @TomasTurina in #40394 Validate group_id before building group file paths by @Antoniogm03 in #40363 Validate the request co",
       "source": "Wazuh GitHub Releases",
       "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.11-rc1",
-      "published": "2026-11-11T15:51:13Z",
+      "published": "2026-11-12T10:53:36Z",
       "category": "version"
     },
     {
