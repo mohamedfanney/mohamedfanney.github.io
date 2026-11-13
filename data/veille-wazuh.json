@@ -1,37 +1,45 @@
 {
   "topic": "Wazuh SIEM/XDR",
-  "generated_at": "2026-11-12T19:54:17.949541Z",
+  "generated_at": "2026-11-13T06:46:11.719752Z",
   "sources": [
     {
       "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": "2026-11-12T19:54:17.949541Z",
+      "checked": "2026-11-13T06:46:11.719752Z",
       "status": "OK",
       "selected": "Actualités et fonctionnalités"
     },
     {
       "name": "Wazuh GitHub Releases",
       "url": "https://github.com/wazuh/wazuh/releases.atom",
-      "checked": "2026-11-12T19:54:17.949541Z",
+      "checked": "2026-11-13T06:46:11.719752Z",
       "status": "OK",
       "selected": "Versions et correctifs"
     },
     {
       "name": "CERT-FR – avis",
       "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
-      "checked": "2026-11-12T19:54:17.949541Z",
+      "checked": "2026-11-13T06:46:11.719752Z",
       "status": "OK",
       "selected": "Avis liés à Wazuh"
     },
     {
       "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": "2026-11-12T19:54:17.949541Z",
+      "checked": "2026-11-13T06:46:11.719752Z",
       "status": "OK",
       "selected": "Vulnérabilités officielles"
     }
   ],
   "items": [
+    {
+      "title": "Detecting APT repository tampering on Ubuntu with Wazuh",
+      "description": "Ubuntu systems rely on the Advanced Package Tool (APT) to install and update software from trusted sources. APT repository tampering abuses this trust by changing package sources or weakening verification setti",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/detecting-apt-repository-tampering-on-ubuntu-with-wazuh/",
+      "published": "2026-11-12T14:30:52Z",
+      "category": "feature"
+    },
     {
       "title": "Wazuh v4.14.11 RC1",
       "description": "What's Changed Bump 4.14.11 branch by @wazuhci in #40319 Merge 4.14.10 into 4.14.11 by @TomasTurina in #40394 Validate group_id before building group file paths by @Antoniogm03 in #40363 Validate the request co",
