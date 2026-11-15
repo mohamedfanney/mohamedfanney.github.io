@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mission professionnelle – Jonction hybride et incident BitLocker | BTS SIO SISR</title>
+<meta name="description" content="Fiche professionnelle anonymisée : intégration de postes Windows à un domaine, jonction hybride Microsoft Entra ID, contrôle du chiffrement BitLocker et résolution d'un incident de récupération.">
+<style>
+:root{color-scheme:dark;--bg:#090d17;--card:#151d2e;--border:#354158;--text:#f1f5fa;--secondary:#bcc8da;--accent:#bda7ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.7 Inter,system-ui,sans-serif}main,header,footer{max-width:1020px;margin:auto;padding:26px}header{border-bottom:1px solid var(--border);display:flex;justify-content:space-between;gap:16px}h1{font-size:clamp(26px,4vw,42px);line-height:1.2;margin:14px 0}h2{font-size:22px;color:var(--accent);margin:30px 0 12px}h3{font-size:17px;margin:0 0 8px}p,li{color:var(--secondary)}strong{color:var(--text)}a{color:#a4c9ff}.tag{display:inline-block;border:1px solid #665c8a;padding:4px 11px;border-radius:20px;margin:4px;font-size:12px;color:#d4c8ff}.eyebrow{font-size:12px;letter-spacing:.1em;color:#d4baff;font-weight:700}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card,.notice{padding:18px;background:var(--card);border:1px solid var(--border);border-radius:12px}.notice{border-left:3px solid #e5ac70}.good{border-left:3px solid #6acdab}ol li{padding-bottom:8px}code{background:#25314b;padding:2px 5px;border-radius:5px}footer{border-top:1px solid var(--border);font-size:13px}@media(max-width:650px){.grid{grid-template-columns:1fr}header{flex-direction:column}}@media print{body{background:white;color:#111}p,li{color:#222}.card,.notice{background:#fff;border-color:#999}}
+</style></head><body>
+<header><a href="../#missions">← Retour aux missions professionnelles</a><span class="eyebrow">BTS SIO · OPTION SISR · E4</span></header>
+<main>
+<p class="eyebrow">EXPÉRIENCE PROFESSIONNELLE · TUNZINI</p>
+<h1>Jonction hybride des postes Windows et résolution d’un incident BitLocker</h1>
+<p>Interventions réalisées dans le cadre de l’alternance : administration de postes Windows, préparation de leur gestion hybride et assistance sur un poste bloqué au démarrage.</p>
+<div><span class="tag">Windows 11</span><span class="tag">Active Directory</span><span class="tag">Microsoft Entra ID</span><span class="tag">Intune</span><span class="tag">BitLocker</span><span class="tag">IAM</span><span class="tag">Gestion des incidents</span></div>
+<section><h2>1. Contexte et objectifs</h2><p>Dans un environnement d’entreprise, les postes doivent être intégrés au domaine afin d’être administrés. Leur jonction hybride entre l’Active Directory local et Microsoft Entra ID participe à leur intégration aux outils de gestion et de sécurité. BitLocker protège les données du disque par chiffrement, mais une modification des conditions de démarrage peut provoquer une demande de clé de récupération.</p></section>
+<section><h2>2. Interventions effectuées</h2><div class="grid">
+<div class="card"><h3>Intégration au domaine</h3><p>Utilisation d’un outil interne de jonction au domaine pour intégrer des ordinateurs Windows à l’environnement d’entreprise.</p></div>
+<div class="card"><h3>Jonction hybride</h3><p>Utilisation d’un outil de type « Hybrid Join Tool for Intune » pour prendre en charge l’enregistrement hybride et la préparation des postes à la gestion et à la sécurité via Microsoft Entra ID.</p></div>
+<div class="card"><h3>Contrôle BitLocker</h3><p>Une capture montre le volume système C: à l’état <code>FullyEncrypted</code>, avec l’algorithme <code>XtsAes256</code>, ainsi qu’un message indiquant que la clé de récupération est sauvegardée dans Entra ID.</p></div>
+<div class="card"><h3>Dépannage</h3><p>Récupération de l’accès à un ordinateur bloqué sur l’écran BitLocker à l’aide de l’identifiant de récupération affiché et d’un accès IAM restreint.</p></div>
+</div></section>
+<section><h2>3. Résolution de l’incident BitLocker</h2>
+<ol><li>Constat : un ordinateur demande sa clé de récupération BitLocker au démarrage.</li>
+<li>Identification : relevé de l’identifiant de clé affiché à l’écran, sans exposer la clé elle-même.</li>
+<li>Recherche : utilisation d’un accès IAM à droits restreints pour retrouver la clé de récupération correspondant à cet identifiant, conformément aux autorisations disponibles.</li>
+<li>Résultat : saisie de la clé autorisée et déverrouillage du poste, confirmé par l’apprenti.</li></ol>
+<div class="notice"><strong>Précision technique :</strong> la clé utilisée est celle correspondant à l’identifiant de récupération. La génération d’une nouvelle clé ou une rotation de clé n’est pas revendiquée sans preuve complémentaire. L’écran de récupération et le contrôle du chiffrement peuvent correspondre à des interventions distinctes.</div>
+</section>
+<section><h2>4. Résultats et compétences illustrées</h2>
+<div class="card good"><p><strong>Résultats rapportés :</strong> postes joints à l’environnement d’entreprise ; démarche de jonction hybride ; constat du chiffrement complet d’un volume C: et d’une sauvegarde de clé vers Entra ID sur une capture ; résolution d’un blocage BitLocker.</p>
+<p><strong>Compétences E4 à rapprocher du référentiel :</strong> gérer le patrimoine informatique, répondre aux incidents et aux demandes d’assistance, mettre à disposition un service informatique. La correspondance exacte des compétences doit être validée avec le formateur.</p></div>
+</section>
+<section><h2>5. Justificatifs et confidentialité</h2>
+<p>Trois photographies ont été communiquées : outil de jonction au domaine, outil hybride affichant l’état BitLocker et écran de récupération. Elles ne sont pas reproduites sur cette page car elles comportent des informations internes (identifiants de clés, nom d’ordinateur et éléments de domaine). Une version masquée pourra être utilisée après accord de l’entreprise.</p>
+<p class="notice"><strong>Pour l’oral :</strong> expliquer le lien entre domaine local, Entra ID et chiffrement, distinguer clé de récupération et identifiant de clé, puis présenter les étapes de diagnostic et de résolution, sans divulguer de donnée interne.</p>
+</section>
+</main><footer><a href="../#missions">← Retour au portfolio</a> · Fiche professionnelle de synthèse, justificatifs originaux conservés hors du site public.</footer>
+</body></html>
