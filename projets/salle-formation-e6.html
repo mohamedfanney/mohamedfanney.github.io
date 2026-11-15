@@ -31,7 +31,7 @@ pre{overflow-x:auto;padding:17px;border-radius:10px;background:#060912;color:#c6
 <div class="hero"><span class="pill">Projet de formation · 2e année · E6 SISR</span>
 <h1>Infrastructure réseau d’une salle de formation sous Debian 13</h1>
 <p class="lead">Virtualisation sur VMware Workstation d'une infrastructure centralisée : adressage DHCP, résolution DNS, annuaire OpenLDAP, partages Samba, intranet GLPI et supervision Bash/cron.</p>
-<p>Documentation remise le <strong>19 octobre 2026</strong> · Projet de laboratoire <strong>madrid.local</strong>.</p>
+<p>Documentation initiale du <strong>19 octobre 2026</strong>, complétée par un support E6 avec tests du <strong>8 novembre 2026</strong> et variante de sauvegarde · Projet de laboratoire <strong>madrid.local</strong>.</p>
 </div>
 <section><h2>1. Cahier des charges et environnement</h2>
 <div class="cols">
@@ -45,34 +45,44 @@ pre{overflow-x:auto;padding:17px;border-radius:10px;background:#060912;color:#c6
 <tr><td>VMnet2</td><td>192.168.198.0/24</td><td>Réseau NAT privé du laboratoire</td></tr>
 <tr><td>Passerelle VMware</td><td>192.168.198.2</td><td>Accès extérieur par NAT</td></tr>
 <tr><td>SRV-INFRA</td><td>192.168.198.10</td><td>Serveur multi-services Debian 13</td></tr>
-<tr><td>CLIENT-01</td><td>192.168.198.101</td><td>Poste de test ; bail DHCP</td></tr>
+<tr><td>CLIENT-01</td><td>192.168.198.102 (dernier test)</td><td>Poste de test ; bail DHCP dynamique</td></tr>
 <tr><td>Domaine local</td><td>madrid.local</td><td>DNS et annuaire du laboratoire</td></tr>
 </tbody></table></section>
 <section><h2>3. Services et configurations documentés</h2><div class="cols">
 <div class="card"><h3>DHCP · isc-dhcp-server</h3><p>Plage <code>192.168.198.100–150</code>. Le serveur annonce la passerelle NAT et le DNS <code>192.168.198.10</code>. Vérification par <code>dhcpd -t</code> et contrôle du bail sur CLIENT-01.</p></div>
-<div class="card"><h3>DNS · BIND9</h3><p>Zone directe et inverse de <code>madrid.local</code>, avec <code>dig</code> et <code>named-checkzone</code> pour les tests. Le compte rendu détaille un problème de résolution externe dû à DNSSEC dans le laboratoire NAT.</p></div>
+<div class="card"><h3>DNS · BIND9</h3><p>Zone directe et inverse de <code>madrid.local</code>, avec <code>dig</code> et <code>named-checkzone</code> pour les tests. Le compte rendu initial détaille un problème de résolution externe. Le support E6 plus récent montre la validation des zones directe et inverse et la correction du point final d’un enregistrement PTR.</p></div>
 <div class="card"><h3>Annuaire · OpenLDAP</h3><p>Arbre <code>dc=madrid,dc=local</code>, unités <code>ou=people</code> et <code>ou=groups</code>, groupes étudiants/professeurs. Tests avec <code>ldapsearch</code> et <code>ldapwhoami</code>.</p></div>
-<div class="card"><h3>Partages · Samba</h3><p>Deux espaces : <code>EspaceEleves</code> et <code>EspaceProfs</code>, différenciés par groupe. Le compte rendu indique un test d'accès croisé avec un utilisateur étudiant.</p></div>
+<div class="card"><h3>Partages · Samba</h3><p>Deux espaces : <code>EspaceEleves</code> et <code>EspaceProfs</code>, différenciés par groupe. Le support E6 indique des tests d’accès différencié dans les deux sens : étudiant autorisé sur EspaceEleves, professeur autorisé sur EspaceProfs, accès croisés refusés.</p></div>
 <div class="card"><h3>Intranet · Apache, PHP, GLPI</h3><p>Page d'accueil de l'intranet pointant vers GLPI, avec MariaDB pour le service de gestion du parc. Vérifications présentées dans le rapport.</p></div>
-<div class="card"><h3>Supervision · Bash et cron</h3><p>Vérification de cinq services : <code>isc-dhcp-server</code>, <code>bind9</code>, <code>slapd</code>, <code>smbd</code> et <code>apache2</code>. Écriture dans <code>/var/log/supervision.log</code>.</p></div>
+<div class="card"><h3>Supervision · Bash et cron</h3><p>Deux scripts vérifiés : <code>check_services.sh</code> surveille cinq services (<code>isc-dhcp-server</code>, <code>bind9</code>, <code>slapd</code>, <code>smbd</code>, <code>apache2</code>) et <code>monitoring.sh</code> surveille également <code>mariadb</code>. Exécution planifiée toutes les cinq minutes par cron et traces dans les journaux.</p></div>
 </div><pre>*/5 * * * * /usr/local/bin/check_services.sh >> /var/log/supervision.log 2>&1</pre></section>
 <section><h2>4. Tests et incidents documentés</h2>
 <table><thead><tr><th>Vérification</th><th>Résultat indiqué dans le rapport</th></tr></thead><tbody>
-<tr><td>DHCP</td><td>Bail dynamique 192.168.198.101 obtenu sur CLIENT-01</td></tr>
+<tr><td>DHCP</td><td>Bail dynamique 192.168.198.102/24 observé dans le support E6 (le précédent compte rendu indiquait .101) ; ping vers le serveur : 3 réponses, 0 % de perte</td></tr>
 <tr><td>DNS</td><td>Résolution interne du serveur et résolution externe via forwarder</td></tr>
 <tr><td>LDAP</td><td>Groupes et comptes visibles ; authentification après correction d'un hash</td></tr>
 <tr><td>Samba</td><td>Partage étudiant accessible et partage professeurs refusé à l'utilisateur étudiant</td></tr>
 <tr><td>Intranet</td><td>Apache / GLPI et base MariaDB présentés comme actifs</td></tr>
-<tr><td>Supervision</td><td>Journal de contrôle périodique ; simulation d'un arrêt DHCP et d'une erreur DNS</td></tr>
+<tr><td>Supervision</td><td>Journaux réguliers des scripts Bash ; arrêt volontaire du DHCP détecté « KO », redémarrage puis contrôle « OK » (support du 8 novembre 2026).</td></tr><tr><td>DNS : contrôle d’erreur</td><td>Introduction volontaire de « FAUXTYPE » dans une copie de zone ; <code>named-checkzone</code> signale l’erreur tandis que la configuration active continue de répondre. Il ne s’agit pas d’un arrêt réel du DNS.</td></tr>
 </tbody></table>
 <p>Incidents présentés : syntaxe de <code>dhcpd.conf</code>, relais DNS provoquant <code>SERVFAIL</code>, erreurs LDIF, identifiants LDAP, commande <code>dhclient</code> absente et correction de partages.</p>
 </section>
-<section><h2>5. Captures et preuves à compléter</h2>
-<div class="alert"><strong>État du dossier documentaire :</strong> le PDF source fourni comporte 21 pages, des captures de configuration et un tableau de tests. Ses pages 4, 19 et 21 signalent néanmoins des captures manquantes : installation Debian, authentification LDAP réussie, test d'accès différencié Samba, <code>curl -I</code>, simulation de panne DHCP et erreur/restauration DNS. Le PDF et les images d'origine ne sont pas encore publiés dans ce dépôt ; cette fiche reprend uniquement leurs informations techniques.</div>
+<section><h2>5. Variante E6 : sauvegarde automatisée des partages Samba</h2>
+<p>Le support E6 complémentaire présente une variante réalisée en laboratoire : script Bash <code>/usr/local/bin/sauvegarde_auto.sh</code> qui archive le dossier <code>/srv/samba/partage</code> dans <code>/var/backups/salle-formation</code>. Le nom de l’archive comprend une date et une heure ; un contrôle <code>tar -tzf</code> vérifie sa lisibilité. Le script supprime les archives dont la date de modification dépasse sept jours.</p>
+<div class="cols">
+<div class="card"><h3>Création et vérification</h3><p>Exécution manuelle du script, création d’une archive <code>.tar.gz</code> horodatée et message « Archive valide ».</p></div>
+<div class="card"><h3>Restauration</h3><p>Création d’un fichier de test <code>TEST_E6.txt</code>, nouvelle sauvegarde, extraction avec <code>tar -xzf</code> et récupération du texte de vérification.</p></div>
+<div class="card"><h3>Rétention</h3><p>Simulation d’une archive vieille de huit jours avec <code>touch -d</code> ; la purge du script est testée et les archives récentes sont conservées.</p></div>
+<div class="card"><h3>Planification cron</h3><p>Une tâche à <code>0 2 * * *</code> est configurée, avec le service cron actif. <strong>L’exécution automatique réelle à 02:00 n’a pas encore été observée.</strong></p></div>
+</div>
+<div class="alert"><strong>Limites de la variante :</strong> les archives sont stockées sur la même VM que les données. Ce test n’est pas une stratégie de sauvegarde hors site. Une copie externe et des contrôles réguliers de restauration seraient nécessaires en exploitation.</div>
+</section>
+<section><h2>6. Captures et preuves à compléter</h2>
+<div class="alert"><strong>Mise à jour des preuves :</strong> le support E6 complémentaire contient des captures pour le DHCP, le DNS, LDAP, Samba, le tableau de bord GLPI, les journaux de supervision et les essais de sauvegarde, restauration, planification et purge. Certaines diapositives d’incidents décrivent des résultats dans leurs notes sans image intégrée ; les captures détaillées et les fichiers de configuration restent à réunir si le jury les demande. Les captures du PowerPoint n’ont pas encore été publiées séparément sur ce site.</div>
 <p>Pour le jury : ajouter les captures et préciser le rôle individuel dans le projet. Vérifier notamment les conditions de sécurité de l'annuaire et le choix de désactivation DNSSEC dans l'environnement de test.</p>
 </section>
-<section><h2>6. Correspondance avec le BTS SIO</h2><div class="good">Ce projet contribue notamment aux activités de gestion du patrimoine, de traitement d'incidents, de conduite de projet et de mise à disposition de services informatiques. Il peut nourrir une réalisation technique E6 SISR, mais le dossier officiel E6 et la conformité de l'environnement doivent être validés avec le formateur.</div></section>
-</main><footer class="foot"><a href="../#projects">← Retour au portfolio</a> · Projet de formation sous Debian 13 · Documentation fournie le 19/10/2026</footer>
+<section><h2>7. Correspondance avec le BTS SIO</h2><div class="good">Ce projet contribue notamment aux activités de gestion du patrimoine, de traitement d'incidents, de conduite de projet et de mise à disposition de services informatiques. Il peut nourrir une réalisation technique E6 SISR, mais le dossier officiel E6 et la conformité de l'environnement doivent être validés avec le formateur.</div></section>
+</main><footer class="foot"><a href="../#projects">← Retour au portfolio</a> · Projet de formation sous Debian 13 · Documentation initiale du 19/10/2026 et support E6 complémentaire</footer>
 
 <dialog id="documentDialog" class="doc-modal" aria-labelledby="documentDialogTitle">
 <div class="doc-modal__panel">
