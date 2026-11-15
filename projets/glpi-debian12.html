@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Installation GLPI 11 sur Debian 12 – BTS SIO SISR</title>
+<meta name="description" content="Projet de formation : installation de GLPI 11 sur une machine virtuelle Debian 12, avec Apache, MariaDB et PHP, tests et dépannage documentés.">
+<style>
+:root{color-scheme:dark;--bg:#090d17;--panel:#121a2a;--line:#303b53;--txt:#ecf2fb;--dim:#b5c1d5;--accent:#9fc4ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.7 Inter,system-ui,sans-serif}header,main,footer{max-width:1020px;margin:auto;padding:24px}header{display:flex;gap:20px;justify-content:space-between;border-bottom:1px solid var(--line)}h1{font-size:clamp(26px,4vw,39px);line-height:1.2}h2{font-size:21px;color:#d5b5ff;margin:30px 0 10px}h3{font-size:16px;margin:0 0 8px}a{color:var(--accent)}p,li{color:var(--dim)}strong{color:var(--txt)}.lead{font-size:17px}.kicker{font-size:12px;font-weight:700;color:#d4b7ff;letter-spacing:.1em}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card,.notice{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:17px}.notice{border-left:3px solid #e8ae71}.good{border-left:3px solid #5de0b5}code{background:#202c42;padding:2px 5px;border-radius:4px}ol li{padding:3px 0}table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}th{color:#d5b5ff}.scroll{overflow-x:auto}.tags span{display:inline-block;padding:4px 10px;margin:3px;border:1px solid #465576;border-radius:20px;color:#d0ddf4;font-size:12px}@media(max-width:650px){.grid{grid-template-columns:1fr}header{flex-direction:column;gap:6px}}@media print{body{background:white;color:#151515}p,li,strong,th{color:#151515}.card,.notice{border-color:#bbb;background:#fff}header,main{padding:10px}}
+</style></head><body>
+<header><a href="../#projects">← Retour aux projets</a><span class="kicker">BTS SIO SISR · PROJET DE FORMATION</span></header>
+<main>
+<p class="kicker">30 AOÛT 2026 · ENVIRONNEMENT DE LABORATOIRE</p>
+<h1>Installation de GLPI 11 sur Debian 12</h1>
+<p class="lead">Déploiement documenté d'une solution de gestion de parc informatique et de support (ITSM) dans une machine virtuelle VirtualBox.</p>
+<div class="tags"><span>GLPI 11.0.4</span><span>Debian 12</span><span>VirtualBox</span><span>Apache2</span><span>MariaDB</span><span>PHP</span><span>SSH</span></div>
+<section><h2>Contexte et objectif</h2>
+<p>Mettre à disposition un serveur GLPI local afin de découvrir l'installation et la configuration des services nécessaires à une application de gestion de parc et de tickets. L'objectif documenté est d'obtenir une interface GLPI accessible depuis le navigateur de la VM, et non de présenter une mise en production en entreprise.</p></section>
+<section><h2>Environnement technique</h2><div class="grid">
+<div class="card"><h3>Machine virtuelle</h3><p>Oracle VirtualBox · Debian 12 (Bookworm) · GNOME · 2 Go de RAM configurés · disque virtuel VDI de 20 à 25 Go.</p></div>
+<div class="card"><h3>Services</h3><p>Administration SSH, serveur web Apache2, base de données MariaDB 10.11, PHP et extensions requises pour GLPI.</p></div>
+</div>
+<p class="notice"><strong>Précision documentaire :</strong> les premières captures d'installation du système proviennent d'un premier essai sous Debian 13 ; l'installation finale décrite dans les étapes serveur et GLPI a été réalisée sous Debian 12.</p></section>
+<section><h2>Étapes réalisées et documentées</h2>
+<ol><li>Création de la machine virtuelle et installation de Debian avec GNOME, Apache et SSH.</li>
+<li>Mise à jour des paquets puis installation et configuration de MariaDB.</li>
+<li>Installation de PHP et des extensions nécessaires.</li>
+<li>Création de la base <code>glpi</code> et d'un compte SQL dédié.</li>
+<li>Téléchargement de l'archive GLPI 11.0.4 et déploiement dans <code>/var/www/html/glpi</code>.</li>
+<li>Création d'un VirtualHost Apache pointant vers <code>/var/www/html/glpi/public</code>, activation du site et du module de réécriture.</li>
+<li>Lancement de l'assistant web GLPI, vérification des prérequis, ajout de <code>php-bcmath</code>, configuration de la base et accès au tableau de bord.</li></ol>
+</section>
+<section><h2>Tests et preuves relevés dans la procédure</h2>
+<div class="scroll"><table><thead><tr><th>Test</th><th>Résultat documenté</th></tr></thead><tbody>
+<tr><td>Apache</td><td>Service affiché comme « active (running) » après redémarrage.</td></tr>
+<tr><td>Écoute du service</td><td>Contrôle du port 80 avec <code>ss -tlnp</code>.</td></tr>
+<tr><td>Requête HTTP</td><td><code>curl -I http://localhost/</code> renvoie « 200 OK » et un cookie de session GLPI.</td></tr>
+<tr><td>Installation web</td><td>Captures de l'assistant, de la connexion et du tableau de bord GLPI.</td></tr>
+</tbody></table></div></section>
+<section><h2>Incidents et résolution</h2>
+<div class="grid">
+<div class="card"><h3>Écran noir de la VM</h3><p>La machine a été recréée avec le contrôleur VMSVGA, 128 Mo de mémoire vidéo et sans accélération 3D.</p></div>
+<div class="card"><h3>Erreurs de commande ou d'URL</h3><p>Correction d'une faute SQL et d'une URL GitHub coupée lors du téléchargement de l'archive.</p></div>
+<div class="card"><h3>Configuration Apache</h3><p>Correction du VirtualHost et désactivation du site par défaut ; accès servi depuis le dossier <code>public/</code>.</p></div>
+<div class="card"><h3>Prérequis PHP</h3><p>Installation de l'extension <code>php-bcmath</code> après signalement par l'assistant GLPI.</p></div>
+</div></section>
+<section><h2>Compétences BTS SIO à argumenter</h2>
+<p>Ce projet peut illustrer la <strong>mise à disposition d'un service informatique</strong> (installation, configuration, tests) et la <strong>réponse aux incidents</strong> (diagnostic et correction des difficultés). Les correspondances précises et les croix du tableau officiel E4 doivent être validées avec le professeur.</p></section>
+<section><h2>Ce qu'il reste à documenter</h2>
+<p class="notice"><strong>Preuves non encore fournies :</strong> capture de la configuration de la VM, contrôle de l'état SSH, et capture de l'administration après modification des mots de passe par défaut. La procédure décrit ces étapes mais n'en apporte pas toutes les preuves.</p>
+<p>Le document source comprend 25 pages et des captures de progression. Il n'est pas publié en intégralité ici pour éviter de diffuser des identifiants et mots de passe de démonstration visibles dans certaines pages. Les résultats de tests ci-dessus sont tirés de la procédure fournie, et non d'un nouvel essai exécuté sur l'infrastructure.</p>
+</section>
+</main><footer><a href="../#projects">← Retour au portfolio</a> · Fiche de synthèse basée sur la procédure GLPI datée du 30 août 2026.</footer></body></html>
