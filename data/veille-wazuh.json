@@ -1,37 +1,45 @@
 {
   "topic": "Wazuh SIEM/XDR",
-  "generated_at": "2026-11-18T07:28:47.940093Z",
+  "generated_at": "2026-11-18T20:31:32.126289Z",
   "sources": [
     {
       "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": "2026-11-18T07:28:47.940093Z",
+      "checked": "2026-11-18T20:31:32.126289Z",
       "status": "OK",
       "selected": "Actualités et fonctionnalités"
     },
     {
       "name": "Wazuh GitHub Releases",
       "url": "https://github.com/wazuh/wazuh/releases.atom",
-      "checked": "2026-11-18T07:28:47.940093Z",
+      "checked": "2026-11-18T20:31:32.126289Z",
       "status": "OK",
       "selected": "Versions et correctifs"
     },
     {
       "name": "CERT-FR – avis",
       "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
-      "checked": "2026-11-18T07:28:47.940093Z",
+      "checked": "2026-11-18T20:31:32.126289Z",
       "status": "OK",
       "selected": "Avis liés à Wazuh"
     },
     {
       "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": "2026-11-18T07:28:47.940093Z",
+      "checked": "2026-11-18T20:31:32.126289Z",
       "status": "OK",
       "selected": "Vulnérabilités officielles"
     }
   ],
   "items": [
+    {
+      "title": "Wazuh v4.14.11 RC 2",
+      "description": "What's Changed Bump 4.14.11 branch by @wazuhci in #40319 Merge 4.14.10 into 4.14.11 by @TomasTurina in #40394 Validate group_id before building group file paths by @Antoniogm03 in #40363 Validate the request co",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.11-rc2",
+      "published": "2026-11-18T09:28:18Z",
+      "category": "version"
+    },
     {
       "title": "Detecting APT repository tampering on Ubuntu with Wazuh",
       "description": "Ubuntu systems rely on the Advanced Package Tool (APT) to install and update software from trusted sources. APT repository tampering abuses this trust by changing package sources or weakening verification setti",
