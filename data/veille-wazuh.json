@@ -1,37 +1,45 @@
 {
   "topic": "Wazuh SIEM/XDR",
-  "generated_at": "2026-11-20T07:16:13.235713Z",
+  "generated_at": "2026-11-20T20:20:27.596407Z",
   "sources": [
     {
       "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": "2026-11-20T07:16:13.235713Z",
+      "checked": "2026-11-20T20:20:27.596407Z",
       "status": "OK",
       "selected": "Actualités et fonctionnalités"
     },
     {
       "name": "Wazuh GitHub Releases",
       "url": "https://github.com/wazuh/wazuh/releases.atom",
-      "checked": "2026-11-20T07:16:13.235713Z",
+      "checked": "2026-11-20T20:20:27.596407Z",
       "status": "OK",
       "selected": "Versions et correctifs"
     },
     {
       "name": "CERT-FR – avis",
       "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
-      "checked": "2026-11-20T07:16:13.235713Z",
+      "checked": "2026-11-20T20:20:27.596407Z",
       "status": "OK",
       "selected": "Avis liés à Wazuh"
     },
     {
       "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": "2026-11-20T07:16:13.235713Z",
-      "status": "Accès API non confirmé",
+      "checked": "2026-11-20T20:20:27.596407Z",
+      "status": "OK",
       "selected": "Vulnérabilités officielles"
     }
   ],
   "items": [
+    {
+      "title": "Wazuh v4.14.11 RC 2",
+      "description": "What's Changed Bump 4.14.11 branch by @wazuhci in #40319 Merge 4.14.10 into 4.14.11 by @TomasTurina in #40394 Validate group_id before building group file paths by @Antoniogm03 in #40363 Validate the request co",
+      "source": "Wazuh GitHub Releases",
+      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.11-rc2",
+      "published": "2026-11-20T10:20:29Z",
+      "category": "version"
+    },
     {
       "title": "Detecting common Linux impact techniques with Wazuh",
       "description": "Impact techniques are actions that attackers perform to disrupt system availability, compromise data integrity, or prevent recovery. On Linux systems, threat actors often use these techniques during ransomware ",
@@ -39,14 +47,6 @@
       "link": "https://wazuh.com/blog/detecting-common-linux-impact-techniques-with-wazuh/",
       "published": "2026-11-19T16:11:24Z",
       "category": "feature"
-    },
-    {
-      "title": "Wazuh v4.14.11 RC 2",
-      "description": "What's Changed Bump 4.14.11 branch by @wazuhci in #40319 Merge 4.14.10 into 4.14.11 by @TomasTurina in #40394 Validate group_id before building group file paths by @Antoniogm03 in #40363 Validate the request co",
-      "source": "Wazuh GitHub Releases",
-      "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.11-rc2",
-      "published": "2026-11-18T09:28:18Z",
-      "category": "version"
     },
     {
       "title": "Detecting APT repository tampering on Ubuntu with Wazuh",
