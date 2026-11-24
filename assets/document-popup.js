@@ -12,7 +12,8 @@ document.addEventListener('click',function(e){
 var trigger=e.target.closest('[data-document-popup]'); if(!trigger)return;
 var raw=trigger.getAttribute('href'); if(!raw)return;
 var url;try{url=new URL(raw,document.baseURI)}catch(error){return}
-if(url.origin!==location.origin||!/^https?:$/.test(url.protocol)||typeof dialog.showModal!=='function')return;
+var isLocalFile=(location.protocol==="file:" && url.protocol==="file:");
+if((!isLocalFile && (url.origin!==location.origin||!/^https?:$/.test(url.protocol)))||typeof dialog.showModal!=='function')return;
 e.preventDefault();priorFocus=trigger;
 var name=trigger.getAttribute('data-document-title')||trigger.textContent.trim()||'Document';
 var pdf=/\.pdf$/i.test(url.pathname);
