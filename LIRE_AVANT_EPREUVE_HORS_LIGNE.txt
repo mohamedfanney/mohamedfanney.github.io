@@ -1,0 +1,51 @@
+PORTFOLIO BTS SIO SISR — MODE HORS LIGNE
+Mohamed Hemamda
+==============================================
+
+À FAIRE AVANT L'ÉPREUVE (QUAND INTERNET FONCTIONNE)
+
+1. Ouvrir :
+   https://mohamedfanney.github.io/
+2. Cliquer sur « Télécharger le portfolio hors ligne (ZIP) »
+   ou accéder directement à :
+   https://github.com/mohamedfanney/mohamedfanney.github.io/archive/refs/heads/main.zip
+3. Attendre la fin du téléchargement.
+4. Décompresser l'archive ZIP dans un dossier, par exemple :
+   Documents\PORTFOLIO_EPREUVE\
+5. Ouvrir le dossier extrait, puis double-cliquer sur INDEX.HTML.
+   Conserver TOUS les fichiers et sous-dossiers ensemble.
+6. Tester chaque rubrique pendant que le Wi-Fi est désactivé :
+   - projets Active Directory, VLAN, GLPI et Debian 13
+   - missions Tunzini BitLocker et sécurisation FTP/RSH
+   - tableau E4 et fichier Excel
+   - veille Wazuh : recherche, filtres et pop-up
+   - CV, PIX et PDF des projets
+7. Copier le dossier décompressé sur une clé USB pour une deuxième sauvegarde.
+8. Conserver également le fichier original du tableau E4 vérifié par le formateur.
+
+PENDANT L'ÉPREUVE (MÊME SANS WIFI)
+
+- Ouvrir le fichier INDEX.HTML depuis le dossier extrait.
+- Les liens internes et les pop-up de fiches fonctionnent localement.
+- Les PDF sont accessibles via le bouton « ouvrir dans un onglet »
+  si le navigateur n'affiche pas l'aperçu dans une fenêtre.
+- La veille affiche un instantané local des publications.
+  Elle NE se met PAS à jour sans réseau et les liens vers les
+  sources officielles, LinkedIn ou Google exigent Internet.
+- Les formulaires de contact et liens externes ne fonctionnent
+  pas sans accès Internet.
+
+EN CAS DE BLOCAGE DES POP-UP DE FICHIERS LOCAUX
+- Utiliser le lien « Ouvrir dans un onglet » si disponible,
+  ou ouvrir directement le fichier HTML/PDF correspondant
+  dans le dossier projets/, missions/, documents/ ou certificats/.
+- À défaut, utiliser Firefox ou Edge en mode hors ligne.
+
+IMPORTANT
+- Ne pas ouvrir INDEX.HTML directement depuis une archive ZIP non extraite.
+- Ne pas déplacer INDEX.HTML seul, sinon les documents et styles manqueront.
+- Le téléchargement GitHub ZIP est gratuit et ne nécessite pas
+  de maintenir une connexion le jour de l'épreuve.
+- Les éléments confidentiels de Tunzini ne figurent pas dans ce dossier.
+
+Répertoire principal : https://mohamedfanney.github.io/
