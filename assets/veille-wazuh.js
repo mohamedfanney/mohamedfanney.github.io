@@ -48,9 +48,12 @@ search.addEventListener("submit",function(e){e.preventDefault();limit=8;render()
 document.querySelectorAll("[data-vw-suggest]").forEach(function(b){b.onclick=function(){input.value=b.dataset.vwSuggest;limit=8;render();input.focus()}});
 document.querySelectorAll("[data-vw-filter]").forEach(function(b){b.onclick=function(){filter=b.dataset.vwFilter;limit=8;document.querySelectorAll("[data-vw-filter]").forEach(function(t){t.setAttribute("aria-pressed",String(t===b))});render()}});
 more.onclick=function(){limit+=8;render()};
-fetch("data/veille-wazuh.json?v="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw Error("HTTP");return r.json()}).then(function(data){
+function loadIndex(data){
+
 items=(Array.isArray(data.items)?data.items:[]).filter(function(x){return x&&x.title&&safe(x.link)}).slice(0,100);
 items.sort(function(a,b){return(Date.parse(b.published)||0)-(Date.parse(a.published)||0)});
 sources=Array.isArray(data.sources)?data.sources:[];date=data.generated_at||"";renderSources();render();
-}).catch(function(){status.textContent="Index temporairement indisponible. Ouvrez les sources officielles.";render()});
+}
+if(location.protocol==="file:" && window.__WAZUH_OFFLINE_DATA__){loadIndex(window.__WAZUH_OFFLINE_DATA__);status.textContent+=" · Copie hors ligne (non actualisée)";}
+else fetch("data/veille-wazuh.json?v="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw Error("HTTP");return r.json()}).then(loadIndex).catch(function(){if(window.__WAZUH_OFFLINE_DATA__){loadIndex(window.__WAZUH_OFFLINE_DATA__);status.textContent+=" · Copie de secours (non actualisée)";}else{status.textContent="Index temporairement indisponible.";render();}});
 })();
