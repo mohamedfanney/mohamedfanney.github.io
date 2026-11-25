@@ -1,43 +1,43 @@
 {
   "topic": "Wazuh SIEM/XDR",
-  "generated_at": "2026-11-25T08:34:26.180286Z",
+  "generated_at": "2026-11-25T21:41:59.064558Z",
   "sources": [
     {
       "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": "2026-11-25T08:34:26.180286Z",
+      "checked": "2026-11-25T21:41:59.064558Z",
       "status": "OK",
       "selected": "Actualités et fonctionnalités"
     },
     {
       "name": "Wazuh GitHub Releases",
       "url": "https://github.com/wazuh/wazuh/releases.atom",
-      "checked": "2026-11-25T08:34:26.180286Z",
+      "checked": "2026-11-25T21:41:59.064558Z",
       "status": "OK",
       "selected": "Versions et correctifs"
     },
     {
       "name": "CERT-FR – avis",
       "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
-      "checked": "2026-11-25T08:34:26.180286Z",
+      "checked": "2026-11-25T21:41:59.064558Z",
       "status": "OK",
       "selected": "Avis liés à Wazuh"
     },
     {
       "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": "2026-11-25T08:34:26.180286Z",
+      "checked": "2026-11-25T21:41:59.064558Z",
       "status": "OK",
       "selected": "Vulnérabilités officielles"
     }
   ],
   "items": [
     {
-      "title": "v4.14.11",
-      "description": "v4.14.11",
+      "title": "Wazuh v4.14.11",
+      "description": "Manager Removed Removed the df -P command from the default ossec.conf of Linux and Solaris agents and of the manager. ( #41441 ) Fixed Fixed the removal and purge of the wazuh-manager DEB package failing when t",
       "source": "Wazuh GitHub Releases",
       "link": "https://github.com/wazuh/wazuh/releases/tag/v4.14.11",
-      "published": "2026-11-25T08:11:31Z",
+      "published": "2026-11-25T15:19:41Z",
       "category": "version"
     },
     {
