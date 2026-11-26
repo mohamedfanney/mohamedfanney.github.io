@@ -1,37 +1,45 @@
 {
   "topic": "Wazuh SIEM/XDR",
-  "generated_at": "2026-11-26T08:17:50.239580Z",
+  "generated_at": "2026-11-26T21:31:49.642021Z",
   "sources": [
     {
       "name": "Blog officiel Wazuh",
       "url": "https://wazuh.com/feed/",
-      "checked": "2026-11-26T08:17:50.239580Z",
+      "checked": "2026-11-26T21:31:49.642021Z",
       "status": "OK",
       "selected": "Actualités et fonctionnalités"
     },
     {
       "name": "Wazuh GitHub Releases",
       "url": "https://github.com/wazuh/wazuh/releases.atom",
-      "checked": "2026-11-26T08:17:50.239580Z",
-      "status": "OK",
-      "selected": "Versions et correctifs"
+      "checked": "2026-11-26T21:31:49.642021Z",
+      "status": "Indisponible",
+      "selected": "Collecte impossible : The read operation timed out"
     },
     {
       "name": "CERT-FR – avis",
       "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
-      "checked": "2026-11-26T08:17:50.239580Z",
+      "checked": "2026-11-26T21:31:49.642021Z",
       "status": "OK",
       "selected": "Avis liés à Wazuh"
     },
     {
       "name": "Wazuh GitHub Advisories",
       "url": "https://github.com/wazuh/wazuh/security/advisories",
-      "checked": "2026-11-26T08:17:50.239580Z",
+      "checked": "2026-11-26T21:31:49.642021Z",
       "status": "OK",
       "selected": "Vulnérabilités officielles"
     }
   ],
   "items": [
+    {
+      "title": "Wazuh and iSecNG GmbH Announce Partnership to Strengthen SOC Services",
+      "description": "San Jose, California, November 2026 – Wazuh, the leading open-source Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) solution, announced a partnership with iSecNG GmbH",
+      "source": "Blog officiel Wazuh",
+      "link": "https://wazuh.com/blog/wazuh-and-isecng-gmbh-announce-partnership-to-strengthen-soc-services/",
+      "published": "2026-11-26T14:33:47Z",
+      "category": "feature"
+    },
     {
       "title": "Wazuh v4.14.11",
       "description": "Manager Removed Removed the df -P command from the default ossec.conf of Linux and Solaris agents and of the manager. ( #41441 ) Fixed Fixed the removal and purge of the wazuh-manager DEB package failing when t",
